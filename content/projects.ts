@@ -21,11 +21,41 @@ export type Project = {
   youtube?: { id: string; title: string }; // the hero video
   work?: { id: string; title: string }[];
   shorts?: { id: string; title: string }[];
+  featured?: boolean; // shown on the home page
+  stats?: { value: string; label: string }[]; // headline numbers for the page
 };
 
 export type Video = { id: string; title: string };
 
 export const projects: Project[] = [
+  {
+    slug: "getting-ready-for-life",
+    title: "Getting Ready for Life",
+    discipline: "Brand campaign",
+    year: "[Year]",
+    summary: "A Bing Bunny brand campaign across Italy, the UK and Poland.",
+    meta: "Acamar Films · Bing Bunny · Italy, UK, Poland",
+    tags: ["Campaign", "Content pipeline", "Multi-market"],
+    facts: {
+      client: "Acamar Films (Bing Bunny)",
+      role: "Designed and executed the content pipeline",
+      tools: "[Tools] · Batch Builder",
+      deliverables: "[e.g. episodes, cutdowns and social assets per market]",
+    },
+    brief: "[2–3 sentences: what the campaign set out to do, and for whom.]",
+    approach:
+      "[2–3 sentences: how the pipeline let one team deliver every market's assets on time.]",
+    result:
+      "212.7 million YouTube views across Italy and the UK, with 8.8 million social reach and 10.8 million social views. Poland passed 1 million YouTube views in its first year.",
+    stats: [
+      { value: "212.7m", label: "YouTube views, Italy + UK" },
+      { value: "8.8m", label: "Social reach, Italy + UK" },
+      { value: "10.8m", label: "Social views, Italy + UK" },
+      { value: "1m+", label: "YouTube views in Poland's first year" },
+    ],
+    featured: true,
+    workSlots: 2,
+  },
   {
     slug: "nine-news",
     title: "News stories for Nine",
@@ -43,26 +73,28 @@ export const projects: Project[] = [
     brief: "[2–3 sentences: what Nine needed, and the turnaround.]",
     approach: "[2–3 sentences: how you cut the stories, what made it work.]",
     result: "[1–2 sentences: what aired, any numbers or feedback.]",
+    featured: true,
     youtube: { id: "C1YrjGWKxHk", title: "Nine Network showreel" },
     workSlots: 4,
   },
   {
     slug: "pcuk",
-    title: "PCUK",
+    title: "Pancreatic Cancer UK",
     discipline: "[Discipline]",
     year: "[Year]",
     summary: "[One-line summary of the PCUK project.]",
-    meta: "PCUK · [Format] · [Year]",
+    meta: "Pancreatic Cancer UK · Third Sector award winner",
     tags: ["[Tag]", "[Tag]"],
     facts: {
-      client: "PCUK",
+      client: "Pancreatic Cancer UK",
       role: "[Your role]",
       tools: "[Tools]",
       deliverables: "[Deliverables]",
     },
     brief: "[2–3 sentences: what PCUK needed.]",
     approach: "[2–3 sentences: how you approached it.]",
-    result: "[1–2 sentences: the outcome.]",
+    result: "Won a Third Sector award. [Confirm which video, and add any reach numbers.]",
+    featured: true,
     youtube: { id: "6QLwYsRF0uY", title: "PCUK “Lost Voices”" },
     workSlots: 2,
   },
@@ -135,14 +167,22 @@ export const projects: Project[] = [
     tags: ["Operations", "Social", "Cinema"],
     facts: {
       client: "Acamar Films",
-      role: "Operational lead, new formats",
+      role: "Designed and executed the content pipeline",
       tools: "[Tools]",
       deliverables:
         "Themed compilations, cinema games & DCP, social, stop-motion and toy play, educational, Alexa audio story visuals",
     },
     brief: "[2–3 sentences: why Acamar needed new formats, and the scale.]",
     approach: "[2–3 sentences: how you ran the pipeline across formats.]",
-    result: "[1–2 sentences: output volume, reach, results.]",
+    result:
+      "Working alongside the YouTube team that ran the channels, the pipeline helped Bing grow from 1 billion to 11 billion YouTube views in six years. TikTok went from 0 to 142,000 followers in two years, and Instagram from 15,000 to 75,000.",
+    stats: [
+      { value: "13bn+", label: "Lifetime YouTube views, 67 channels, 35 languages" },
+      { value: "1bn → 11bn", label: "YouTube views in six years" },
+      { value: "1.3m", label: "Viewing hours every day" },
+      { value: "0 → 142k", label: "TikTok followers in two years" },
+    ],
+    featured: true,
     youtube: { id: "-O3VAWv-Y_A", title: "Themed compilation: It's Christmas Day Today!" },
     work: [
       { id: "4b9wuENbRlg", title: "Carrot and Banana music video" },
@@ -201,7 +241,8 @@ export const projects: Project[] = [
     title: "Batch Builder",
     discipline: "Tools & workflow",
     year: "[Year]",
-    summary: "A plugin I designed to [what Batch Builder does].",
+    summary:
+      "The custom plugin I built to make the Bing Bunny content pipeline fast: [what it does, in one line].",
     meta: "Plugin · [Host app] · [Year]",
     tags: ["Workflow", "Plugin"],
     facts: {

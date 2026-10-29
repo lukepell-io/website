@@ -37,8 +37,8 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
     <article>
       <div className="container">
         <header className="cs-head">
-          <Link href="/#work" className="back-link">
-            ← All work
+          <Link href="/work" className="back-link">
+            ← All case studies
           </Link>
           <span className="eyebrow">
             <Text>{`${project.discipline} · ${project.year}`}</Text>
@@ -77,6 +77,17 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
             </div>
           ))}
         </dl>
+
+        {project.stats && (
+          <dl className="stats">
+            {project.stats.map((s) => (
+              <div key={s.label}>
+                <dt className="stat-value">{s.value}</dt>
+                <dd className="caption">{s.label}</dd>
+              </div>
+            ))}
+          </dl>
+        )}
 
         <section className="cs-section">
           <h2 className="heading">The brief</h2>

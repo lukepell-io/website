@@ -1,54 +1,91 @@
+import Link from "next/link";
 import { projects } from "@/content/projects";
 import { shorts, site } from "@/content/site";
+import { Highlight } from "@/components/Highlight";
 import { Media } from "@/components/Media";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Text } from "@/components/Text";
+import { Wave } from "@/components/Wave";
 
 export default function Home() {
+  const featured = projects.filter((p) => p.featured);
+
   return (
     <>
-      {/* Hero */}
-      <section className="hero">
-        <div className="container hero-grid">
-          <div className="hero-text">
-            <span className="eyebrow">{site.hero.eyebrow}</span>
-            <h1 className="display-xl">{site.hero.headline}</h1>
-            <p className="body-lg">{site.hero.intro}</p>
-            <div className="hero-actions">
-              <a className="btn btn-primary" href="#reel">
-                Watch the reel
-              </a>
-              <a className="btn btn-secondary" href="#work">
-                See the work
-              </a>
-            </div>
+      {/* Showreel, full width */}
+      <section className="reel-full" aria-label="Showreel">
+        <Media
+          folder="home"
+          name="showreel"
+          kind="video"
+          label="Showreel"
+          spec="16:9, 60–90s, 1080p MP4 (H.264), under 50 MB · plays muted on loop"
+          autoplay
+        />
+      </section>
+
+      {/* What I do, and the two doors */}
+      <section className="intro">
+        <div className="container intro-grid">
+          <div className="intro-text">
+            <h1 className="display">{site.hero.headline}</h1>
+            <p className="body-lg muted">{site.hero.intro}</p>
           </div>
-          <div className="hero-reel" id="reel">
-            <Media
-              folder="home"
-              name="showreel"
-              kind="video"
-              label="Showreel"
-              spec="16:9, 60–90s, 1080p MP4 (H.264), under 50 MB · plays muted on loop"
-              large
-              autoplay
-            />
-          </div>
-          <p className="caption hero-clients">
-            Selected clients · {site.hero.clients.join(" · ")}
+          <ul className="doors">
+            {site.doors.map((d) => (
+              <li key={d.href}>
+                <Link href={d.href} className="door">
+                  <span className="door-title">
+                    {d.title}
+                    <span className="door-arrow" aria-hidden="true">
+                      →
+                    </span>
+                  </span>
+                  <span className="door-line">{d.line}</span>
+                  <span className="door-action">{d.action}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* End to end, at a glance */}
+      <section className="pipeline-wrap" aria-label="What I do, end to end">
+        <div className="container">
+          <ol className="pipeline">
+            {site.pipeline.map((step, i) => (
+              <li key={step}>
+                <span>{step}</span>
+                {i < site.pipeline.length - 1 && <Wave className="pipeline-wave" />}
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* Proof */}
+      <section className="section">
+        <div className="container proof">
+          <span className="eyebrow">{site.proof.label}</span>
+          <p className="proof-sentence">
+            <Highlight>{site.proof.sentence}</Highlight>
           </p>
+          <p className="caption">{site.proof.footnote}</p>
         </div>
       </section>
 
       {/* Selected work */}
       <section className="section" id="work">
         <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">Selected work</span>
-            <h2 className="display">Case studies</h2>
+          <div className="section-head row">
+            <h2 className="heading">Selected work</h2>
+            <Link href="/work" className="text-link">
+              All case studies →
+            </Link>
           </div>
-          <div className="work-grid">
-            {projects.map((p, i) => (
+          <div className="work-grid featured">
+            {featured.map((p, i) => (
               <ProjectCard key={p.slug} project={p} index={i} />
             ))}
           </div>
@@ -59,7 +96,6 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="section-head">
-            <span className="eyebrow">Shorts & social</span>
             <h2 className="heading">Made for the scroll</h2>
           </div>
           <div className="shelf">
@@ -83,34 +119,6 @@ export default function Home() {
                   <Text>{s.credit}</Text>
                 </span>
               </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About */}
-      <section className="section" id="about">
-        <div className="container about">
-          <div className="about-photo">
-            <Media
-              folder="home"
-              name="portrait"
-              kind="image"
-              ratio="square"
-              label="Portrait"
-              spec="Square photo of you, 1200×1200 JPG"
-              canopy
-            />
-          </div>
-          <div className="about-text">
-            <span className="eyebrow">{site.about.eyebrow}</span>
-            <h2 className="display" style={{ marginTop: "var(--space-3)" }}>
-              {site.about.heading}
-            </h2>
-            {site.about.paragraphs.map((para, i) => (
-              <p key={i} className={i === 0 ? "body-lg" : undefined}>
-                <Text>{para}</Text>
-              </p>
             ))}
           </div>
         </div>

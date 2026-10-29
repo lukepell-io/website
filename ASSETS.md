@@ -2,13 +2,18 @@
 
 Drop each file into the folder shown. The site picks it up automatically: the placeholder disappears and your file shows instead.
 
-Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each poster still the same as its video (hero.mp4 + hero.jpg).
+Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each poster still the same as its video (hero.mp4 + hero.jpg). Projects with a YouTube video already show it, so a local file is only needed if you'd rather host it yourself.
 
 ## Home page (`public/media/home/`)
 
-- [ ] `showreel.mp4` + `showreel.jpg`: your showreel, 16:9, 60–90s. Plays muted on loop.
-- [ ] `short-1.mp4` … `short-4.mp4` (+ matching .jpg): four vertical pieces, 9:16, 1080×1920, under 60s.
-- [ ] `portrait.jpg`: a square photo of you, 1200×1200.
+- [ ] `showreel.mp4` + `showreel.jpg`: your showreel, 16:9, 60–90s. Plays muted on loop, full width.
+- [ ] `portrait.jpg`: a square photo of you, 1200×1200 (About page).
+
+## Getting Ready for Life (`public/media/getting-ready-for-life/`)
+
+- [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
+- [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
+- [ ] `work-1.mp4` … `work-2.mp4` (or .jpg stills): supporting clips, 16:9.
 
 ## News stories for Nine (`public/media/nine-news/`)
 
@@ -16,7 +21,7 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 - [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
 - [ ] `work-1.mp4` … `work-4.mp4` (or .jpg stills): supporting clips, 16:9.
 
-## PCUK (`public/media/pcuk/`)
+## Pancreatic Cancer UK (`public/media/pcuk/`)
 
 - [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
 - [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
