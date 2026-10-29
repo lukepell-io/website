@@ -13,6 +13,8 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
         label="Card thumbnail"
         spec="16:9 still, 1920×1080 JPG"
         canopy={index % 2 === 1}
+        youtube={project.youtube?.id}
+        title={project.youtube?.title}
       />
       <div className="card-body">
         <span className="eyebrow">

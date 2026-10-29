@@ -73,6 +73,8 @@ export default function Home() {
                   label={`Vertical ${i + 1}`}
                   spec="9:16, 1080×1920 MP4, under 60s"
                   canopy={i % 2 === 1}
+                  youtube={s.youtube}
+                  title={s.title}
                 />
                 <span className="title" style={{ fontSize: 18, lineHeight: "24px" }}>
                   <Text>{s.title}</Text>

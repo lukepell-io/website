@@ -770,11 +770,45 @@ a {
   container-type: inline-size;
 }
 @container (max-width: 480px) {
-  .play {
+  .slot-label ~ .play,
+  .play:has(~ .slot-label) {
     display: none;
   }
 }
-.cs-section > .media-grid {
+.cs-section > .media-grid,
+.cs-section > .shelf {
   grid-column: 1 / -1;
   max-width: none;
+}
+
+/* ── YouTube embeds ── */
+.frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.yt-facade {
+  position: absolute;
+  inset: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.yt-facade img {
+  transition: transform 0.4s ease-out;
+}
+.yt-facade:hover img {
+  transform: scale(1.03);
+}
+.yt-facade .play {
+  transition: transform 0.3s ease-out;
+}
+.yt-facade:hover .play {
+  transform: scale(1.08);
+}
+.yt-facade:focus-visible {
+  outline-offset: -4px;
 }

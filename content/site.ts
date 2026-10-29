@@ -33,9 +33,10 @@ export const site = {
 } as const;
 
 // Vertical (9:16) pieces for the Shorts shelf on the home page.
+// `youtube` is the video ID (the bit after /shorts/).
 export const shorts = [
-  { id: "short-1", title: "[Vertical piece 1]", credit: "[Client · format · year]" },
-  { id: "short-2", title: "[Vertical piece 2]", credit: "[Client · format · year]" },
-  { id: "short-3", title: "[Vertical piece 3]", credit: "[Client · format · year]" },
-  { id: "short-4", title: "[Vertical piece 4]", credit: "[Client · format · year]" },
+  { id: "short-1", youtube: "lSP4MglE-qw", title: "The Wildlife Trusts collaboration", credit: "Bing Bunny · YouTube Shorts · [Year]" },
+  { id: "short-2", youtube: "ag5qz-wddbo", title: "Live-action paper cutout", credit: "Bing Bunny · YouTube Shorts · [Year]" },
+  { id: "short-3", youtube: "HDUusThf8m4", title: "Guess which musical instrument", credit: "Bing Bunny · YouTube Shorts · [Year]" },
+  { id: "short-4", youtube: "UgsB7p9qLtI", title: "In the garden", credit: "Bing Bunny · YouTube Shorts · [Year]" },
 ];

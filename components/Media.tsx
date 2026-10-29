@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { YouTube } from "./YouTube";
 
 // A frame for one piece of media. If the file exists in public/media,
 // it shows it. If not, it shows a labelled placeholder saying exactly
@@ -17,6 +18,8 @@ type Props = {
   large?: boolean;
   canopy?: boolean; // green-to-turquoise placeholder instead of the default
   autoplay?: boolean; // muted looping preview (never with sound)
+  youtube?: string; // YouTube video ID, used when there's no local file
+  title?: string; // the video's title (for YouTube)
 };
 
 const VIDEO_EXT = ["mp4", "webm", "mov"];
@@ -40,6 +43,8 @@ export function Media({
   large,
   canopy,
   autoplay,
+  youtube,
+  title,
 }: Props) {
   const image = find(folder, name, IMAGE_EXT);
   const video = kind === "video" ? find(folder, name, VIDEO_EXT) : null;
@@ -69,6 +74,20 @@ export function Media({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={image} alt={label} />
       </div>
+    );
+  }
+
+  // No local file, but there's a YouTube version: show that.
+  // An image slot (like a card thumbnail) just shows its thumbnail.
+  if (youtube && (ratio === "wide" || ratio === "vertical")) {
+    return (
+      <YouTube
+        id={youtube}
+        title={title ?? label}
+        vertical={ratio === "vertical"}
+        large={large}
+        thumbOnly={kind === "image"}
+      />
     );
   }
 
