@@ -1,18 +1,26 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Fraunces } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
-const outfit = Outfit({
+// Headlines: Fraunces, a soft serif. SOFT and WONK stay at 0 so it reads calm;
+// opsz lets it tune itself from small titles up to the hero.
+const fraunces = Fraunces({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  axes: ["opsz"],
 });
 
-const inter = Inter({
+// Body, nav and buttons: General Sans (Fontshare, free for commercial use), self-hosted.
+const generalSans = localFont({
   variable: "--font-body",
-  subsets: ["latin"],
+  src: [
+    { path: "./fonts/GeneralSans-Variable.woff2", weight: "200 700", style: "normal" },
+    { path: "./fonts/GeneralSans-VariableItalic.woff2", weight: "200 700", style: "italic" },
+  ],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +39,7 @@ const themeScript = `try{var t=localStorage.getItem("theme");if(t==="day"||t==="
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${outfit.variable} ${inter.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${fraunces.variable} ${generalSans.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
