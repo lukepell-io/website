@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { site } from "@/content/site";
 import { Wave } from "./Wave";
+import { Wordmark } from "./Wordmark";
 
 const links = [
   { href: "/work", label: "Case studies" },
@@ -92,11 +92,7 @@ export function Nav() {
     <header className="site-header" data-scrolled={scrolled}>
       <div className="header-inner">
         <Link href="/" className="wordmark" onClick={() => setOpen(false)}>
-          <span className="wordmark-text">
-            {site.wordmark}
-            <span className="dot">.</span>io
-          </span>
-          <Wave className="wordmark-wave" />
+          <Wordmark className="wordmark-svg" />
         </Link>
 
         <nav aria-label="Main" className="nav-links">

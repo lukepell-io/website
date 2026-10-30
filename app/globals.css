@@ -301,25 +301,24 @@ a {
 
 .wordmark {
   display: inline-flex;
-  flex-direction: column;
-  gap: 2px;
+  align-items: center;
   color: var(--ink);
   text-decoration: none;
 }
-.wordmark-text {
-  font: 600 24px/1 var(--font-display), sans-serif;
-  letter-spacing: -0.015em;
+/* The SVG box includes the "p" descender; the negative margin drops it out of
+   the layout so the letters sit optically centred in the nav. */
+.wordmark-svg {
+  display: block;
+  height: 30px;
+  width: auto;
+  margin-bottom: -5px;
+  overflow: visible;
 }
-.wordmark .dot {
-  color: var(--coral);
-}
-.wordmark-wave {
-  width: 100%;
-  height: 7px;
-  color: var(--brand);
-}
-.wordmark:hover .wordmark-wave {
-  color: var(--palm);
+@media (max-width: 767px) {
+  .wordmark-svg {
+    height: 26px;
+    margin-bottom: -4.5px;
+  }
 }
 
 .nav-links {
