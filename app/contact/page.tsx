@@ -1,41 +1,61 @@
 import type { Metadata } from "next";
 import { site } from "@/content/site";
 
-export const metadata: Metadata = { title: "Contact" };
+const c = site.contact;
+
+export const metadata: Metadata = { title: "Contact", description: c.metaDescription };
 
 export default function ContactPage() {
   return (
     <div className="container page">
       <header className="page-head">
-        <h1 className="display">Let&apos;s talk.</h1>
-        <p className="body-lg muted">
-          Tell me a little about what you need, and I&apos;ll get back to you.
-        </p>
+        <h1 className="display">{c.headline}</h1>
+        <p className="body-lg muted">{c.intro}</p>
       </header>
 
       <div className="contact-options">
         <div className="contact-option">
-          <h2 className="title">For brands & companies</h2>
-          <p className="muted">A short call to talk through your content and what a system could do for you.</p>
+          <h2 className="title">{c.brands.title}</h2>
+          <p className="muted">{c.brands.body}</p>
           <a className="btn btn-primary" href={site.bookingUrl}>
-            Book a call
+            {site.ctas.call}
           </a>
         </div>
         <div className="contact-option">
-          <h2 className="title">For agencies</h2>
-          <p className="muted">Send me your dates and a rough brief, and I&apos;ll confirm availability.</p>
+          <h2 className="title">{c.agencies.title}</h2>
+          <p className="muted">{c.agencies.body}</p>
           <a className="btn btn-primary" href={site.availabilityUrl}>
-            Check availability
+            {site.ctas.availability}
           </a>
         </div>
       </div>
 
-      <p className="body-lg" style={{ marginTop: "var(--space-12)" }}>
-        Or just email{" "}
-        <a href={`mailto:${site.email}`} className="text-link">
-          {site.email}
-        </a>
-      </p>
+      <section className="service" style={{ marginTop: "var(--space-12)" }}>
+        <h2 className="heading">{c.emailTitle}</h2>
+        <p className="body-lg">
+          <a href={`mailto:${site.email}`} className="text-link">
+            {site.email}
+          </a>
+        </p>
+        <p className="caption">{c.emailHint}</p>
+      </section>
+
+      <section className="service">
+        <h2 className="heading">Details</h2>
+        <ul className="plain-list">
+          <li>{c.details}</li>
+          <li>
+            <a href={site.linkedin} className="text-link" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href={site.resumeUrl} className="text-link" target="_blank" rel="noopener noreferrer">
+              {site.ctas.resumeBody}
+            </a>
+          </li>
+        </ul>
+      </section>
     </div>
   );
 }

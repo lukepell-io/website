@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { site } from "@/content/site";
 import { Media } from "@/components/Media";
-import { Text } from "@/components/Text";
 
-export const metadata: Metadata = { title: "About" };
+const a = site.about;
+
+export const metadata: Metadata = { title: "About", description: a.metaDescription };
 
 export default function AboutPage() {
   return (
@@ -22,22 +22,54 @@ export default function AboutPage() {
           />
         </div>
         <div className="about-text">
-          <h1 className="display">{site.about.heading}</h1>
-          {site.about.paragraphs.map((para, i) => (
-            <p key={i} className={i === 0 ? "body-lg" : undefined}>
-              <Text>{para}</Text>
-            </p>
+          <h1 className="display">{a.heading}</h1>
+          <p className="body-lg">{a.intro}</p>
+
+          <h2 className="heading about-subhead">{a.storyTitle}</h2>
+          {a.story.map((para) => (
+            <p key={para}>{para}</p>
           ))}
-          <div className="hero-actions" style={{ marginTop: "var(--space-8)" }}>
-            <Link className="btn btn-primary" href="/contact">
-              Get in touch
-            </Link>
-            <Link className="btn btn-secondary" href="/work">
-              See the work
-            </Link>
-          </div>
         </div>
       </div>
+
+      <section className="service">
+        <h2 className="heading">{a.quotesTitle}</h2>
+        <div className="quotes">
+          {a.quotes.map((q) => (
+            <figure key={q.name} className="quote">
+              <blockquote className="body-lg">“{q.text}”</blockquote>
+              <figcaption className="caption">
+                <strong>{q.name}</strong>, {q.role}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="service">
+        <h2 className="heading">{a.factsTitle}</h2>
+        <ul className="plain-list">
+          {a.facts.map((f) => (
+            <li key={f}>{f}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="service">
+        <p className="body-lg">
+          {a.signOff}{" "}
+          <a href={`mailto:${site.email}`} className="text-link">
+            {site.email}
+          </a>
+          .
+        </p>
+        <p className="caption">
+          {site.ctas.hiring}{" "}
+          <a href={site.resumeUrl} className="text-link" target="_blank" rel="noopener noreferrer">
+            {site.ctas.resumeBody}
+          </a>
+        </p>
+      </section>
     </div>
   );
 }

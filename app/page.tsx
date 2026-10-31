@@ -5,6 +5,7 @@ import { Highlight } from "@/components/Highlight";
 import { Media } from "@/components/Media";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Text } from "@/components/Text";
+import { PlayWithSound } from "@/components/PlayWithSound";
 import { Wave } from "@/components/Wave";
 
 export default function Home() {
@@ -22,31 +23,56 @@ export default function Home() {
           spec="16:9, 60–90s, 1080p MP4 (H.264), under 50 MB · plays muted on loop"
           autoplay
         />
+        <PlayWithSound />
       </section>
 
       {/* What I do, and the two doors */}
       <section className="intro">
         <div className="container intro-grid">
           <div className="intro-text">
+            <span className="eyebrow">{site.hero.eyebrow}</span>
             <h1 className="display">{site.hero.headline}</h1>
             <p className="body-lg muted">{site.hero.intro}</p>
+            <p className="caption">{site.hero.proof}</p>
+            <div className="hero-actions">
+              <a className="btn btn-primary" href={site.bookingUrl}>
+                {site.ctas.call}
+              </a>
+              <span className="muted hero-or">
+                or email{" "}
+                <a href={`mailto:${site.email}`} className="text-link">
+                  {site.email}
+                </a>
+              </span>
+            </div>
+            <p className="caption">{site.hero.location}</p>
           </div>
-          <ul className="doors">
-            {site.doors.map((d) => (
-              <li key={d.href}>
-                <Link href={d.href} className="door">
-                  <span className="door-title">
-                    {d.title}
-                    <span className="door-arrow" aria-hidden="true">
-                      →
+          <div className="doors-wrap">
+            <h2 className="title">{site.doorsTitle}</h2>
+            <ul className="doors">
+              {site.doors.map((d) => (
+                <li key={d.href}>
+                  <Link href={d.href} className="door">
+                    <span className="door-title">
+                      {d.title}
+                      <span className="door-arrow" aria-hidden="true">
+                        →
+                      </span>
                     </span>
-                  </span>
-                  <span className="door-line">{d.line}</span>
-                  <span className="door-action">{d.action}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+                    <span className="door-line">{d.line}</span>
+                    <span className="caption">{d.tag}</span>
+                    <span className="door-action">{d.action} →</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="caption">
+              {site.ctas.hiring}{" "}
+              <a href={site.resumeUrl} className="text-link" target="_blank" rel="noopener noreferrer">
+                {site.ctas.resumeBody}
+              </a>
+            </p>
+          </div>
         </div>
       </section>
 
@@ -81,7 +107,7 @@ export default function Home() {
           <div className="section-head row">
             <h2 className="heading">Selected work</h2>
             <Link href="/work" className="text-link">
-              All case studies →
+              All Case Studies →
             </Link>
           </div>
           <div className="work-grid featured">

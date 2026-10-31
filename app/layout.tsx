@@ -25,21 +25,22 @@ const generalSans = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "Luke Pelletier · Video, content & motion",
+    default: "Luke Pelletier · Video Editing, Motion Design & Video Systems",
     template: "%s · Luke Pelletier",
   },
   description:
-    "Video editor and motion designer in Sydney. Editing, finishing, motion design and content operations.",
+    "Digital Video Producer and Motion Designer in Sydney. Video Editing and Motion Design for agencies, and video systems and in-house teams for brands.",
   // PRE-LAUNCH: keeps search engines out. Delete this line on launch day.
   robots: { index: false, follow: false, nocache: true },
 };
 
-// Applies the saved theme before the page paints, so there's no flash.
-const themeScript = `try{var t=localStorage.getItem("theme");if(t==="day"||t==="lagoon")document.documentElement.dataset.theme=t}catch(e){}`;
+// Night (lagoon) is the default for every visitor. A saved choice from the
+// toggle wins, and is applied before the page paints so there's no flash.
+const themeScript = `try{var t=localStorage.getItem("theme");document.documentElement.dataset.theme=(t==="day"||t==="lagoon")?t:"lagoon"}catch(e){document.documentElement.dataset.theme="lagoon"}`;
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${generalSans.variable}`} suppressHydrationWarning>
+    <html lang="en" data-theme="lagoon" className={`${fraunces.variable} ${generalSans.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>

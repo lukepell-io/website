@@ -1156,3 +1156,122 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Copy pass (Oct 2026): brands, agencies, about, footer ── */
+
+.reel-full {
+  position: relative;
+}
+.reel-sound {
+  position: absolute;
+  right: var(--gutter);
+  bottom: var(--space-6);
+  z-index: 2;
+}
+.hero-or {
+  align-self: center;
+}
+.doors-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.steps {
+  list-style: none;
+}
+.step-tag {
+  color: var(--coral-strong) !important;
+  font-weight: 600;
+}
+.proof-copy {
+  max-width: 760px;
+  margin: var(--space-6) 0;
+}
+.faq {
+  margin: var(--space-8) 0 0;
+  display: grid;
+  gap: var(--space-6);
+  max-width: 760px;
+}
+.faq dd {
+  margin: var(--space-2) 0 0;
+  color: var(--ink-muted);
+}
+.plain-list {
+  margin: var(--space-6) 0;
+  padding-left: var(--space-6);
+  display: grid;
+  gap: var(--space-2);
+  max-width: 760px;
+}
+.about-subhead {
+  margin-top: var(--space-8);
+}
+.quotes {
+  margin-top: var(--space-8);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-8);
+}
+.quote {
+  margin: 0;
+  padding: var(--space-6);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+}
+.quote blockquote {
+  margin: 0 0 var(--space-4);
+}
+.footer-wordmark {
+  display: inline-block;
+}
+.footer-line {
+  margin: var(--space-3) 0 0;
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+.footer-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer-nav a:hover {
+  color: var(--brand-strong);
+}
+@media (max-width: 767px) {
+  .quotes {
+    grid-template-columns: 1fr;
+  }
+  .reel-sound {
+    position: static;
+    margin: var(--space-4) var(--gutter) 0;
+  }
+}
+.doors-wrap {
+  grid-column: 8 / span 5;
+}
+.doors-wrap .doors {
+  grid-column: auto;
+}
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.intro-text .display {
+  margin: 0;
+}
+@media (max-width: 1023px) {
+  .doors-wrap {
+    grid-column: 1 / -1;
+    margin-top: var(--space-8);
+  }
+  .doors-wrap .doors {
+    margin-top: 0;
+  }
+}

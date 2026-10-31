@@ -3,14 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { site } from "@/content/site";
 import { Wave } from "./Wave";
 import { Wordmark } from "./Wordmark";
 
 const links = [
-  { href: "/work", label: "Case studies" },
+  { href: "/work", label: "Case Studies" },
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
 ];
 
 type Theme = "day" | "lagoon";
@@ -43,7 +43,7 @@ function MenuIcon({ open }: { open: boolean }) {
 function currentTheme(): Theme {
   const set = document.documentElement.dataset.theme;
   if (set === "day" || set === "lagoon") return set;
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "lagoon" : "day";
+  return "lagoon";
 }
 
 // A clearly labelled Day / Night switch, so visitors know both looks exist.
@@ -51,11 +51,11 @@ function ThemeSwitch({ theme, onChange }: { theme: Theme | null; onChange: (t: T
   return (
     <div className="theme-switch" role="group" aria-label="Colour theme" data-theme-active={theme ?? "day"}>
       <span className="theme-knob" aria-hidden="true" />
-      <button type="button" aria-pressed={theme === "day"} onClick={() => onChange("day")}>
+      <button type="button" aria-pressed={theme === "day"} aria-label="Switch to light mode" onClick={() => onChange("day")}>
         <SunIcon />
         <span>Day</span>
       </button>
-      <button type="button" aria-pressed={theme === "lagoon"} onClick={() => onChange("lagoon")}>
+      <button type="button" aria-pressed={theme === "lagoon"} aria-label="Switch to dark mode" onClick={() => onChange("lagoon")}>
         <MoonIcon />
         <span>Night</span>
       </button>
@@ -102,12 +102,16 @@ export function Nav() {
               <Wave className="link-wave" />
             </Link>
           ))}
+          <a href={site.resumeUrl} target="_blank" rel="noopener noreferrer">
+            {site.ctas.resumeNav}
+            <Wave className="link-wave" />
+          </a>
         </nav>
 
         <div className="header-actions">
           <ThemeSwitch theme={theme} onChange={chooseTheme} />
           <Link className="btn btn-primary header-cta" href="/contact">
-            Book a call
+            Contact
           </Link>
           <button
             type="button"
@@ -132,8 +136,11 @@ export function Nav() {
             {l.label}
           </Link>
         ))}
+        <a href={site.resumeUrl} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+          {site.ctas.resumeNav}
+        </a>
         <Link className="btn btn-primary" href="/contact" onClick={() => setOpen(false)}>
-          Book a call
+          Contact
         </Link>
       </div>
     </header>
