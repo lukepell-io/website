@@ -48,7 +48,8 @@ export const site = {
     label: "The systems behind the numbers",
     sentence:
       "At Acamar Films, I designed and ran the content pipeline behind the global digital channels for Bing and Again! Again!",
-    footnote: "Channels managed by Acamar's YouTube team. Pipeline, tooling and delivery by me.",
+    footnote:
+      "Channels managed by Acamar's YouTube team. Pipeline, workflow, naming conventions and automation tools by me; QC and delivery by a video team of three, including me.",
     // Each number counts up and fades in as it scrolls into view
     stats: [
       { value: 13, prefix: "", suffix: "bn+", label: "lifetime views" },
