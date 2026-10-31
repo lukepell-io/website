@@ -1394,3 +1394,10 @@ a {
 .proof-sentence {
   text-wrap: balance;
 }
+.stats-band {
+  margin-top: var(--section-gap);
+  padding: var(--space-16) 0 var(--space-12);
+}
+.stats-band .proof-sentence {
+  margin-bottom: var(--space-12);
+}

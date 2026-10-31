@@ -76,17 +76,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Proof */}
-      <section className="section">
-        <div className="container proof">
-          <span className="eyebrow">{site.proof.label}</span>
-          <p className="proof-sentence">{site.proof.sentence}</p>
-        </div>
-      </section>
-
-      {/* The numbers, counting up in the gradient band */}
-      <section className="stats-band" aria-label="The numbers">
+      {/* Proof: the line and the numbers together, in the gradient band */}
+      <section className="stats-band" aria-labelledby="proof-label">
         <div className="container">
+          <div className="proof">
+            <span id="proof-label" className="eyebrow">
+              {site.proof.label}
+            </span>
+            <p className="proof-sentence">{site.proof.sentence}</p>
+          </div>
           <dl className="stat-row">
             {site.proof.stats.map((st) => (
               <div key={st.label}>
