@@ -17,7 +17,7 @@ export const site = {
 
   hero: {
     eyebrow: "Digital Video Producer & Motion Designer",
-    headline: "Video Editing and Motion Design for agencies. Video Systems for brands.",
+    headline: "Video Editing & Motion Design for agencies. Content Systems for brands.",
     intro:
       "Agencies book me by the day to edit, animate and produce. Brands bring me in for one-off videos, or to build the in-house team and workflow that keeps their content coming.",
     proof:
