@@ -31,7 +31,11 @@ export default function Home() {
         <div className="container">
           <div className="intro-text">
             <span className="eyebrow">{site.hero.eyebrow}</span>
-            <h1 className="display">{site.hero.headline}</h1>
+            <h1 className="display hero-headline">
+              {site.hero.headline.map((line) => (
+                <span key={line}>{line}</span>
+              ))}
+            </h1>
             <p className="body-lg muted">{site.hero.intro}</p>
             <div className="hero-actions">
               <a className="btn btn-primary" href={site.bookingUrl}>

@@ -1327,3 +1327,17 @@ a {
     padding: var(--space-6);
   }
 }
+
+/* Home headline: one offer per line, the second in the brand colour */
+.hero-headline span {
+  display: block;
+}
+.hero-headline span + span {
+  color: var(--brand-strong);
+}
+.intro .intro-text {
+  max-width: 1100px;
+}
+.hero-headline span {
+  text-wrap: balance;
+}

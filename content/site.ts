@@ -17,7 +17,8 @@ export const site = {
 
   hero: {
     eyebrow: "Digital Video Producer & Motion Designer",
-    headline: "Video Editing & Motion Design for agencies. Content Systems for brands.",
+    // Each line of the headline shows on its own line; the second is in the brand colour
+    headline: ["Video Editing & Motion Design for agencies.", "Content Systems for brands."],
     intro:
       "Agencies book me by the day to produce, edit or animate. Companies bring me in for one-off videos, or to build the in-house team, systems and automations that let them make more, for less.",
     proof:
