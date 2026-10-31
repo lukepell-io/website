@@ -20,7 +20,7 @@ export const site = {
     // Each line of the headline shows on its own line; the second is in the brand colour
     headline: ["Video Editing & Motion Design for agencies.", "Content Systems for brands."],
     intro:
-      "Agencies book me by the day to produce, edit or animate. Companies bring me in for one-off videos, or to build the in-house team, systems and automations that let them make more, for less.",
+      "Thirteen years in video, from cutting national news at 9News Sydney to building the pipeline behind 67 YouTube channels.",
     proof:
       "Most recently, I designed the content pipeline for a global kids' entertainment brand's 67 YouTube channels. It turned out around 60 compilations a week in 35 languages, with a team of three.",
     location: "Based in Sydney, working in studio or remotely.",
@@ -31,7 +31,7 @@ export const site = {
     {
       href: "/brands",
       title: "For Brands and Companies",
-      line: "Your own video team and the system it runs on, or a one-off video.",
+      line: "Your own video team and the systems to make more, for less, or a one-off video.",
       tag: "Audit and retainer, or a project fee for one-off videos",
       action: "See how I work with brands",
     },
