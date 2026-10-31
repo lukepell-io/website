@@ -1275,3 +1275,6 @@ a {
     margin-top: 0;
   }
 }
+.intro-grid {
+  align-items: start;
+}
