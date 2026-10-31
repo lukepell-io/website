@@ -11,7 +11,7 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 
 ## Getting Ready for Life (`public/media/getting-ready-for-life/`)
 
-- [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
+- [x] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
 - [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
 - [ ] `work-1.mp4` … `work-2.mp4` (or .jpg stills): supporting clips, 16:9.
 
