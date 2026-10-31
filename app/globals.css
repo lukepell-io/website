@@ -1401,3 +1401,15 @@ a {
 .stats-band .proof-sentence {
   margin-bottom: var(--space-12);
 }
+
+/* Softer way into and out of the stats band: less dead space, faded edges */
+.doors-section {
+  padding-bottom: var(--space-8);
+}
+.stats-band {
+  margin-top: 0;
+  padding: var(--space-24) 0 var(--space-24);
+  background:
+    linear-gradient(180deg, var(--surface) 0%, transparent 140px, transparent calc(100% - 140px), var(--surface) 100%),
+    linear-gradient(90deg, var(--sky) 0%, var(--shallows) 55%, var(--sky) 100%);
+}
