@@ -1,12 +1,11 @@
 import Link from "next/link";
 import { projects } from "@/content/projects";
 import { shorts, site } from "@/content/site";
-import { Highlight } from "@/components/Highlight";
 import { Media } from "@/components/Media";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Text } from "@/components/Text";
+import { CountUp } from "@/components/CountUp";
 import { PlayWithSound } from "@/components/PlayWithSound";
-import { Wave } from "@/components/Wave";
 
 export default function Home() {
   const featured = projects.filter((p) => p.featured);
@@ -77,28 +76,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* End to end, at a glance */}
-      <section className="pipeline-wrap" aria-label="What I do, end to end">
-        <div className="container">
-          <ol className="pipeline">
-            {site.pipeline.map((step, i) => (
-              <li key={step}>
-                <span>{step}</span>
-                {i < site.pipeline.length - 1 && <Wave className="pipeline-wave" />}
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
       {/* Proof */}
       <section className="section">
         <div className="container proof">
           <span className="eyebrow">{site.proof.label}</span>
-          <p className="proof-sentence">
-            <Highlight>{site.proof.sentence}</Highlight>
-          </p>
-          <p className="caption">{site.proof.footnote}</p>
+          <p className="proof-sentence">{site.proof.sentence}</p>
+        </div>
+      </section>
+
+      {/* The numbers, counting up in the gradient band */}
+      <section className="stats-band" aria-label="The numbers">
+        <div className="container">
+          <dl className="stat-row">
+            {site.proof.stats.map((st) => (
+              <div key={st.label}>
+                <dt className="stat-label">{st.label}</dt>
+                <dd>
+                  <CountUp value={st.value} prefix={st.prefix} suffix={st.suffix} />
+                </dd>
+              </div>
+            ))}
+          </dl>
+          <p className="caption stats-footnote">{site.proof.footnote}</p>
         </div>
       </section>
 

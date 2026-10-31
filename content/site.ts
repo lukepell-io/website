@@ -44,14 +44,18 @@ export const site = {
     },
   ],
 
-  pipeline: ["Plan", "Edit", "Motion", "Finish", "Deliver", "Systems"],
-
   proof: {
     label: "The systems behind the numbers",
-    // Numbers in {curly brackets} are highlighted
     sentence:
-      "At Acamar Films I designed and ran the content pipeline behind Bing Bunny's global YouTube channels. Alongside the channel team, it helped reach {13bn+ lifetime views} across {67 channels} in {35 languages}, and {1.3m hours watched every day}.",
+      "At Acamar Films, I designed and ran the content pipeline behind the global digital channels for Bing and Again! Again!",
     footnote: "Channels managed by Acamar's YouTube team. Pipeline, tooling and delivery by me.",
+    // Each number counts up and fades in as it scrolls into view
+    stats: [
+      { value: 13, prefix: "", suffix: "bn+", label: "lifetime views" },
+      { value: 67, prefix: "", suffix: "", label: "YouTube channels" },
+      { value: 35, prefix: "", suffix: "", label: "languages" },
+      { value: 60, prefix: "~", suffix: "", label: "compilations a week" },
+    ],
   },
 
   brands: {

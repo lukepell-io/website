@@ -1341,3 +1341,56 @@ a {
 .hero-headline span {
   text-wrap: balance;
 }
+
+/* Home: the numbers, in the gradient band */
+.stats-band {
+  padding: var(--space-16) 0 var(--space-12);
+  background: linear-gradient(90deg, var(--sky) 0%, var(--shallows) 55%, var(--sky) 100%);
+}
+.stat-row {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-8);
+}
+.stat-row > div {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--space-2);
+}
+.stat-row dd {
+  margin: 0;
+}
+.stat-number {
+  display: block;
+  font: 500 72px/1 var(--font-display), sans-serif;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.stat-number[data-visible="false"] {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.stat-label {
+  font-weight: 500;
+  color: var(--ink-muted);
+}
+.stats-footnote {
+  margin: var(--space-12) 0 0;
+}
+@media (max-width: 1023px) {
+  .stat-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: var(--space-12);
+  }
+}
+@media (max-width: 767px) {
+  .stat-number {
+    font-size: 52px;
+  }
+}
+.proof-sentence {
+  text-wrap: balance;
+}
