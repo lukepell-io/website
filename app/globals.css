@@ -428,19 +428,13 @@ a {
   display: none;
 }
 
-@media (max-width: 1023px) {
-  .header-inner {
-    grid-template-columns: auto 1fr auto;
-    gap: var(--space-4);
-  }
-  .nav-links {
-    gap: var(--space-6);
-  }
+/* Burger menu from tablet size down; Contact stays in the header until phone size */
+@media (max-width: 767px) {
   .header-cta {
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .header-inner {
     grid-template-columns: auto 1fr;
   }

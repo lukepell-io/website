@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { site } from "@/content/site";
-import { Wave } from "./Wave";
 import { Wordmark } from "./Wordmark";
 
 const links = [
@@ -99,12 +98,10 @@ export function Nav() {
           {links.map((l) => (
             <Link key={l.href} href={l.href} aria-current={isActive(l.href) ? "page" : undefined}>
               {l.label}
-              <Wave className="link-wave" />
             </Link>
           ))}
           <a href={site.resumeUrl} target="_blank" rel="noopener noreferrer">
             {site.ctas.resumeNav}
-            <Wave className="link-wave" />
           </a>
         </nav>
 
