@@ -139,6 +139,7 @@ export function Nav() {
         <a href={site.resumeUrl} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
           {site.ctas.resumeNav}
         </a>
+        <div className="menu-divider" aria-hidden="true" />
         <Link className="btn btn-primary" href="/contact" onClick={() => setOpen(false)}>
           Contact
         </Link>

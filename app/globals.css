@@ -1413,3 +1413,19 @@ a {
     linear-gradient(180deg, var(--surface) 0%, transparent 140px, transparent calc(100% - 140px), var(--surface) 100%),
     linear-gradient(90deg, var(--sky) 0%, var(--shallows) 55%, var(--sky) 100%);
 }
+
+/* Mobile menu: Contact as the same compact pill as on desktop, not a menu link */
+@media (max-width: 1023px) {
+  .mobile-sheet a.btn {
+    align-self: flex-start;
+    margin-top: var(--space-4);
+    padding: var(--space-3) var(--space-8);
+    font: 600 16px/20px var(--font-body), sans-serif;
+    color: var(--on-brand);
+  }
+  .mobile-sheet .menu-divider {
+    height: 1px;
+    margin-top: var(--space-4);
+    background: var(--hairline);
+  }
+}
