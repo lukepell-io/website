@@ -30,14 +30,14 @@ export const site = {
     {
       href: "/brands",
       title: "For Brands and Companies",
-      line: "You want video made in-house, without starting from scratch every time. I audit what you have, build the workflow, and help you hire and train the person to run it. Need a single video in the meantime? I make those too.",
+      line: "Your own video team and the system it runs on, or a one-off video.",
       tag: "Audit and retainer, or a project fee for one-off videos",
       action: "See how I work with brands",
     },
     {
       href: "/agencies",
       title: "For Agencies",
-      line: "You need a senior pair of hands who can pick up a brief and deliver cleanly. I can edit, animate, or produce your animation projects from script to delivery. I work in your software and naming conventions, so handover is clean.",
+      line: "A senior editor, motion designer or animation producer, by the day.",
       tag: "Day or project rate",
       action: "See how I work with agencies",
     },

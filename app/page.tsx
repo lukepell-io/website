@@ -26,14 +26,13 @@ export default function Home() {
         <PlayWithSound />
       </section>
 
-      {/* What I do, and the two doors */}
+      {/* What I do */}
       <section className="intro">
-        <div className="container intro-grid">
+        <div className="container">
           <div className="intro-text">
             <span className="eyebrow">{site.hero.eyebrow}</span>
             <h1 className="display">{site.hero.headline}</h1>
             <p className="body-lg muted">{site.hero.intro}</p>
-            <p className="caption">{site.hero.proof}</p>
             <div className="hero-actions">
               <a className="btn btn-primary" href={site.bookingUrl}>
                 {site.ctas.call}
@@ -45,34 +44,32 @@ export default function Home() {
                 </a>
               </span>
             </div>
-            <p className="caption">{site.hero.location}</p>
           </div>
-          <div className="doors-wrap">
-            <h2 className="title">{site.doorsTitle}</h2>
-            <ul className="doors">
-              {site.doors.map((d) => (
-                <li key={d.href}>
-                  <Link href={d.href} className="door">
-                    <span className="door-title">
-                      {d.title}
-                      <span className="door-arrow" aria-hidden="true">
-                        →
-                      </span>
+        </div>
+      </section>
+
+      {/* The two doors */}
+      <section className="doors-section" aria-labelledby="doors-title">
+        <div className="container">
+          <h2 id="doors-title" className="heading">
+            {site.doorsTitle}
+          </h2>
+          <ul className="door-cards">
+            {site.doors.map((d) => (
+              <li key={d.href}>
+                <Link href={d.href} className="door-card">
+                  <span className="door-title">
+                    {d.title}
+                    <span className="door-arrow" aria-hidden="true">
+                      →
                     </span>
-                    <span className="door-line">{d.line}</span>
-                    <span className="caption">{d.tag}</span>
-                    <span className="door-action">{d.action} →</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <p className="caption">
-              {site.ctas.hiring}{" "}
-              <a href={site.resumeUrl} className="text-link" target="_blank" rel="noopener noreferrer">
-                {site.ctas.resumeBody}
-              </a>
-            </p>
-          </div>
+                  </span>
+                  <span className="door-line">{d.line}</span>
+                  <span className="door-action">{d.action} →</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
