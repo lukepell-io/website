@@ -44,7 +44,7 @@ export default function BrandsPage() {
         <h2 className="heading">{b.proofTitle}</h2>
         <p className="body-lg proof-copy">{b.proof}</p>
         <Link href="/work" className="text-link">
-          See the case study →
+          See the case study <span className="arrow" aria-hidden="true">→</span>
         </Link>
       </section>
 

@@ -68,7 +68,9 @@ export default function Home() {
                     </span>
                   </span>
                   <span className="door-line">{d.line}</span>
-                  <span className="door-action">{d.action} →</span>
+                  <span className="door-action">
+                    {d.action} <span className="arrow" aria-hidden="true">→</span>
+                  </span>
                 </Link>
               </li>
             ))}
@@ -105,7 +107,7 @@ export default function Home() {
           <div className="section-head row">
             <h2 className="heading">Selected work</h2>
             <Link href="/work" className="text-link">
-              All Case Studies →
+              All Case Studies <span className="arrow" aria-hidden="true">→</span>
             </Link>
           </div>
           <div className="work-grid featured">

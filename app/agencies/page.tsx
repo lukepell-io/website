@@ -56,7 +56,7 @@ export default function AgenciesPage() {
           ))}
         </ul>
         <Link href="/work" className="text-link">
-          See the case studies →
+          See the case studies <span className="arrow" aria-hidden="true">→</span>
         </Link>
       </section>
 

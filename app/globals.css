@@ -1423,3 +1423,13 @@ a {
     background: var(--hairline);
   }
 }
+
+/* Coral as the warm accent: labels above headings, and every arrow.
+   Turquoise stays for anything you click. coral-strong reads well in both themes. */
+.eyebrow {
+  color: var(--coral-strong);
+}
+.arrow,
+.door-arrow {
+  color: var(--coral-strong);
+}

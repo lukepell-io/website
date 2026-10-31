@@ -44,7 +44,7 @@ export default function ServicesPage() {
           </ul>
           <p style={{ marginTop: "var(--space-6)" }}>
             <Link href={item.link.href} className="text-link">
-              {item.link.label}
+              {item.link.label} <span className="arrow" aria-hidden="true">→</span>
             </Link>
           </p>
         </section>

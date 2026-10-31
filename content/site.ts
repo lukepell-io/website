@@ -184,7 +184,7 @@ export const site = {
         problem: "Each video starts from scratch, costs a lot, and nobody in-house owns what happens next.",
         does: "I audit your goals, your current output and your tools. Then I build the workflow in the software you already use, code custom tools where they save time, and help you hire and train someone to run it.",
         gets: "A person making video every week, and a documented system they can run without me. Builds usually take 1 to 3 months.",
-        link: { href: "/brands", label: "How I work with brands →" },
+        link: { href: "/brands", label: "How I work with brands" },
       },
       {
         id: "editing",
@@ -193,7 +193,7 @@ export const site = {
         problem: "The footage is in, the deadline's moved and your editors are booked.",
         does: "Offline and Online Editing for broadcast, social and brand, with Colour Grading in DaVinci Resolve. Versions, cut-downs and aspect ratios included.",
         gets: "Clean timelines and project files, labelled to your conventions and ready for your sound team.",
-        link: { href: "/work", label: "See the case studies →" },
+        link: { href: "/work", label: "See the case studies" },
       },
       {
         id: "motion",
@@ -202,7 +202,7 @@ export const site = {
         problem: "Your content needs to look right on a phone, a broadcast feed and a building-sized LED screen.",
         does: "2D and 3D Motion Design in After Effects and Blender, built to the exact resolution and spec of each screen, including apps.",
         gets: "Finished renders, plus editable templates your team can reuse.",
-        link: { href: "/work", label: "See the case studies →" },
+        link: { href: "/work", label: "See the case studies" },
       },
       {
         id: "animation",
@@ -211,7 +211,7 @@ export const site = {
         problem: "You've got an animated project and nobody free to run it.",
         does: "I take it from script and storyboard through art direction, animators and partners to final delivery, including localised versions for other markets.",
         gets: "One person accountable from first draft to final file. I've art directed and animated a special sold to Italian broadcaster Rai, and coordinated international partners for localised releases.",
-        link: { href: "/work", label: "See the case studies →" },
+        link: { href: "/work", label: "See the case studies" },
       },
     ],
     alongsideTitle: "Working Alongside Others",
