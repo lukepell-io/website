@@ -19,7 +19,7 @@ export const site = {
     eyebrow: "Digital Video Producer & Motion Designer",
     headline: "Video Editing & Motion Design for agencies. Content Systems for brands.",
     intro:
-      "Agencies book me by the day to edit, animate and produce. Brands bring me in for one-off videos, or to build the in-house team and workflow that keeps their content coming.",
+      "Agencies book me by the day to produce, edit or animate. Brands bring me in for one-off videos, or to build the in-house team, systems and automations that keep their content coming.",
     proof:
       "Most recently, I designed the content pipeline for a global kids' entertainment brand's 67 YouTube channels. It turned out around 60 compilations a week in 35 languages, with a team of three.",
     location: "Based in Sydney, working in studio or remotely.",
