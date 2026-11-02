@@ -26,6 +26,8 @@ export type Project = {
   result: string | string[];
   blurb?: string; // short description on the project card
   credits?: { role: string; names: string; links?: Record<string, string> }[];
+  // Links shown under The Result (e.g. a channel or article)
+  links?: { label: string; href: string }[];
   // A client quote shown under The Result
   quote?: { text: string; name: string };
   // Screenshots shown under The Result (awards, press, posts). Files go in public/media/<slug>/
@@ -537,10 +539,15 @@ export const projects: Project[] = [
       tools: "Premiere Pro, After Effects (Adobe Creative Cloud)",
       timeline: "3 months",
     },
-    brief:
-      "Earlier this year, starting around February, we prepared to launch a new bespoke YouTube channel, Again! Again!. It launched with 19 titles: Bing, Ha Ha Hairies, Buddiworld, Get Well Soon, Jim Henson's Construction Site, Kiki, Mist, Circle Square, Glow Dogs, Ebb and Flo, Kaia's Discoveries, [MM: full title], Jim Henson's Pajanimals, Howie, Jim Henson's Animal Show with Stinky and Jake, Grandpa in My Pocket, Adiboo: Inside the Human Body, Mumfie and Billy Bunny's Animal Songs. [Rest of the brief]",
+    brief: [
+      "In February 2026, Acamar Films announced Again! Again!, a new global YouTube channel for pre-school audiences built on public service values. The idea is gentle, purposeful programming chosen by an advisory board of children's TV and child development experts, with the look and feel of a TV channel and presenters introducing each programme in regular live streams.",
+      "The channel launched with 18 titles from producers in the UK and around the world: Bing, Ha Ha Hairies, Buddiworld, Get Well Soon, Jim Henson's Construction Site, Kiki, Mist: Sheepdog Tales, Circle Square, Glow Dogs, Ebb and Flo, Kaia's Discoveries, Jim Henson's Pajanimals, Howie, Jim Henson's Animal Show with Stinky and Jake, Grandpa in My Pocket, Adiboo: Inside the Human Body, Mumfie and Billy Bunny's Animal Songs.",
+      "Starting around February, we had about three months to build everything the channel needed to launch: animated logos, coloured backgrounds and an animated character, all made to sit alongside very different shows.",
+    ],
     approach: "[2–3 sentences: the launch assets and how you set up the channel's workflow.]",
     result: "[1–2 sentences: the launch and any numbers.]",
+    links: [{ label: "Visit the Again! Again! channel on YouTube", href: "https://www.youtube.com/@AgainAgainOfficial" }],
+    youtube: { id: "1IEhUxRPkgM", title: "Welcome to Again! Again! (launch video, with the logo animation)" },
     workSlots: 2,
   },
   {

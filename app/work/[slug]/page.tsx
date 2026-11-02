@@ -181,6 +181,15 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
                 <Text>{para}</Text>
               </p>
             ))}
+            {project.links && project.links.length > 0 && (
+              <p>
+                {project.links.map((l) => (
+                  <a key={l.href} href={l.href} className="text-link" target="_blank" rel="noopener noreferrer">
+                    {l.label} <span className="arrow" aria-hidden="true">→</span>
+                  </a>
+                ))}
+              </p>
+            )}
             {project.quote && (
               <figure className="cs-quote">
                 <blockquote>{`\u201c${project.quote.text}\u201d`}</blockquote>
