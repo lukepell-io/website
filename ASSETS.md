@@ -81,9 +81,10 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 
 ## Water Truck: TODAY Show Feature (`public/media/water-truck/`)
 
-- [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
-- [ ] `hero.mp4` + `hero.jpg`: the feature, or the best 30–90s of it, 16:9 (or a YouTube link).
-- [ ] `work-1.jpg` … `work-2.jpg`: stills, or the award.
+- [x] `cover.jpg`: the Camera Crew Awards trophy, cropped to the engraving.
+- [x] `press-trophy.jpg`: the full trophy photo, shown under The Result.
+- [ ] `hero.mp4` + `hero.jpg`: the feature, or the best 30–90s of it, 16:9 (not found online; check the drive archive).
+- [ ] `work-1.jpg` … `work-2.jpg`: stills from the feature.
 
 ## Again! Again!: Logo Animation & YouTube Channel Launch (`public/media/again-again-launch/`)
 

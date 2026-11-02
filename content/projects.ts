@@ -134,7 +134,7 @@ export const projects: Project[] = [
     discipline: "Editing",
     year: "2018",
     summary: "[One-line hook for the Water Truck feature.]",
-    blurb: "An award-winning TODAY Show feature for Nine. Winner, Best TODAY Show Feature Edit, Camera Crew Awards 2018.",
+    blurb: "An award-winning TODAY Show feature for Nine. Winner, Feature Edit (TODAY Show), Nine Camera Crew Awards 2018.",
     meta: "Nine Entertainment Co. · TODAY · 2018",
     tags: ["Editing", "Broadcast", "Award Winner"],
     facts: {
@@ -144,11 +144,19 @@ export const projects: Project[] = [
       deliverables: "[Deliverables, e.g. 1 × feature for national broadcast]",
       tools: "[Tools]",
       timeline: "[Timeline]",
-      recognition: "Winner, Best TODAY Show Feature Edit, Camera Crew Awards 2018",
+      recognition: "Winner, Feature Edit (TODAY Show), Nine Camera Crew Awards 2018",
     },
     brief: "[2–3 sentences: the story and what the feature needed to do.]",
     approach: "[2–3 sentences: how you produced and cut it.]",
     result: "[1–2 sentences: where it aired, the award and any reaction.]",
+    press: [
+      {
+        src: "/media/water-truck/press-trophy.jpg",
+        alt: "Glass trophy engraved: Nine Camera Crew Awards 2018, Category: Feature Edit TODAY Show, Winner Luke Pelletier, TCN, Water Truck",
+        caption: "Nine Camera Crew Awards 2018: Feature Edit, TODAY Show, winner",
+        narrow: true,
+      },
+    ],
     workSlots: 2,
   },
   {
