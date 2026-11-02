@@ -1433,3 +1433,17 @@ a {
 .door-arrow {
   color: var(--coral-strong);
 }
+
+/* Case studies: card blurb and credits */
+.card-blurb {
+  margin: 0;
+  color: var(--ink-muted);
+}
+.credits {
+  margin: 0;
+  display: grid;
+  gap: var(--space-4);
+}
+.credits dd {
+  margin: var(--space-1) 0 0;
+}

@@ -15,7 +15,11 @@ export function generateStaticParams() {
 export async function generateMetadata(props: PageProps<"/work/[slug]">): Promise<Metadata> {
   const { slug } = await props.params;
   const project = getProject(slug);
-  return { title: project?.title ?? "Work" };
+  if (!project) return { title: "Work" };
+  return {
+    title: project.seoTitle ? { absolute: project.seoTitle } : project.title,
+    description: project.metaDescription ?? project.summary,
+  };
 }
 
 export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
@@ -28,17 +32,21 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
 
   const facts = [
     { label: "Client", value: project.facts.client },
-    { label: "Role", value: project.facts.role },
-    { label: "Tools", value: project.facts.tools },
+    { label: "My Role", value: project.facts.role },
+    { label: "Disciplines", value: project.facts.disciplines },
     { label: "Deliverables", value: project.facts.deliverables },
-  ];
+    { label: "Tools", value: project.facts.tools },
+    { label: "Timeline", value: project.facts.timeline },
+  ].filter((f): f is { label: string; value: string } => Boolean(f.value));
+
+  const paragraphs = (text: string | string[]) => (Array.isArray(text) ? text : [text]);
 
   return (
     <article>
       <div className="container">
         <header className="cs-head">
           <Link href="/work" className="back-link">
-            ← All case studies
+            ← All Case Studies
           </Link>
           <span className="eyebrow">
             <Text>{`${project.discipline} · ${project.year}`}</Text>
@@ -90,26 +98,30 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
         )}
 
         <section className="cs-section">
-          <h2 className="heading">The brief</h2>
+          <h2 className="heading">The Brief</h2>
           <div className="body-lg">
-            <p>
-              <Text>{project.brief}</Text>
-            </p>
+            {paragraphs(project.brief).map((para) => (
+              <p key={para}>
+                <Text>{para}</Text>
+              </p>
+            ))}
           </div>
         </section>
 
         <section className="cs-section">
-          <h2 className="heading">The approach</h2>
+          <h2 className="heading">The Approach</h2>
           <div className="body-lg">
-            <p>
-              <Text>{project.approach}</Text>
-            </p>
+            {paragraphs(project.approach).map((para) => (
+              <p key={para}>
+                <Text>{para}</Text>
+              </p>
+            ))}
           </div>
         </section>
 
         <section className="cs-section" style={{ display: "block" }}>
           <h2 className="heading" style={{ marginBottom: "var(--space-8)" }}>
-            The work
+            The Work
           </h2>
           <div className="media-grid">
             {Array.from({ length: Math.max(project.workSlots, project.work?.length ?? 0) }, (_, i) => {
@@ -160,17 +172,33 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
         </section>
 
         <section className="cs-section">
-          <h2 className="heading">The result</h2>
+          <h2 className="heading">The Result</h2>
           <div className="body-lg">
-            <p>
-              <Text>{project.result}</Text>
-            </p>
+            {paragraphs(project.result).map((para) => (
+              <p key={para}>
+                <Text>{para}</Text>
+              </p>
+            ))}
           </div>
         </section>
 
+        {project.credits && project.credits.length > 0 && (
+          <section className="cs-section">
+            <h2 className="heading">Credits</h2>
+            <dl className="credits">
+              {project.credits.map((c) => (
+                <div key={c.role}>
+                  <dt className="caption">{c.role}</dt>
+                  <dd>{c.names}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
+
         <section className="section">
           <div className="section-head">
-            <span className="eyebrow">Next project</span>
+            <span className="eyebrow">Next Project</span>
           </div>
           <div style={{ maxWidth: 400 }}>
             <ProjectCard project={next} index={index + 1} />

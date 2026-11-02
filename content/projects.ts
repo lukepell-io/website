@@ -10,10 +10,22 @@ export type Project = {
   summary: string;
   meta: string; // one line under the card title
   tags: string[];
-  facts: { client: string; role: string; tools: string; deliverables: string };
-  brief: string;
-  approach: string;
-  result: string;
+  facts: {
+    client: string;
+    role: string;
+    tools: string;
+    deliverables: string;
+    disciplines?: string;
+    timeline?: string;
+  };
+  // A string, or a list of strings for several paragraphs
+  brief: string | string[];
+  approach: string | string[];
+  result: string | string[];
+  blurb?: string; // short description on the project card
+  credits?: { role: string; names: string }[];
+  seoTitle?: string; // the browser tab / Google title, written in full
+  metaDescription?: string; // the Google snippet, under 155 characters
   // How many clips/stills to show in "The work" (in addition to the hero).
   // Any `work` videos fill the first slots; the rest show as placeholders.
   workSlots: number;
@@ -30,29 +42,57 @@ export type Video = { id: string; title: string };
 export const projects: Project[] = [
   {
     slug: "getting-ready-for-life",
-    title: "Getting Ready for Life",
+    title: "Bing Bunny: Getting Ready for Life",
     discipline: "Brand campaign",
-    year: "[Year]",
-    summary: "A Bing Bunny brand campaign across Italy, the UK and Poland.",
-    meta: "Acamar Films · Bing Bunny · Italy, UK, Poland",
-    tags: ["Campaign", "Content pipeline", "Multi-market"],
+    year: "2024",
+    summary:
+      "A vertical brand campaign showing parents the emotional intelligence behind Bing, one feeling at a time.",
+    blurb:
+      "A vertical brand campaign for Bing Bunny across four European markets, built around each episode's core emotion. 213m+ YouTube views.",
+    meta: "Acamar Films · Bing Bunny · UK, Italy, Poland, Benelux",
+    tags: ["Editing", "Motion Design", "Localisation"],
     facts: {
       client: "Acamar Films (Bing Bunny)",
-      role: "Designed and executed the content pipeline",
-      tools: "[Tools] · Batch Builder",
-      deliverables: "[e.g. episodes, cutdowns and social assets per market]",
+      role: "Creative Producer, Art Director, Editor & Motion Designer",
+      disciplines:
+        "Offline editorial, motion design, content operations (localisation and high-volume social delivery)",
+      deliverables:
+        "52 × 9:16 videos per market, each under 90s, for the UK, Italy, Poland and the Netherlands/Benelux, running paid and organic",
+      tools: "Premiere Pro, After Effects (mix by Odinn Shrewsbury in Pro Tools)",
+      timeline: "Two 3-month bursts of 26 videos per market, from October 2024",
     },
-    brief: "[2–3 sentences: what the campaign set out to do, and for whom.]",
-    approach:
-      "[2–3 sentences: how the pipeline let one team deliver every market's assets on time.]",
+    brief:
+      "Acamar Films wanted a brand campaign that told parents what makes Bing different, running as paid media and organically on its own social channels. Every video had to be vertical and under 90 seconds, and the format had to hold up in four languages at a volume of 52 videos per market.",
+    approach: [
+      "Laura Alexander and I each drafted different ways of showing what Bing gives young children. The format we landed on takes the tension and resolution from a single episode, with a voiceover that guides the viewer through what Bing is feeling. It's built on something true of the whole show: every episode centres on one core emotion.",
+      "In one, Bing is crushed when a picnic he's been looking forward to falls through, and the episode resolves into how he copes with not knowing what happens next. The voiceover sums it up: \u201cOh, plans might change… but so can feelings.\u201d",
+      "Once creative directors Mikael Shields and Niki Markot-David signed off the format, I art directed its look: the background colour, the typeface, and the placement and animation of on-screen text. I then built the branding assets the wider team of editors and motion designers used to produce the series. That kit is what kept every market's version consistent, however many hands touched it and whichever language it was voiced in.",
+    ],
     result:
-      "212.7 million YouTube views across Italy and the UK, with 8.8 million social reach and 10.8 million social views. Poland passed 1 million YouTube views in its first year.",
+      "Across Italy, the UK and Poland, the campaign has passed 213 million YouTube views across its playlists and Shorts, plus more than 10 million social views. Italy leads on YouTube with 116.3 million views; the UK leads on social with 9.9 million views and 7.6 million reach. Poland launched in 2026 and has already passed 1 million YouTube views, with 161,000 social reach. The Dutch/Benelux version is now live too.",
     stats: [
       { value: "212.7m", label: "YouTube views, Italy + UK" },
       { value: "8.8m", label: "Social reach, Italy + UK" },
       { value: "10.8m", label: "Social views, Italy + UK" },
-      { value: "1m+", label: "YouTube views in Poland's first year" },
+      { value: "1m+", label: "YouTube views in Poland since launch" },
     ],
+    credits: [
+      { role: "Creative direction & production", names: "Mikael Shields, Niki Markot-David" },
+      { role: "Creative Producer & Editor", names: "Laura Alexander" },
+      { role: "Assistant Producer", names: "Elliot Barnes" },
+      {
+        role: "Voiceover",
+        names: "Niki Markot-David (UK), Vale De Felice (Italian), Aneta Piotrowska (Polish)",
+      },
+      { role: "Sound mix", names: "Odinn Shrewsbury, Luke Shrewsbury" },
+      {
+        role: "Scheduling & paid implementation",
+        names: "Vale De Felice (Head of Communications), Kirk Rutter (Social Media Manager)",
+      },
+    ],
+    seoTitle: "Bing Bunny Getting Ready for Life Campaign | Luke Pelletier",
+    metaDescription:
+      "How I art directed and edited Bing Bunny's Getting Ready for Life campaign for Acamar Films: 9:16 videos in four languages, 213m+ YouTube views.",
     featured: true,
     workSlots: 2,
   },

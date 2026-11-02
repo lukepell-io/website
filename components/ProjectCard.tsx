@@ -21,6 +21,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
           <Text>{project.discipline}</Text>
         </span>
         <h3 className="title">{project.title}</h3>
+        {project.blurb && <p className="card-blurb">{project.blurb}</p>}
         <span className="caption">
           <Text>{project.meta}</Text>
         </span>
