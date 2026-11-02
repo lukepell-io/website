@@ -133,22 +133,34 @@ export const projects: Project[] = [
     title: "Water Truck: TODAY Show Feature",
     discipline: "Editing",
     year: "2018",
-    summary: "[One-line hook for the Water Truck feature.]",
-    blurb: "An award-winning TODAY Show feature for Nine. Winner, Feature Edit (TODAY Show), Nine Camera Crew Awards 2018.",
+    summary:
+      "A feature for the TODAY Show's 2018 telethon for farmers, cut within a week of the footage arriving, that won Nine's award for best TODAY Show feature edit.",
+    blurb:
+      "A feature for the TODAY Show's 2018 telethon for farmers, cut in a week. Winner, Feature Edit (TODAY Show), Nine Camera Crew Awards 2018.",
     meta: "Nine Entertainment Co. · TODAY · 2018",
     tags: ["Editing", "Broadcast", "Award Winner"],
     facts: {
       client: "Nine Entertainment Co. (TODAY)",
-      role: "Video Producer & Editor",
-      disciplines: "[Disciplines]",
-      deliverables: "[Deliverables, e.g. 1 × feature for national broadcast]",
-      tools: "[Tools]",
-      timeline: "[Timeline]",
+      role: "Video Editor",
+      disciplines: "Offline editorial",
+      deliverables: "1 × feature for national broadcast, around 8 minutes ([confirm duration])",
+      tools: "Avid Media Composer",
+      timeline: "Within 1 week of receiving the footage",
       recognition: "Winner, Feature Edit (TODAY Show), Nine Camera Crew Awards 2018",
     },
-    brief: "[2–3 sentences: the story and what the feature needed to do.]",
-    approach: "[2–3 sentences: how you produced and cut it.]",
-    result: "[1–2 sentences: where it aired, the award and any reaction.]",
+    brief:
+      "In 2018 the TODAY Show ran a telethon for Australian farmers. Producer and reporter Michael Dalton spent several days in the field with a camera operator to shoot Water Truck, a feature for the broadcast, and I was brought in to edit it.",
+    approach: [
+      "Michael wrote the script from his time on location. I took all the footage the crew had shot and built a number of different edits from it, then we iterated on those together until we had the final cut.",
+      "The whole edit was done in Avid Media Composer within a week of the footage coming in.",
+    ],
+    result:
+      "Water Truck aired as part of the TODAY Show's 2018 telethon for farmers, one feature within a much bigger live broadcast. Later that year it won Feature Edit (TODAY Show) at Nine's 2018 Camera Crew Awards.",
+    credits: [
+      { role: "Producer & Reporter", names: "Michael Dalton" },
+      { role: "Camera", names: "[Camera operator]" },
+      { role: "Editor", names: "Luke Pelletier" },
+    ],
     press: [
       {
         src: "/media/water-truck/press-trophy.jpg",
@@ -157,6 +169,9 @@ export const projects: Project[] = [
         narrow: true,
       },
     ],
+    seoTitle: "Water Truck: TODAY Show Feature Edit | Luke Pelletier",
+    metaDescription:
+      "Editing for Water Truck, a TODAY Show feature for Nine's 2018 telethon for farmers. Cut in a week in Avid; winner of Nine's best TODAY Show feature edit.",
     workSlots: 2,
   },
   {
