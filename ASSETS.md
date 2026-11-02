@@ -38,7 +38,7 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 
 ## London Business TV (`public/media/london-business-tv/`)
 
-- [x] `cover.jpg`: London Business TV logo on navy, fading into the green-screen and composite shot.
+- [x] `cover.jpg`: London Business TV logo badge over the green-screen and composite shot.
 - [ ] `hero.mp4`: a short clip from the MP's constituency message. [x] `hero.jpg` (the green-screen photo) is already in as the poster and shows on its own until then.
 - [x] The Work: `work-1.jpg` X-keys and in-ear monitor flat-lay, `work-2.jpg` LiveMatte keyer, `work-3.jpg` control desk, `work-4.jpg` recording in the shed (captions in `content/projects.ts`).
 - [ ] Beside the brand line: the London Business TV logo.
