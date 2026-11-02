@@ -295,21 +295,45 @@ export const projects: Project[] = [
   },
   {
     slug: "bing-title-animation",
-    title: "Bing Bunny International Title Animation",
+    title: "Bing Bunny: International Title Animation",
     discipline: "Motion Design",
-    year: "[Year]",
-    summary: "The title animation for Bing Bunny's international release.",
-    meta: "Acamar Films · Title sequence · [Year]",
-    tags: ["Motion", "Animation"],
+    year: "2021–2024",
+    summary: "Re-animating Bing's opening titles so four international versions feel like the same show.",
+    blurb:
+      "Re-animating Bing's opening titles for Japanese, Mandarin, Hindi and Arabic versions, matched beat for beat to the original.",
+    meta: "Acamar Films · Bing Bunny · 2021–2024",
+    tags: ["Motion Design", "Localisation", "After Effects"],
     facts: {
-      client: "Acamar Films",
-      role: "[Your role]",
-      tools: "[e.g. After Effects]",
-      deliverables: "[Deliverables]",
+      client: "Acamar Films (Bing Bunny)",
+      role: "Localisation Motion Designer",
+      disciplines: "Motion design, localisation",
+      deliverables:
+        "Opening title sequence for 4 international versions: Japanese (Japan), Mandarin Chinese (Taiwan), Hindi (India) and Arabic (Egypt and the Gulf)",
+      tools: "After Effects",
+      timeline: "Across 2021–2024, around 3 hours of animation in total",
     },
-    brief: "[2–3 sentences: what the international titles needed to do.]",
-    approach: "[2–3 sentences: design and animation choices.]",
-    result: "[1–2 sentences: where it runs, how many territories.]",
+    brief:
+      "As Bing was localised for new markets, each version needed its own opening title. The localised characters look very different from the originals, but the sequence still had to feel like Bing: the same beats, the same timing, the same spirit.",
+    approach: [
+      "Each time, I started from Brown Bag Films' original title and animated the localised characters in After Effects to match it, keeping the original's timing so every version lands on the same beats.",
+      "The animation was the quick part. The hard part was judgement. Once you've watched a sequence over and over, you stop being able to see it properly. Your eye gets used to the differences, and it becomes difficult to tell how close you really are to the original.",
+      "So I built distance into the process. Animate, step away, come back with fresh eyes, then give myself a round of notes. I repeated that loop on every title until it held up side by side with the original.",
+    ],
+    result:
+      "Each title went to Mikael Shields, producer and voice director of Bing and CEO of Acamar Films, for approval, and they came back without notes. The self-review rounds had already caught what a reviewer would have flagged. [Where the localised versions aired or streamed]",
+    stats: [
+      { value: "4", label: "international versions" },
+      { value: "~3 hrs", label: "of animation in total" },
+      { value: "0", label: "notes at approval" },
+      { value: "2021–24", label: "release years" },
+    ],
+    credits: [
+      { role: "Approval", names: "Mikael Shields, Producer & Voice Director of Bing, CEO of Acamar Films" },
+      { role: "Original Title Sequence", names: "Brown Bag Films" },
+    ],
+    seoTitle: "Bing International Title Animation | Luke Pelletier",
+    metaDescription:
+      "Localisation motion design for Bing Bunny: four international title sequences animated in After Effects to match the original beat for beat.",
     workSlots: 2,
   },
   {
