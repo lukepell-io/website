@@ -134,31 +134,35 @@ export const projects: Project[] = [
     discipline: "Editing",
     year: "2018",
     summary:
-      "A feature for the TODAY Show's 2018 telethon for farmers, cut within a week of the footage arriving, that won Nine's award for best TODAY Show feature edit.",
+      "A five-minute feature for the TODAY Show's 2018 drought telethon, which raised $7.5 million for farmers, cut in a week and named Nine's best TODAY Show feature edit.",
     blurb:
-      "A feature for the TODAY Show's 2018 telethon for farmers, cut in a week. Winner, Feature Edit (TODAY Show), Nine Camera Crew Awards 2018.",
+      "A five-minute feature for the TODAY Show's 2018 drought telethon, which raised $7.5 million. Winner, Feature Edit (TODAY Show), Nine Camera Crew Awards 2018.",
     meta: "Nine Entertainment Co. · TODAY · 2018",
     tags: ["Editing", "Broadcast", "Award Winner"],
     facts: {
       client: "Nine Entertainment Co. (TODAY)",
       role: "Video Editor",
       disciplines: "Offline editorial",
-      deliverables: "1 × feature for national broadcast, around 8 minutes ([confirm duration])",
+      deliverables: "1 × 4:55 feature for national broadcast",
       tools: "Avid Media Composer",
       timeline: "Within 1 week of receiving the footage",
       recognition: "Winner, Feature Edit (TODAY Show), Nine Camera Crew Awards 2018",
     },
     brief:
-      "In 2018 the TODAY Show ran a telethon for Australian farmers. Producer and reporter Michael Dalton spent several days in the field with a camera operator to shoot Water Truck, a feature for the broadcast, and I was brought in to edit it.",
+      "In 2018 the TODAY Show ran a telethon for drought-stricken Australian farmers, broadcast live over several hours. Producer and reporter Michael Dalton spent several days in the field with a camera operator to shoot Water Truck, a feature for the broadcast, and I was brought in to edit it.",
     approach: [
       "Michael wrote the script from his time on location. I took all the footage the crew had shot and built a number of different edits from it, then we iterated on those together until we had the final cut.",
       "The whole edit was done in Avid Media Composer within a week of the footage coming in.",
     ],
     result:
-      "Water Truck aired as part of the TODAY Show's 2018 telethon for farmers, one feature within a much bigger live broadcast. Later that year it won Feature Edit (TODAY Show) at Nine's 2018 Camera Crew Awards.",
+      "The 4:55 feature aired as part of the telethon, which raised $7.5 million for drought-stricken farmers. Later that year it won Feature Edit (TODAY Show) at Nine's 2018 Camera Crew Awards.",
+    stats: [
+      { value: "$7.5m", label: "raised by the telethon for drought-stricken farmers" },
+      { value: "4:55", label: "feature runtime" },
+      { value: "1 week", label: "from footage to final cut" },
+    ],
     credits: [
       { role: "Producer & Reporter", names: "Michael Dalton" },
-      { role: "Camera", names: "[Camera operator]" },
       { role: "Editor", names: "Luke Pelletier" },
     ],
     press: [
@@ -171,7 +175,7 @@ export const projects: Project[] = [
     ],
     seoTitle: "Water Truck: TODAY Show Feature Edit | Luke Pelletier",
     metaDescription:
-      "Editing for Water Truck, a TODAY Show feature for Nine's 2018 telethon for farmers. Cut in a week in Avid; winner of Nine's best TODAY Show feature edit.",
+      "Editing for Water Truck, a 4:55 feature in the TODAY Show's 2018 drought telethon, which raised $7.5m. Cut in a week; Nine's best TODAY Show feature edit.",
     workSlots: 2,
   },
   {
