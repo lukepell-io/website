@@ -59,7 +59,7 @@ export const projects: Project[] = [
         "Offline editorial, motion design, content operations (localisation and high-volume social delivery)",
       deliverables:
         "52 × 9:16 videos per market, each under 90s, for the UK, Italy, Poland and the Netherlands/Benelux, running paid and organic",
-      tools: "Premiere Pro, After Effects (mix by Óðinn Ingibergsson in Pro Tools)",
+      tools: "Premiere Pro, After Effects (mix by Óðinn Ingibergsson and Luke Shrewsbury in Pro Tools)",
       timeline: "Two 3-month bursts of 26 videos per market, from October 2024",
     },
     brief:
