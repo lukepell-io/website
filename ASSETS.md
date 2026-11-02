@@ -32,8 +32,8 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 
 ## Prohibition Partners (`public/media/prohibition-partners/`)
 
-- [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
-- [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
+- [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080 (uses the YouTube thumbnail until then).
+- [x] Hero: the 32s promo, embedded from YouTube (mxcAunOa5Cw).
 - [ ] `work-1.mp4` … `work-2.mp4` (or .jpg stills): supporting clips, 16:9.
 
 ## London Business TV (`public/media/london-business-tv/`)

@@ -181,6 +181,12 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
                 <Text>{para}</Text>
               </p>
             ))}
+            {project.quote && (
+              <figure className="cs-quote">
+                <blockquote>{`\u201c${project.quote.text}\u201d`}</blockquote>
+                <figcaption className="caption">{project.quote.name}</figcaption>
+              </figure>
+            )}
             {project.press && project.press.length > 0 && (
               <div className="press">
                 {project.press.map((item) => {

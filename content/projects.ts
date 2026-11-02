@@ -26,6 +26,8 @@ export type Project = {
   result: string | string[];
   blurb?: string; // short description on the project card
   credits?: { role: string; names: string; links?: Record<string, string> }[];
+  // A client quote shown under The Result
+  quote?: { text: string; name: string };
   // Screenshots shown under The Result (awards, press, posts). Files go in public/media/<slug>/
   press?: { src: string; alt: string; caption: string; href?: string; narrow?: boolean }[];
   seoTitle?: string; // the browser tab / Google title, written in full
@@ -192,22 +194,57 @@ export const projects: Project[] = [
   },
   {
     slug: "prohibition-partners",
-    title: "Prohibition Partners",
-    discipline: "[Discipline]",
-    year: "[Year]",
-    summary: "[One-line summary of the Prohibition Partners project.]",
-    meta: "Prohibition Partners · [Format] · [Year]",
-    tags: ["[Tag]", "[Tag]"],
+    title: "Prohibition Partners LIVE 2020: Launch Promo",
+    discipline: "Launch Promo",
+    year: "2020",
+    summary:
+      "A 32-second hip-hop promo for a global cannabis conference that became the client's most-viewed YouTube video.",
+    blurb:
+      "A 32-second hip-hop launch promo for Prohibition Partners LIVE 2020, built from webcam footage and motion graphics. The client's most-viewed YouTube video.",
+    meta: "Prohibition Partners · Event promo · 2020",
+    tags: ["Editing", "Motion Design", "3D"],
     facts: {
       client: "Prohibition Partners",
-      role: "[Your role]",
-      tools: "[Tools]",
-      deliverables: "[Deliverables]",
+      role: "Creative Producer, Video Editor & Motion Designer",
+      disciplines: "Offline editorial, motion design (2D and 3D)",
+      deliverables: "1 × 32s launch promo, an alternate \u201cpremium\u201d cut, social thumbnails",
+      tools: "Premiere Pro, After Effects, Blender",
+      timeline: "First cut in under 2 days, signed off within 8",
     },
-    brief: "[2–3 sentences: what Prohibition Partners needed.]",
-    approach: "[2–3 sentences: how you approached it.]",
-    result: "[1–2 sentences: the outcome.]",
-    youtube: { id: "mxcAunOa5Cw", title: "Prohibition Partners 2020 promo" },
+    brief: [
+      "Prohibition Partners is a data and events company for the global cannabis industry. With in-person events off the table in 2020, it took its conferences online, and for the second edition of Prohibition Partners LIVE (17–20 November 2020) it needed a 30–40 second promo to launch ticket sales across LinkedIn, Facebook, Twitter and YouTube.",
+      "The brief was three words: engaging, bright and bold. The raw material was the opposite: webcam recordings of panels from the June event and a folder of brand assets. The audience was investors, operators and policymakers, and the first cut was due in two days.",
+    ],
+    approach: [
+      "I started with the music. Rather than the usual corporate conference bed, I chose a hip-hop beat from a stock library. It was unexpected in a B2B space, set a fast pace and nodded to the long-running link between hip-hop and cannabis culture. I structured the edit like a fashion promo: minimal words and quick cuts, with the visuals doing the explaining, so it would stop people mid-scroll and hold up to a rewatch.",
+      "Motion graphics carry the piece, built on the brand's new gold, green, red and blue palette, so the webcam footage only had to appear in short bursts using the most engaged moments from the June panels. To make \u201cvirtual\u201d obvious at a glance, I built a 3D laptop in Blender that opens and closes on screen, and added a phone shot showing off the platform's matchmaking feature. One brand rule held throughout: no cannabis leaves, and none of the category's tired visual shorthand.",
+      "As creative producer, I labelled every text slot in the cut so the client team could rewrite copy against exact on-screen positions. I also delivered an alternate, more premium version (dark background, sleek gold laptop) as a second option for the campaign.",
+    ],
+    result: [
+      "The final 32-second cut was signed off eight days after the brief and rolled out on YouTube, social and the newsletter ahead of the event. It's now the best-performing video on Prohibition Partners' YouTube channel, with 18,000 views.",
+      "They later asked me back for more promos, but by then I'd started a new role at Acamar Films.",
+    ],
+    quote: {
+      text: "We love the energy and pace of the video – it also pulls us in a new direction.",
+      name: "Matt Freemantle, Product Director, Prohibition Partners LIVE",
+    },
+    stats: [
+      { value: "18,000", label: "YouTube views, the channel's most-viewed video" },
+      { value: "32s", label: "launch promo" },
+      { value: "<2 days", label: "to the first cut" },
+      { value: "8 days", label: "from brief to sign-off" },
+    ],
+    credits: [
+      {
+        role: "Prohibition Partners",
+        names:
+          "Matt Freemantle (Product Director), Stephen Murphy (Co-Founder & MD), Eoin Keenan (Content & Communications Director)",
+      },
+    ],
+    seoTitle: "Prohibition Partners LIVE 2020 Promo | Luke Pelletier",
+    metaDescription:
+      "A 32-second hip-hop launch promo for Prohibition Partners LIVE 2020: editing, 2D and 3D motion design, and the client's most-viewed YouTube video.",
+    youtube: { id: "mxcAunOa5Cw", title: "Prohibition Partners LIVE 2020 launch promo" },
     workSlots: 2,
   },
   {

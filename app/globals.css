@@ -1517,3 +1517,30 @@ a {
   border-radius: var(--radius-md);
   border: 1px solid var(--hairline);
 }
+
+/* Case studies: client quote under The Result */
+.cs-quote {
+  margin: var(--space-8) 0 0;
+  padding: var(--space-6) var(--space-8);
+  border-left: 0;
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+  border: 1px solid var(--hairline);
+}
+.cs-quote blockquote {
+  margin: 0 0 var(--space-3);
+  font: 400 24px/34px var(--font-display), sans-serif;
+}
+.cs-quote figcaption {
+  color: var(--coral-strong);
+}
+/* Credits sit in the same right-hand column as the other case study text */
+.cs-section > .credits {
+  grid-column: 5 / span 7;
+  max-width: var(--container-text);
+}
+@media (max-width: 767px) {
+  .cs-section > .credits {
+    grid-column: 1 / -1;
+  }
+}
