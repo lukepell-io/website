@@ -33,6 +33,8 @@ export type Project = {
   // How many clips/stills to show in "The work" (in addition to the hero).
   // Any `work` videos fill the first slots; the rest show as placeholders.
   workSlots: number;
+  // Captions for local work stills/clips (work-1, work-2, …), in order
+  workCaptions?: string[];
   // YouTube links (just the video ID, the bit after watch?v=)
   youtube?: { id: string; title: string }; // the hero video
   work?: { id: string; title: string }[];
@@ -246,7 +248,13 @@ export const projects: Project[] = [
     seoTitle: "Lockdown Virtual-Set Studio | Luke Pelletier",
     metaDescription:
       "How I turned a garden shed into a TriCaster virtual-set studio in spring 2020, used by an MP to address constituents, plus the brand and a charity film.",
-    workSlots: 2,
+    workSlots: 4,
+    workCaptions: [
+      "The X-keys pad, with a hand-labelled key for every TriCaster macro, beside the in-ear monitor pack and lav mic",
+      "Keying the presenter into the 3D news-desk set with TriCaster's LiveMatte",
+      "The control desk: TriCaster Mini, programme monitor and multiview, with the green screen behind",
+      "Recording in the shed, with the TriCaster running the show live",
+    ],
   },
   {
     slug: "bing-title-animation",

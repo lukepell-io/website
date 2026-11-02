@@ -141,7 +141,7 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
                     title={video?.title}
                   />
                   <figcaption className="caption">
-                    <Text>{video?.title ?? "[Caption: client · format · tools · year]"}</Text>
+                    <Text>{video?.title ?? project.workCaptions?.[i] ?? "[Caption: client · format · tools · year]"}</Text>
                   </figcaption>
                 </figure>
               );

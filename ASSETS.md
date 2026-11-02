@@ -38,9 +38,9 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 
 ## London Business TV (`public/media/london-business-tv/`)
 
-- [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
-- [ ] `hero.mp4` + `hero.jpg`: a short clip from the MP's constituency message, with the green-screen photo as the poster frame.
-- [ ] Beside "The Approach": the X-keys and in-ear monitor flat-lay, paired with the LiveMatte keyer screenshot.
+- [x] `cover.jpg`: the keyed presenter on the virtual news desk.
+- [ ] `hero.mp4`: a short clip from the MP's constituency message. [x] `hero.jpg` (the green-screen photo) is already in as the poster and shows on its own until then.
+- [x] The Work: `work-1.jpg` X-keys and in-ear monitor flat-lay, `work-2.jpg` LiveMatte keyer, `work-3.jpg` control desk, `work-4.jpg` recording in the shed (captions in `content/projects.ts`).
 - [ ] Beside the brand line: the London Business TV logo.
 - [ ] Beside "The Result": the Lola's Homeless Helpers reel (https://www.facebook.com/reel/2835395346587289), ideally re-hosted on Vimeo or YouTube so it loads faster.
 
