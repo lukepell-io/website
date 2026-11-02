@@ -18,6 +18,7 @@ export type Project = {
     deliverables: string;
     disciplines?: string;
     timeline?: string;
+    recognition?: string;
   };
   // A string, or a list of strings for several paragraphs
   brief: string | string[];
@@ -123,21 +124,51 @@ export const projects: Project[] = [
   },
   {
     slug: "pcuk",
-    title: "Pancreatic Cancer UK",
-    discipline: "[Discipline]",
-    year: "[Year]",
-    summary: "[One-line summary of the PCUK project.]",
-    meta: "Pancreatic Cancer UK · Third Sector award winner",
-    tags: ["[Tag]", "[Tag]"],
+    title: "Lost Voices: An Award-Winning Animation for Pancreatic Cancer UK",
+    discipline: "Motion Design",
+    year: "2021",
+    summary:
+      "Kinetic typography that turned the voices of people lost to pancreatic cancer into an award-winning film, made in four days.",
+    blurb:
+      "Kinetic typography for Pancreatic Cancer UK's Lost Voices, made in four days. Winner, Communications Campaign of the Year, Third Sector Awards 2022.",
+    meta: "Pancreatic Cancer UK · Acamar Films · 2021",
+    tags: ["Art Direction", "Motion Design", "Kinetic Typography"],
     facts: {
-      client: "Pancreatic Cancer UK",
-      role: "[Your role]",
-      tools: "[Tools]",
-      deliverables: "[Deliverables]",
+      client: "Pancreatic Cancer UK (animation by Acamar Films)",
+      role: "Art Director & Motion Designer",
+      disciplines: "Art direction, motion design",
+      deliverables: "1 × 60s animated film, in 16:9 and 9:16",
+      tools: "Photoshop, Illustrator, After Effects, Premiere Pro",
+      timeline: "4 days",
+      recognition: "Winner, Communications Campaign of the Year, Third Sector Awards 2022",
     },
-    brief: "[2–3 sentences: what PCUK needed.]",
-    approach: "[2–3 sentences: how you approached it.]",
-    result: "Won a Third Sector award. [Confirm which video, and add any reach numbers.]",
+    brief:
+      "Pancreatic cancer is the deadliest common cancer. More than half of people diagnosed die within three months, yet only 8% of the UK public could name its most common symptoms. With few survivors to front a campaign, Pancreatic Cancer UK built Lost Voices around the voices of well-known people who had died of the disease, including Alan Rickman, Sir John Hurt, Aretha Franklin and Steve Jobs. Jon Holmes wove them into an audio piece. My job was to turn the 1-minute version into an animated film, in four days, in time for Pancreatic Cancer Awareness Month.",
+    approach: [
+      "The voices are the star of the piece, so I made them the visuals. I built the film as kinetic typography, with each line set in type drawn from the film or TV show it came from. Viewers recognise the voice and the design at the same moment, which lands the reveal before the hard facts arrive. Everything else stayed in Pancreatic Cancer UK's own colour palette, so the borrowed type carried the variety and the film still read as the charity's.",
+      "What made four days possible was trust. There was no storyboard to get signed off, so I designed the type treatments in Photoshop and Illustrator, animated them in After Effects and cut them to the audio in Premiere Pro without stopping for approval rounds. The finished film went through with no notes. I delivered it in 16:9 and 9:16 for broadcast-style and social placements.",
+      "Acamar Films donated the animation, which meant the charity got broadcast-quality work on a small charity budget.",
+    ],
+    result: [
+      "Lost Voices launched in November 2021. The campaign generated 97 pieces of media coverage with a combined potential reach of 37 million, drove a record 12,500+ visitors to the charity's website on launch day, and reached over 170,000 people on social media. A later screening event for the film raised more than £50,000.",
+      "In September 2022 the campaign won Communications Campaign of the Year at the Third Sector Awards. The judges called it \u201can ingenious, innovative campaign\u201d, and Pancreatic Cancer UK publicly credited me for creating the animation.",
+    ],
+    stats: [
+      { value: "37m", label: "potential media reach" },
+      { value: "12,500+", label: "website visitors on launch day" },
+      { value: "170k+", label: "people reached on social" },
+      { value: "£50k+", label: "raised at a screening event" },
+    ],
+    credits: [
+      { role: "Client", names: "Pancreatic Cancer UK" },
+      { role: "Campaign Lead", names: "Olivia Williams, ambassador for Pancreatic Cancer UK" },
+      { role: "Audio", names: "Jon Holmes and Unusual Productions" },
+      { role: "Animation Studio", names: "Acamar Films" },
+      { role: "Art Direction & Motion Design", names: "Luke Pelletier" },
+    ],
+    seoTitle: "Lost Voices for Pancreatic Cancer UK | Luke Pelletier",
+    metaDescription:
+      "Award-winning kinetic typography for Pancreatic Cancer UK's Lost Voices campaign. Art direction and motion design by Luke Pelletier, made in four days.",
     featured: true,
     youtube: { id: "6QLwYsRF0uY", title: "PCUK “Lost Voices”" },
     workSlots: 2,

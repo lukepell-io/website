@@ -21,11 +21,14 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 - [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
 - [ ] `work-1.mp4` … `work-4.mp4` (or .jpg stills): supporting clips, 16:9.
 
-## Pancreatic Cancer UK (`public/media/pcuk/`)
+## Pancreatic Cancer UK: Lost Voices (`public/media/pcuk/`)
 
-- [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
-- [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
-- [ ] `work-1.mp4` … `work-2.mp4` (or .jpg stills): supporting clips, 16:9.
+- [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080 (the card uses the YouTube thumbnail until then).
+- [x] Hero: the 1-minute film, embedded from PCUK's YouTube (6QLwYsRF0uY).
+- [ ] Beside "The Approach": a grid of stills showing three or four type treatments side by side, so readers see the film-and-TV references at a glance.
+- [ ] Also beside "The Approach": one frame shown in 16:9 and 9:16 together, to show the vertical version.
+- [ ] Beside "The Result": the embedded PCUK tweet crediting Luke (with the trophy photo), plus a link to Third Sector's winner article. [Need both links]
+- [ ] Optional: link the full 4-minute audio on PCUK's site. [Need the link]
 
 ## Prohibition Partners (`public/media/prohibition-partners/`)
 

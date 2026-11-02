@@ -38,6 +38,7 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
     { label: "Deliverables", value: project.facts.deliverables },
     { label: "Tools", value: project.facts.tools },
     { label: "Timeline", value: project.facts.timeline },
+    { label: "Recognition", value: project.facts.recognition },
   ].filter((f): f is { label: string; value: string } => Boolean(f.value));
 
   const paragraphs = (text: string | string[]) => (Array.isArray(text) ? text : [text]);
