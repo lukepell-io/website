@@ -47,7 +47,7 @@ export const projects: Project[] = [
     discipline: "Brand Campaign",
     year: "2024",
     summary:
-      "A vertical brand campaign showing parents the emotional intelligence behind Bing, one feeling at a time.",
+      "A vertical brand campaign showing parents how Bing helps little ones get ready for life, one feeling at a time.",
     blurb:
       "A vertical brand campaign for Bing Bunny across four European markets, built around each episode's core emotion. 213m+ YouTube views.",
     meta: "Acamar Films · Bing Bunny · UK, Italy, Poland, Benelux",
@@ -63,9 +63,9 @@ export const projects: Project[] = [
       timeline: "Two 3-month bursts of 26 videos per market, from October 2024",
     },
     brief:
-      "Acamar Films wanted a brand campaign that told parents what makes Bing different, running as paid media and organically on its own social channels. Every video had to be vertical and under 90 seconds, and the format had to hold up in four languages at a volume of 52 videos per market.",
+      "Acamar Films wanted a brand campaign that showed parents what Bing gives their children: stories that mirror a young child's everyday life, and help them understand new emotions, navigate first experiences and build resilience. It ran as paid media and organically on Bing's own social channels. Every video had to be vertical and under 90 seconds, and the format had to hold up in four languages at a volume of 52 videos per market.",
     approach: [
-      "Laura Alexander and I each drafted different ways of showing what Bing gives young children. The format we landed on takes the tension and resolution from a single episode, with a voiceover that guides the viewer through what Bing is feeling. It's built on something true of the whole show: every episode centres on one core emotion.",
+      "Laura Alexander and I each drafted different ways of showing what Bing gives young children. The format we landed on takes the tension and resolution from a single episode, with a voiceover that walks parents through what Bing is feeling and how he works through it. It's built on something true of the whole show: every episode is developed with child development experts and centres on one core emotion.",
       "In one, Bing is crushed when a picnic he's been looking forward to falls through, and the episode resolves into how he copes with not knowing what happens next. The voiceover sums it up: \u201cOh, plans might change… but so can feelings.\u201d",
       "Once creative directors Mikael Shields and Niki Markot-David signed off the format, I art directed its look: the background colour, the typeface, and the placement and animation of on-screen text. I then built the branding assets the wider team of editors and motion designers used to produce the series. That kit is what kept every market's version consistent, however many hands touched it and whichever language it was voiced in.",
     ],
@@ -88,7 +88,6 @@ export const projects: Project[] = [
       {
         role: "Sound Mix",
         names: "Óðinn Ingibergsson, Luke Shrewsbury",
-        links: { "Óðinn Ingibergsson": "https://www.linkedin.com/in/%C3%B3%C3%B0inn-ingibergsson-779296161/" },
       },
       {
         role: "Scheduling & Paid Implementation",
