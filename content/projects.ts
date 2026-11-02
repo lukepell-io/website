@@ -538,7 +538,7 @@ export const projects: Project[] = [
       timeline: "3 months",
     },
     brief:
-      "Earlier this year, starting around February, we prepared to launch a new bespoke YouTube channel. [Rest of the brief]",
+      "Earlier this year, starting around February, we prepared to launch a new bespoke YouTube channel, Again! Again!. It launched with 19 titles: Bing, Ha Ha Hairies, Buddiworld, Get Well Soon, Jim Henson's Construction Site, Kiki, Mist, Circle Square, Glow Dogs, Ebb and Flo, Kaia's Discoveries, [MM: full title], Jim Henson's Pajanimals, Howie, Jim Henson's Animal Show with Stinky and Jake, Grandpa in My Pocket, Adiboo: Inside the Human Body, Mumfie and Billy Bunny's Animal Songs. [Rest of the brief]",
     approach: "[2–3 sentences: the launch assets and how you set up the channel's workflow.]",
     result: "[1–2 sentences: the launch and any numbers.]",
     workSlots: 2,
