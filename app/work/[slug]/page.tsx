@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getProject, projects } from "@/content/projects";
 import { Media } from "@/components/Media";
 import { ProjectCard } from "@/components/ProjectCard";
+import { LinkedNames } from "@/components/LinkedNames";
 import { Text } from "@/components/Text";
 
 export const dynamicParams = false;
@@ -189,7 +190,9 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
               {project.credits.map((c) => (
                 <div key={c.role}>
                   <dt className="caption">{c.role}</dt>
-                  <dd>{c.names}</dd>
+                  <dd>
+                    <LinkedNames names={c.names} links={c.links} />
+                  </dd>
                 </div>
               ))}
             </dl>

@@ -6,6 +6,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { Text } from "@/components/Text";
 import { CountUp } from "@/components/CountUp";
 import { PlayWithSound } from "@/components/PlayWithSound";
+import { VimeoReel } from "@/components/VimeoReel";
 
 export default function Home() {
   const featured = projects.filter((p) => p.featured);
@@ -14,15 +15,21 @@ export default function Home() {
     <>
       {/* Showreel, full width */}
       <section className="reel-full" aria-label="Showreel">
-        <Media
-          folder="home"
-          name="showreel"
-          kind="video"
-          label="Showreel"
-          spec="16:9, 60–90s, 1080p MP4 (H.264), under 50 MB · plays muted on loop"
-          autoplay
-        />
-        <PlayWithSound />
+        {site.showreelVimeo ? (
+          <VimeoReel id={site.showreelVimeo} title="Showreel · Luke Pelletier" />
+        ) : (
+          <>
+            <Media
+              folder="home"
+              name="showreel"
+              kind="video"
+              label="Showreel"
+              spec="16:9, 60–90s, 1080p MP4 (H.264), under 50 MB · plays muted on loop"
+              autoplay
+            />
+            <PlayWithSound />
+          </>
+        )}
       </section>
 
       {/* What I do */}
@@ -105,7 +112,7 @@ export default function Home() {
       <section className="section" id="work">
         <div className="container">
           <div className="section-head row">
-            <h2 className="heading">Selected work</h2>
+            <h2 className="heading">Selected Work</h2>
             <Link href="/work" className="text-link">
               All Case Studies <span className="arrow" aria-hidden="true">→</span>
             </Link>
@@ -122,7 +129,7 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="section-head">
-            <h2 className="heading">Made for the scroll</h2>
+            <h2 className="heading">Made for the Scroll</h2>
           </div>
           <div className="shelf">
             {shorts.map((s, i) => (

@@ -1,5 +1,6 @@
 // The case studies. Order here = order on the site.
 // Text in [square brackets] is a placeholder: swap it for the real thing.
+// RULE: every title is in Title Case (titles, headings, labels, job titles, skills).
 // Media files go in public/media/<slug>/ — see ASSETS.md for the full list.
 
 export type Project = {
@@ -23,7 +24,7 @@ export type Project = {
   approach: string | string[];
   result: string | string[];
   blurb?: string; // short description on the project card
-  credits?: { role: string; names: string }[];
+  credits?: { role: string; names: string; links?: Record<string, string> }[];
   seoTitle?: string; // the browser tab / Google title, written in full
   metaDescription?: string; // the Google snippet, under 155 characters
   // How many clips/stills to show in "The work" (in addition to the hero).
@@ -43,7 +44,7 @@ export const projects: Project[] = [
   {
     slug: "getting-ready-for-life",
     title: "Bing Bunny: Getting Ready for Life",
-    discipline: "Brand campaign",
+    discipline: "Brand Campaign",
     year: "2024",
     summary:
       "A vertical brand campaign showing parents the emotional intelligence behind Bing, one feeling at a time.",
@@ -58,7 +59,7 @@ export const projects: Project[] = [
         "Offline editorial, motion design, content operations (localisation and high-volume social delivery)",
       deliverables:
         "52 × 9:16 videos per market, each under 90s, for the UK, Italy, Poland and the Netherlands/Benelux, running paid and organic",
-      tools: "Premiere Pro, After Effects (mix by Odinn Shrewsbury in Pro Tools)",
+      tools: "Premiere Pro, After Effects (mix by Óðinn Ingibergsson in Pro Tools)",
       timeline: "Two 3-month bursts of 26 videos per market, from October 2024",
     },
     brief:
@@ -77,16 +78,20 @@ export const projects: Project[] = [
       { value: "1m+", label: "YouTube views in Poland since launch" },
     ],
     credits: [
-      { role: "Creative direction & production", names: "Mikael Shields, Niki Markot-David" },
+      { role: "Creative Direction & Production", names: "Mikael Shields, Niki Markot-David" },
       { role: "Creative Producer & Editor", names: "Laura Alexander" },
       { role: "Assistant Producer", names: "Elliot Barnes" },
       {
         role: "Voiceover",
         names: "Niki Markot-David (UK), Vale De Felice (Italian), Aneta Piotrowska (Polish)",
       },
-      { role: "Sound mix", names: "Odinn Shrewsbury, Luke Shrewsbury" },
       {
-        role: "Scheduling & paid implementation",
+        role: "Sound Mix",
+        names: "Óðinn Ingibergsson, Luke Shrewsbury",
+        links: { "Óðinn Ingibergsson": "https://www.linkedin.com/in/%C3%B3%C3%B0inn-ingibergsson-779296161/" },
+      },
+      {
+        role: "Scheduling & Paid Implementation",
         names: "Vale De Felice (Head of Communications), Kirk Rutter (Social Media Manager)",
       },
     ],
@@ -98,7 +103,7 @@ export const projects: Project[] = [
   },
   {
     slug: "nine-news",
-    title: "News stories for Nine",
+    title: "News Stories for Nine",
     discipline: "Editing",
     year: "[Year]",
     summary: "A compilation of news stories I cut for Nine Entertainment Co.",
@@ -179,8 +184,8 @@ export const projects: Project[] = [
   },
   {
     slug: "bing-title-animation",
-    title: "Bing Bunny international title animation",
-    discipline: "Motion design",
+    title: "Bing Bunny International Title Animation",
+    discipline: "Motion Design",
     year: "[Year]",
     summary: "The title animation for Bing Bunny's international release.",
     meta: "Acamar Films · Title sequence · [Year]",
@@ -198,8 +203,8 @@ export const projects: Project[] = [
   },
   {
     slug: "bing-creative-content",
-    title: "Bing Bunny creative content",
-    discipline: "Content operations",
+    title: "Bing Bunny Creative Content",
+    discipline: "Content Operations",
     year: "[Years]",
     summary:
       "Operational lead on every new Bing Bunny content format, from cinema to Alexa.",
@@ -229,10 +234,10 @@ export const projects: Project[] = [
       { id: "wBh2UfGWc9g", title: "Bing & Coco being artists" },
     ],
     shorts: [
-      { id: "lSP4MglE-qw", title: "The Wildlife Trusts collaboration" },
-      { id: "ag5qz-wddbo", title: "Live-action paper cutout" },
-      { id: "HDUusThf8m4", title: "Guess which musical instrument" },
-      { id: "UgsB7p9qLtI", title: "In the garden" },
+      { id: "lSP4MglE-qw", title: "The Wildlife Trusts Collaboration" },
+      { id: "ag5qz-wddbo", title: "Live-Action Paper Cutout" },
+      { id: "HDUusThf8m4", title: "Guess Which Musical Instrument" },
+      { id: "UgsB7p9qLtI", title: "In the Garden" },
     ],
     workSlots: 4,
   },
@@ -279,7 +284,7 @@ export const projects: Project[] = [
   {
     slug: "batch-builder",
     title: "Batch Builder",
-    discipline: "Tools & workflow",
+    discipline: "Tools & Workflow",
     year: "[Year]",
     summary:
       "The custom plugin I built to make the Bing Bunny content pipeline fast: [what it does, in one line].",

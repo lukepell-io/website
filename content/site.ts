@@ -1,4 +1,6 @@
 // All the words on the site that aren't case studies live here.
+// RULE: every title is in Title Case (titles, headings, labels, job titles, skills).
+// Buttons and body text stay in sentence case.
 // Text in [square brackets] is a placeholder: swap it for the real thing.
 
 export const site = {
@@ -12,13 +14,16 @@ export const site = {
   // Swap for your Calendly link when it's set up
   bookingUrl: "mailto:luke@lukepell.io?subject=15-minute%20call",
   availabilityUrl: "mailto:luke@lukepell.io?subject=Availability",
+  // The homepage showreel on Vimeo (the number at the end of the Vimeo link)
+  // Leave empty to use public/media/home/showreel.mp4. Vimeo blocks embedding 406275939 for now.
+  showreelVimeo: "",
   // Drop your resume into the public folder with exactly this name
   resumeUrl: "/Luke-Pelletier-Resume.pdf",
 
   hero: {
     eyebrow: "Digital Video Producer & Motion Designer",
     // Each line of the headline shows on its own line; the second is in the brand colour
-    headline: ["Video Editing & Motion Design for agencies.", "Content Systems for brands."],
+    headline: ["Video Editing & Motion Design for Agencies.", "Content Systems for Brands."],
     intro:
       "Thirteen years in video, from cutting national news at 9News Sydney to building the pipeline behind 67 YouTube channels.",
     proof:
@@ -45,7 +50,7 @@ export const site = {
   ],
 
   proof: {
-    label: "The systems behind the numbers",
+    label: "The Systems Behind the Numbers",
     sentence:
       "At Acamar Films, I designed and ran the content pipeline behind the global digital channels for Bing and Again! Again!",
     footnote:
@@ -63,7 +68,7 @@ export const site = {
     metaTitle: "Video Systems & In-House Teams for Brands",
     metaDescription:
       "Sydney-based Video Producer who helps brands build in-house video teams: audit, workflow, custom tools, hiring and training.",
-    headline: "Build your own video team, and the system it runs on.",
+    headline: "Build Your Own Video Team, and the System It Runs On.",
     intro:
       "The content that works usually comes from steady output: lots of pieces, tried on real audiences, with the winners turned into more. I help you hire the person to make it, set up the workflow around them and train them to run it. Need one video rather than a team? I make one-off videos too, priced per project.",
     stepsTitle: "How We'd Work Together",
@@ -90,34 +95,34 @@ export const site = {
     faqTitle: "Questions Brands Usually Ask",
     faq: [
       {
-        q: "We don't have anyone doing video yet. Is that a problem?",
+        q: "We Don't Have Anyone Doing Video Yet. Is That a Problem?",
         a: "It's a good place to start. I'll help you decide on the role, hire for it and set them up properly from day one.",
       },
       {
-        q: "We already have our own tools. Do we need to switch?",
+        q: "We Already Have Our Own Tools. Do We Need to Switch?",
         a: "No. I'll work with what you have and make it run better. If something's missing, I can build it.",
       },
       {
-        q: "Do you film?",
+        q: "Do You Film?",
         a: "No. Your new hire might, or I'll set up the workflow around footage, animation or whatever formats suit you best.",
       },
       {
-        q: "Can you just make one video for us?",
+        q: "Can You Just Make One Video for Us?",
         a: "Yes. I make one-off videos too, from Video Editing and Motion Design to animation, priced per project.",
       },
       {
-        q: "What does it cost?",
+        q: "What Does It Cost?",
         a: "The audit is $3,600 + GST, which is four days of my time, and it comes off the Build if you go ahead. The Build is a monthly retainer, scoped after the audit so you know the total upfront.",
       },
     ],
-    closing: "Tell me where your video is now, and where you want it to be.",
+    closing: "Tell Me Where Your Video Is Now, and Where You Want It to Be.",
   },
 
   agencies: {
     metaTitle: "Freelance Editor & Motion Designer for Agencies",
     metaDescription:
       "Sydney-based Senior Editor, Motion Designer and Animation Producer for screens of every size. I slot into your team, your software and your workflow.",
-    headline: "Senior Video Editing, Motion Design and Animation Producing, slotted straight into your team.",
+    headline: "Senior Video Editing, Motion Design and Animation Producing, Slotted Straight Into Your Team.",
     intro:
       "I've spent over a decade cutting for national TV news and making content for a global kids' entertainment brand. I work in your software, follow your naming and versioning, and hand back project files your team can pick up without a briefing.",
     rate: "$900 + GST a day, or a project rate for longer jobs. Your first day is risk-free.",
@@ -154,26 +159,26 @@ export const site = {
     faqTitle: "Questions Producers Usually Ask",
     faq: [
       {
-        q: "What's your rate?",
+        q: "What's Your Rate?",
         a: "$900 + GST a day. If you need me for a few weeks, I'll quote a project rate instead. Either way, your first day with me is risk-free.",
       },
       {
-        q: "Can you take something on at short notice?",
+        q: "Can You Take Something On at Short Notice?",
         a: "Send me your dates and I'll confirm my availability within one working day.",
       },
-      { q: "Do you shoot?", a: "No. I edit footage your crew has shot, and produce animation." },
+      { q: "Do You Shoot?", a: "No. I edit footage your crew has shot, and produce animation." },
       {
-        q: "Do you do the sound mix?",
+        q: "Do You Do the Sound Mix?",
         a: "I lay up audio cleanly for your sound team, but I don't do final mixes.",
       },
     ],
-    closing: "Got a project coming up? Let me know the dates.",
+    closing: "Got a Project Coming Up? Let Me Know the Dates.",
   },
 
   services: {
     metaDescription:
       "Freelance Video Editing, Motion Design and Animation Producing for agencies, plus one-off videos and in-house video teams for brands. Based in Sydney.",
-    headline: "From one edit to a whole video team.",
+    headline: "From One Edit to a Whole Video Team.",
     intro:
       "Agencies book Video Editing, Motion Design and Animation Producing by the day or project. Brands can start with a one-off video, or with an audit and a build.",
     list: [
@@ -216,7 +221,7 @@ export const site = {
     ],
     alongsideTitle: "Working Alongside Others",
     alongside: "For filming and final sound mixes, I work alongside your crew and sound team.",
-    closing: "Tell me what you're working on.",
+    closing: "Tell Me What You're Working On.",
   },
 
   about: {
@@ -260,7 +265,7 @@ export const site = {
   contact: {
     metaDescription:
       "Book a 15-minute call or email luke@lukepell.io. Freelance Video Producer and Motion Designer based in Sydney.",
-    headline: "Tell me what you need.",
+    headline: "Tell Me What You Need.",
     intro: "The quickest way is a 15-minute call. If you'd rather write, email works just as well.",
     brands: {
       title: "For Brands and Companies",
@@ -291,8 +296,8 @@ export const site = {
 // Vertical (9:16) pieces for the Shorts shelf on the home page.
 // `youtube` is the video ID (the bit after /shorts/).
 export const shorts = [
-  { id: "short-1", youtube: "lSP4MglE-qw", title: "The Wildlife Trusts collaboration", credit: "Bing Bunny · YouTube Shorts · [Year]" },
-  { id: "short-2", youtube: "ag5qz-wddbo", title: "Live-action paper cutout", credit: "Bing Bunny · YouTube Shorts · [Year]" },
-  { id: "short-3", youtube: "HDUusThf8m4", title: "Guess which musical instrument", credit: "Bing Bunny · YouTube Shorts · [Year]" },
-  { id: "short-4", youtube: "UgsB7p9qLtI", title: "In the garden", credit: "Bing Bunny · YouTube Shorts · [Year]" },
+  { id: "short-1", youtube: "lSP4MglE-qw", title: "The Wildlife Trusts Collaboration", credit: "Bing Bunny · YouTube Shorts · [Year]" },
+  { id: "short-2", youtube: "ag5qz-wddbo", title: "Live-Action Paper Cutout", credit: "Bing Bunny · YouTube Shorts · [Year]" },
+  { id: "short-3", youtube: "HDUusThf8m4", title: "Guess Which Musical Instrument", credit: "Bing Bunny · YouTube Shorts · [Year]" },
+  { id: "short-4", youtube: "UgsB7p9qLtI", title: "In the Garden", credit: "Bing Bunny · YouTube Shorts · [Year]" },
 ];

@@ -1434,6 +1434,54 @@ a {
   color: var(--coral-strong);
 }
 
+/* Home: Vimeo showreel, cropped to fill the hero like a background video */
+.reel-vimeo {
+  --reel-h: max(240px, min(78vh, 56.25vw));
+}
+.reel-vimeo iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(100cqw, calc(var(--reel-h) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  transform: translate(-50%, -50%);
+  border: 0;
+  pointer-events: none;
+}
+.reel-dialog {
+  width: min(1200px, 92vw);
+  max-width: none;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: #000;
+  overflow: visible;
+}
+.reel-dialog::backdrop {
+  background: var(--scrim);
+  backdrop-filter: blur(4px);
+}
+.reel-dialog-frame {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.reel-dialog-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+.reel-close {
+  position: absolute;
+  top: calc(-1 * var(--space-12));
+  right: 0;
+  color: var(--on-scrim);
+}
+.reel-close:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
 /* Case studies: card blurb and credits */
 .card-blurb {
   margin: 0;

@@ -30,15 +30,15 @@ export default function ServicesPage() {
           </div>
           <ul className="offers">
             <li>
-              <h3 className="title">The problem</h3>
+              <h3 className="title">The Problem</h3>
               <p>{item.problem}</p>
             </li>
             <li>
-              <h3 className="title">What I do</h3>
+              <h3 className="title">What I Do</h3>
               <p>{item.does}</p>
             </li>
             <li>
-              <h3 className="title">What you get</h3>
+              <h3 className="title">What You Get</h3>
               <p>{item.gets}</p>
             </li>
           </ul>
