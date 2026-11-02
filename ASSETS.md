@@ -32,7 +32,7 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 
 ## Prohibition Partners (`public/media/prohibition-partners/`)
 
-- [x] `cover.jpg`: Prohibition Partners logo on their indigo grid background, with a still from the promo.
+- [x] `cover.jpg`: Big centred Prohibition Partners logo over a dimmed, indigo-washed still from the promo.
 - [x] Hero: the 32s promo, embedded from YouTube (mxcAunOa5Cw).
 - [ ] `work-1.mp4` … `work-2.mp4` (or .jpg stills): supporting clips, 16:9.
 
@@ -58,7 +58,7 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 
 ## Bing: Hoppity Voosh & the Moonkeeper (`public/media/hoppity-voosh/`)
 
-- [x] `cover.jpg`: Prohibition Partners logo on their indigo grid background, with a still from the promo.
+- [x] `cover.jpg`: Big centred Prohibition Partners logo over a dimmed, indigo-washed still from the promo.
 - [x] Hero: the finished film, embedded from YouTube (_sW8IlHl3so). The view count backs up the result; Vimeo is a cleaner, ad-free alternative.
 - [ ] Beside "The Approach", paragraph 1: a row of storyboard frames, ideally including the early sleeping-in-bedroom version, to show how the concept changed.
 - [ ] Below the storyboards: the animatic, to show the single-shot structure before final animation.
