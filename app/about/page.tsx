@@ -38,8 +38,14 @@ export default function AboutPage() {
           {a.quotes.map((q) => (
             <figure key={q.name} className="quote">
               <blockquote className="body-lg">“{q.text}”</blockquote>
-              <figcaption className="caption">
-                <strong>{q.name}</strong>, {q.role}
+              <figcaption className="quote-by">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={q.photo} alt={q.name} width={48} height={48} loading="lazy" />
+                <span className="caption">
+                  <strong>{q.name}</strong>
+                  <br />
+                  {q.role}
+                </span>
               </figcaption>
             </figure>
           ))}

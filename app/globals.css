@@ -1544,3 +1544,27 @@ a {
     grid-column: 1 / -1;
   }
 }
+
+/* About: testimonial cards with the person's photo */
+.quote {
+  display: flex;
+  flex-direction: column;
+}
+.quote-by {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.quote-by img {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--hairline);
+}
+.quote-by strong {
+  color: var(--ink);
+  font-weight: 600;
+}

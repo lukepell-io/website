@@ -240,16 +240,19 @@ export const site = {
       {
         text: "Luke combines strong creative judgement with a very organised and practical approach.",
         name: "Vale De Felice",
+        photo: "/media/about/vale-de-felice.jpg",
         role: "Marketing Strategy and Global Campaigns. Worked with Luke at Acamar Films.",
       },
       {
         text: "His dedication to up-skilling the entire team and enhancing our workflows was truly impressive.",
         name: "Laura Alexander",
+        photo: "/media/about/laura-alexander.jpg",
         role: "Video Producer, Bauer Media Group. Managed Luke at Acamar Films.",
       },
       {
         text: "Luke also brings good humour and is always a friendly face in the office.",
         name: "Alex Joy",
+        photo: "/media/about/alex-joy.jpg",
         role: "Production Manager and CG Generalist. Worked with Luke at Acamar Films.",
       },
     ],
