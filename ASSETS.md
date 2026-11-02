@@ -27,7 +27,7 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 - [x] Hero: the 1-minute film, embedded from PCUK's YouTube (6QLwYsRF0uY).
 - [ ] Beside "The Approach": a grid of stills showing three or four type treatments side by side, so readers see the film-and-TV references at a glance.
 - [ ] Also beside "The Approach": one frame shown in 16:9 and 9:16 together, to show the vertical version.
-- [ ] Beside "The Result": the embedded PCUK tweet crediting Luke (with the trophy photo), plus a link to Third Sector's winner article. [Need both links]
+- [x] Beside "The Result": `press-third-sector.jpg` (Third Sector winner listing) and `press-pcuk-post.jpg` (PCUK post crediting Luke, with the trophy photo). Add `href` links in `content/projects.ts` if you want them clickable.
 - [ ] Optional: link the full 4-minute audio on PCUK's site. [Need the link]
 
 ## Prohibition Partners (`public/media/prohibition-partners/`)

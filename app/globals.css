@@ -1495,3 +1495,25 @@ a {
 .credits dd {
   margin: var(--space-1) 0 0;
 }
+
+/* Case studies: award and press screenshots under The Result */
+.press {
+  margin-top: var(--space-8);
+  display: grid;
+  gap: var(--space-8);
+}
+.press-item {
+  margin: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+.press-item[data-narrow="true"] {
+  max-width: 480px;
+}
+.press-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--hairline);
+}

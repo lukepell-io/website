@@ -26,6 +26,8 @@ export type Project = {
   result: string | string[];
   blurb?: string; // short description on the project card
   credits?: { role: string; names: string; links?: Record<string, string> }[];
+  // Screenshots shown under The Result (awards, press, posts). Files go in public/media/<slug>/
+  press?: { src: string; alt: string; caption: string; href?: string; narrow?: boolean }[];
   seoTitle?: string; // the browser tab / Google title, written in full
   metaDescription?: string; // the Google snippet, under 155 characters
   // How many clips/stills to show in "The work" (in addition to the hero).
@@ -165,6 +167,19 @@ export const projects: Project[] = [
       { role: "Audio", names: "Jon Holmes and Unusual Productions" },
       { role: "Animation Studio", names: "Acamar Films" },
       { role: "Art Direction & Motion Design", names: "Luke Pelletier" },
+    ],
+    press: [
+      {
+        src: "/media/pcuk/press-third-sector.jpg",
+        alt: "Third Sector Awards listing: Lost Voices by Pancreatic Cancer UK, winner of Communications Campaign of the Year",
+        caption: "Third Sector Awards 2022: Communications Campaign of the Year, winner",
+      },
+      {
+        src: "/media/pcuk/press-pcuk-post.jpg",
+        alt: "Pancreatic Cancer UK post thanking Olivia Williams, Jon Holmes and Luke Pelletier, with the team holding the award",
+        caption: "Pancreatic Cancer UK on X, 1 October 2022",
+        narrow: true,
+      },
     ],
     seoTitle: "Lost Voices for Pancreatic Cancer UK | Luke Pelletier",
     metaDescription:

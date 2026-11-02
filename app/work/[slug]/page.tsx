@@ -181,6 +181,28 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
                 <Text>{para}</Text>
               </p>
             ))}
+            {project.press && project.press.length > 0 && (
+              <div className="press">
+                {project.press.map((item) => {
+                  const img = (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={item.src} alt={item.alt} loading="lazy" />
+                  );
+                  return (
+                    <figure key={item.src} className="press-item" data-narrow={item.narrow ? "true" : undefined}>
+                      {item.href ? (
+                        <a href={item.href} target="_blank" rel="noopener noreferrer">
+                          {img}
+                        </a>
+                      ) : (
+                        img
+                      )}
+                      <figcaption className="caption">{item.caption}</figcaption>
+                    </figure>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </section>
 
