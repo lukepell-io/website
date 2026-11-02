@@ -286,18 +286,40 @@ export const projects: Project[] = [
     discipline: "Tools & Workflow",
     year: "[Year]",
     summary:
-      "The custom plugin I built to make the Bing Bunny content pipeline fast: [what it does, in one line].",
-    meta: "Plugin · [Host app] · [Year]",
-    tags: ["Workflow", "Plugin"],
+      "A Premiere Pro extension I built in three weekends that turned minutes of compilation assembly into seconds.",
+    blurb:
+      "A Premiere Pro extension I built to assemble ~60 weekly YouTube compilations in seconds, with automatic intros, markers and file naming.",
+    meta: "Acamar Films · Premiere Pro extension · In-house",
+    tags: ["Automation", "Content Operations", "Premiere Pro"],
     facts: {
-      client: "[Personal / client]",
-      role: "Designer",
-      tools: "[Tools]",
-      deliverables: "[e.g. After Effects plugin]",
+      client: "Acamar Films, producers of Bing Bunny (in-house)",
+      role: "Content Pipeline Lead; designer and developer of the tool",
+      disciplines: "Content operations, offline editorial",
+      deliverables:
+        "Custom Premiere Pro CEP extension and matching project template, used by 3 editors producing ~60 compilations a week across 31 territories",
+      tools: "Premiere Pro, CEP (HTML/JavaScript, ExtendScript)",
+      timeline: "About three weekends, built in my own time",
     },
-    brief: "[2–3 sentences: the problem Batch Builder solves.]",
-    approach: "[2–3 sentences: how it works.]",
-    result: "[1–2 sentences: time saved, who uses it.]",
+    brief:
+      "Bing's YouTube channels published around 60 episode compilations a week across 31 territories. Each one meant pulling episodes into a sequence by hand, adding the right series intro and naming the file to convention: 3–5 minutes of work, repeated dozens of times a week by three editors. The team considered it the most boring part of the job, and it was exactly the kind of repetitive task where naming mistakes creep in.",
+    approach: [
+      "I didn't want to write a longer process doc or hand the team another app to learn. So I built the fix into Premiere itself, as a panel that sits in the editor's workspace.",
+      "The key was designing the tool and the project template together. Every master project shares the same bin structure: pre-nested episode sequences split by edit variant (with and without the opening street shot), series intros, end screens, and a bin for finished compilations. Because the extension knows where everything lives, the editor only types the episode numbers in running order. Ranges like 1–3, 5, 7–9 are expanded automatically. Then they pick the variant and the series.",
+      "One click builds the sequence: episodes in order from a 10:00:00:00 start, the series intro if needed, start and end markers, and a filename assembled from the compilation number, version and editor tag. A Validate button checks the input before anything touches the timeline.",
+    ],
+    result: [
+      "Assembly dropped from 3–5 minutes to under 5 seconds per compilation. At ~60 compilations a week, that's roughly 3–5 hours of editor time back every week. Naming errors stopped, and every file follows the same convention whoever builds it.",
+      "The job the team liked least became the quickest part of their week, and they were very happy with it.",
+    ],
+    stats: [
+      { value: "<5 sec", label: "per compilation, down from 3–5 minutes" },
+      { value: "3–5 hrs", label: "editor time saved every week" },
+      { value: "~60", label: "compilations a week" },
+      { value: "31", label: "territories" },
+    ],
+    seoTitle: "Batch Builder – Premiere Pro Automation | Luke Pelletier",
+    metaDescription:
+      "How Luke Pelletier built a Premiere Pro extension that cut YouTube compilation assembly from minutes to seconds across 31 territories at Acamar Films.",
     workSlots: 2,
   },
 ];

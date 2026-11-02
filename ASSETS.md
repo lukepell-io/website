@@ -66,5 +66,6 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 ## Batch Builder (`public/media/batch-builder/`)
 
 - [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
-- [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
-- [ ] `work-1.mp4` … `work-2.mp4` (or .jpg stills): supporting clips, 16:9.
+- [ ] `hero.mp4` + `hero.jpg`: the split-screen video, manual build vs Batch Builder side by side. The 5-second build is the whole pitch, so let people watch it happen.
+- [ ] Beside "The Approach": the bin structure screenshot, then the panel screenshot directly below it, so the reader sees the template and the tool that reads it together.
+- [ ] Beside "The Result": a simple stat graphic, 3–5 min → under 5 sec, plus ~3–5 hours saved a week.
