@@ -66,7 +66,7 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 - [ ] Beside "The Result": the 9:16 version, embedded or as a still, next to the 16:9 frame.
 - [ ] Optional, at the end: the credits card screenshot as a visual sign-off for Credits.
 
-## Bing: Find & Learn (`public/media/bing-find-and-learn/`)
+## Bing: Find and Learn (`public/media/bing-find-and-learn/`)
 
 - [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
 - [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.

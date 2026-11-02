@@ -1,6 +1,8 @@
-// A list of names where some names link out (e.g. to LinkedIn).
+import { Text } from "./Text";
+
+// A list of names where some names link out (e.g. to LinkedIn). [Placeholders] show in coral.
 export function LinkedNames({ names, links }: { names: string; links?: Record<string, string> }) {
-  if (!links || Object.keys(links).length === 0) return <>{names}</>;
+  if (!links || Object.keys(links).length === 0) return <Text>{names}</Text>;
   const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const pattern = new RegExp(`(${Object.keys(links).map(escape).join("|")})`, "g");
   return (
@@ -11,7 +13,7 @@ export function LinkedNames({ names, links }: { names: string; links?: Record<st
             {part}
           </a>
         ) : (
-          part
+          <Text key={i}>{part}</Text>
         ),
       )}
     </>

@@ -428,21 +428,45 @@ export const projects: Project[] = [
   },
   {
     slug: "bing-find-and-learn",
-    title: "Bing: Find & Learn",
-    discipline: "[Discipline]",
-    year: "[Year]",
-    summary: "[One-line summary of Bing: Find & Learn.]",
-    meta: "Acamar Films · Educational · [Year]",
-    tags: ["Educational", "[Tag]"],
+    title: "Bing: Find and Learn",
+    discipline: "Motion Design",
+    year: "2026",
+    summary:
+      "A seek-and-find series for preschoolers, built on an After Effects template that juniors drive with a few switches.",
+    blurb:
+      "A seek-and-find series for Bing's YouTube channels, built on one expression-driven After Effects template that saved two to three weeks of production.",
+    meta: "Acamar Films · Bing Bunny · 2026",
+    tags: ["Motion Design", "Templates", "Content Operations"],
     facts: {
-      client: "Acamar Films",
-      role: "[Your role]",
-      tools: "[Tools]",
-      deliverables: "[Deliverables]",
+      client: "Acamar Films (Bing Bunny)",
+      role: "Technical Artist & Motion Designer (as Head of Video Production)",
+      disciplines: "Motion design, content operations (templated pipeline)",
+      deliverables: "10 episodes, 7 or 10 items per scene ([episode duration and aspect ratios])",
+      tools: "After Effects (expression-driven template)",
+      timeline: "Early 2026 ([production length])",
     },
-    brief: "[2–3 sentences: what Find & Learn is and who it's for.]",
-    approach: "[2–3 sentences: your part in it.]",
-    result: "[1–2 sentences: the outcome.]",
+    brief:
+      "Acamar wanted a new educational format for the Bing YouTube channels, adapted from Bing's Busy Search and Find, the personalised book by BubblyDoo. Each episode drops viewers into a single Bing scene, such as Bing's kitchen, with a bar of items to spot. Viewers hunt for each one, and the episode celebrates once everything's found. The challenge was making ten episodes without hand-animating every card, prop and camera move from scratch.",
+    approach: [
+      "Instead of animating each episode, I built one template in After Effects where the item bar, the cards, the props and the camera are all controlled by expressions. Every action an episode needs is a single on/off switch.",
+      "Turn one on and a card flips over. Another brings it to the centre of the screen. Another plays the reveal animation on the right prop with its matching highlight strokes. Once those are set, the camera follows the action, so nobody has to keyframe a move by hand.",
+      "That meant junior members of the team could assemble episodes on their own, simply by working through the switches in order. My time went into the system rather than into repeating the same animation ten times, and the episodes stayed consistent in timing and feel across the series.",
+    ],
+    result:
+      "The template cut at least two to three weeks from the production schedule. The format has performed well on YouTube, and the YouTube team noticed something unusual: viewers rewind to find the items again, studying the scene closely rather than watching once and moving on. [Views, watch time or retention figures]",
+    stats: [
+      { value: "2–3 wks", label: "cut from the production schedule" },
+      { value: "10", label: "episodes from one template" },
+      { value: "7 or 10", label: "items to find per scene" },
+      { value: "1", label: "switch per action, no hand keyframing" },
+    ],
+    credits: [
+      { role: "Episode Assembly", names: "Acamar's junior production team [names and roles]" },
+      { role: "Format", names: "Based on Bing's Busy Search and Find by BubblyDoo" },
+    ],
+    seoTitle: "Bing: Find and Learn Template | Luke Pelletier",
+    metaDescription:
+      "An expression-driven After Effects template for Bing's Find and Learn series: juniors build each episode with switches, saving two to three weeks.",
     youtube: { id: "FxIDi695xwQ", title: "Bing: Find & Learn | Bing's Kitchen" },
     workSlots: 2,
   },
