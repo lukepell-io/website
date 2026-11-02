@@ -39,8 +39,10 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 ## London Business TV (`public/media/london-business-tv/`)
 
 - [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
-- [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
-- [ ] `work-1.mp4` … `work-2.mp4` (or .jpg stills): supporting clips, 16:9.
+- [ ] `hero.mp4` + `hero.jpg`: a short clip from the MP's constituency message, with the green-screen photo as the poster frame.
+- [ ] Beside "The Approach": the X-keys and in-ear monitor flat-lay, paired with the LiveMatte keyer screenshot.
+- [ ] Beside the brand line: the London Business TV logo.
+- [ ] Beside "The Result": the Lola's Homeless Helpers reel (https://www.facebook.com/reel/2835395346587289), ideally re-hosted on Vimeo or YouTube so it loads faster.
 
 ## Bing Bunny international title animation (`public/media/bing-title-animation/`)
 

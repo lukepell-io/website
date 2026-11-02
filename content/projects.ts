@@ -210,21 +210,42 @@ export const projects: Project[] = [
   },
   {
     slug: "london-business-tv",
-    title: "London Business TV",
-    discipline: "[Discipline]",
-    year: "[Year]",
-    summary: "[One-line summary of the London Business TV project.]",
-    meta: "London Business TV · [Format] · [Year]",
-    tags: ["[Tag]", "[Tag]"],
+    title: "London Business TV: A Multi-Cam Studio in a Garden Shed",
+    discipline: "Content Operations",
+    year: "2020",
+    summary:
+      "In the first week of lockdown, I turned a large garden shed into a virtual-set studio that an MP used to address his constituents.",
+    blurb:
+      "In lockdown, I built a multi-cam virtual-set studio in a garden shed, along with the brand. An MP used it to address his constituents.",
+    meta: "London Business TV · Freelance · 2020",
+    tags: ["Virtual Set", "Brand Identity", "Editing"],
     facts: {
-      client: "London Business TV",
-      role: "[Your role]",
-      tools: "[Tools]",
-      deliverables: "[Deliverables]",
+      client: "London Business TV, a start-up virtual events and business broadcaster",
+      role: "Digital & Video Producer (freelance)",
+      disciplines: "Content operations, motion design, offline and online editorial, audio post",
+      deliverables:
+        "1 × multi-cam virtual-set studio, brand identity and logo, motion graphics, charity and corporate videos",
+      tools:
+        "NewTek TriCaster, X-keys programmable keypad, Audio-Technica PRO 70 lav mics, Behringer in-ear monitoring, Adobe Creative Cloud",
+      timeline: "March to July 2020",
     },
-    brief: "[2–3 sentences: what London Business TV needed.]",
-    approach: "[2–3 sentences: how you approached it.]",
-    result: "[1–2 sentences: the outcome.]",
+    brief:
+      "I started on 16 March 2020, a week before the UK went into lockdown. The founder wanted to launch a business offering live virtual events and broadcasts. The studio, the brand and the product all had to be built together, on a fixed budget, in a large shed at the bottom of a garden.",
+    approach: [
+      "I built a green-screen virtual set around a NewTek TriCaster, keying the presenter into a 3D news-desk environment at 1080/25p. Remote guests joined over Skype and Zoom and appeared on the set's on-screen monitor, so a home video call looked like a studio interview.",
+      "With a crew of one or two, I mapped the show onto a 24-key X-keys pad. Each hand-labelled key fired a TriCaster macro: presenter shot, Skype guest, VT1, VT2, guest captions, track in and out, record start and stop. That let a single operator run a multi-cam show live without hunting through menus.",
+      "The presenter wore a lav mic and heard remote guests through an in-ear monitor. That kept the guests' audio off the room mic and out of the stream.",
+      "I also designed the London Business TV identity, a navy-and-white serif wordmark, and produced the motion graphics, budgets and event plans used to pitch the studio to clients.",
+      "Between shows, I led the edit on charity and corporate videos. One was a film for Lola's Homeless Helpers, an East London volunteer group supporting people sleeping rough. It was made to raise awareness, bring in donations and recruit volunteers.",
+    ],
+    result: [
+      "The studio came in on budget and within scope. Jerome Mayhew, then MP for Broadland, first used it to run a Zoom meeting, then came back to deliver a message to his constituents from the virtual set.",
+      "The Lola's Homeless Helpers film did its job, helping the group raise awareness, funds and new volunteers.",
+      "Henry Mayhew, Executive Producer & Director, said he was \u201coften impressed by his ability to pick things up, learn, and solve problems quickly\u201d.",
+    ],
+    seoTitle: "Lockdown Virtual-Set Studio | Luke Pelletier",
+    metaDescription:
+      "How I turned a garden shed into a TriCaster virtual-set studio in spring 2020, used by an MP to address constituents, plus the brand and a charity film.",
     workSlots: 2,
   },
   {
