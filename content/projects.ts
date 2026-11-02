@@ -354,22 +354,52 @@ export const projects: Project[] = [
   },
   {
     slug: "hoppity-voosh",
-    title: "Hoppity Voosh and the Moonkeeper",
-    discipline: "[Discipline]",
-    year: "[Year]",
-    summary: "[One-line summary of Hoppity Voosh and the Moonkeeper.]",
-    meta: "Acamar Films · [Format] · [Year]",
-    tags: ["[Tag]", "[Tag]"],
+    title: "Bing: Hoppity Voosh & the Moonkeeper",
+    discipline: "Animation",
+    year: "2022",
+    summary:
+      "A three-minute Bing bedtime story told in one unbroken shot, taken from first concept to final delivery.",
+    blurb:
+      "A three-minute, single-shot Bing Bunny story I art directed, edited and animated, now at 1.7M+ YouTube views and sold to broadcasters worldwide.",
+    meta: "Acamar Films · Bing Bunny · 2022",
+    tags: ["Art Direction", "Animation", "3D"],
     facts: {
-      client: "Acamar Films",
-      role: "[Your role]",
-      tools: "[Tools]",
-      deliverables: "[Deliverables]",
+      client: "Acamar Films (Bing Bunny), in-house",
+      role: "Art Director, Offline Editor, 2D & 3D Animator",
+      disciplines:
+        "Offline editorial, motion design (After Effects, 3D in Blender), content operations (multi-platform and vertical versioning)",
+      deliverables:
+        "1 × 3:03 16:9 animated story, 1 × 9:16 version for TikTok and Instagram Reels ([9:16 duration])",
+      tools: "Premiere Pro, After Effects, Blender, Illustrator, Photoshop",
+      timeline: "6 weeks (released 2022)",
     },
-    brief: "[2–3 sentences: what the project was.]",
-    approach: "[2–3 sentences: your part in it.]",
-    result: "[1–2 sentences: the outcome.]",
-    youtube: { id: "_sW8IlHl3so", title: "Hoppity Voosh and the Moonkeeper" },
+    brief:
+      "Bing is an Emmy-winning, BAFTA-nominated pre-school series, first broadcast on the BBC in 2014. Acamar Films needed new visuals for an existing Bing audio story, Hoppity Voosh & the Moonkeeper, which runs across Bing Time on Amazon Alexa, the Bing: Watch Play Learn app and Bing's YouTube channels. The visuals had to hold a pre-school audience for just over three minutes and feel true to the show itself.",
+    approach: [
+      "I led the project from visual concept through storyboard, animatic and several review passes to final delivery. The storyboards went through a number of different openings and endings before we settled on one. The first idea had Hoppity asleep in a bedroom, but it gave the audience too little to look at, so I moved the story towards something with more movement and wonder.",
+      "The biggest creative decision was to tell the whole story in real time with no cuts. Bing episodes deliberately keep cuts to a minimum and stay in real time, so a single continuous shot made the piece feel like part of the show rather than a bolt-on.",
+      "That meant joining work from three different pipelines into one shot. The opening street shot came from Brown Bag Films. Our internal 3D team rendered the bedroom in Maya 2014 with mental ray, along with the renders of Hoppity. I built the storybook in Blender and animated it there, illustrating every page myself: vectors in Illustrator, texturing in Photoshop. I then composited the book and bedroom together in After Effects. I also rigged Hoppity in After Effects from the 3D team's renders so I could animate him directly in the comp, and I cut the offline in Premiere Pro.",
+    ],
+    result:
+      "Since its 2022 release, the story has passed 1.7 million views on YouTube and is the third most popular piece to date on both Amazon Alexa and Bing: Watch Play Learn. It has been sold to broadcasters around the world, including as part of a package deal with Rai, Italy's largest TV and radio broadcaster, where it helped secure around £100,000 in additional revenue. I also cut a 9:16 version for TikTok and Instagram Reels.",
+    stats: [
+      { value: "1.7m+", label: "YouTube views" },
+      { value: "3:03", label: "in one unbroken shot" },
+      { value: "3rd", label: "most popular on Amazon Alexa and Bing: Watch Play Learn" },
+      { value: "~£100k", label: "extra revenue from a Rai package deal" },
+    ],
+    credits: [
+      { role: "Producers", names: "Mikael Shields, Nikica Markot-David" },
+      { role: "Creative Producers", names: "Gati Varillas, Laura Alexander" },
+      { role: "Design", names: "Angie Kordella, Cheryl Brock" },
+      { role: "3D Animation", names: "Amie McGovern, Ellen Conlan Ellis" },
+      { role: "Sound Editors", names: "Luke Shrewsbury, Óðinn Ingibergsson" },
+      { role: "Opening Street Shot", names: "Brown Bag Films" },
+    ],
+    seoTitle: "Bing: Hoppity Voosh & the Moonkeeper | Luke Pelletier",
+    metaDescription:
+      "Art direction, editing and 2D/3D animation for a three-minute, single-shot Bing Bunny story with 1.7M+ YouTube views and worldwide broadcast sales.",
+    youtube: { id: "_sW8IlHl3so", title: "Bing: Hoppity Voosh & the Moonkeeper" },
     workSlots: 2,
   },
   {

@@ -56,11 +56,15 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 - [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
 - [ ] `work-1.mp4` … `work-4.mp4` (or .jpg stills): supporting clips, 16:9.
 
-## Hoppity Voosh and the Moonkeeper (`public/media/hoppity-voosh/`)
+## Bing: Hoppity Voosh & the Moonkeeper (`public/media/hoppity-voosh/`)
 
-- [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
-- [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
-- [ ] `work-1.mp4` … `work-2.mp4` (or .jpg stills): supporting clips, 16:9.
+- [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080 (uses the YouTube thumbnail until then).
+- [x] Hero: the finished film, embedded from YouTube (_sW8IlHl3so). The view count backs up the result; Vimeo is a cleaner, ad-free alternative.
+- [ ] Beside "The Approach", paragraph 1: a row of storyboard frames, ideally including the early sleeping-in-bedroom version, to show how the concept changed.
+- [ ] Below the storyboards: the animatic, to show the single-shot structure before final animation.
+- [ ] Beside "The Approach", paragraph 3: the Blender book screenshot next to the flat page illustrations (the strongest craft image on the page).
+- [ ] Beside "The Result": the 9:16 version, embedded or as a still, next to the 16:9 frame.
+- [ ] Optional, at the end: the credits card screenshot as a visual sign-off for Credits.
 
 ## Bing: Find & Learn (`public/media/bing-find-and-learn/`)
 
