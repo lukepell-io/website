@@ -81,7 +81,7 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 
 ## Water Truck: TODAY Show Feature (`public/media/water-truck/`)
 
-- [x] `cover.jpg`: the Camera Crew Awards trophy, cropped to the engraving.
+- [x] `cover.jpg`: TODAY logo centred in the sky over a drought still from the feature (1920×1080).
 - [x] `press-trophy.jpg`: the full trophy photo, shown under The Result.
 - [x] Hero: the full feature, hosted on Bunny Stream (library 797786).
 - [ ] `work-1.jpg` … `work-2.jpg`: stills from the feature.
