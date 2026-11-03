@@ -133,8 +133,10 @@ export const projects: Project[] = [
       ],
       tools: ["Adobe Premiere Pro", "Avid Media Composer"],
     },
-    brief: "[2–3 sentences: what Nine needed, and the turnaround.]",
-    approach: "[2–3 sentences: how you cut the stories, what made it work.]",
+    brief:
+      "From 2016 to 2019 I cut daily news stories for 9News Sydney, as one of a pool of 30 to 40 editors working on live broadcast. Each shift I was assigned one or two stories for the 6pm bulletin, or stories for the TODAY Show on morning shifts, all cut to a fixed on-air time.",
+    approach:
+      "I regularly cut the bulletin's lead stories. They ranged from foreign news, such as the rise of the Islamic State group in 2015 and 2016 and the Hong Kong protests, to environmental stories like the bushfire seasons of 2018 and 2019, along with the major national and political stories of the period.",
     result: "[1–2 sentences: what aired, any numbers or feedback.]",
     featured: true,
     youtube: { id: "C1YrjGWKxHk", title: "Nine Network showreel" },
