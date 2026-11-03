@@ -133,57 +133,59 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
           </div>
         </section>
 
-        <section className="cs-section" style={{ display: "block" }}>
-          <h2 className="heading" style={{ marginBottom: "var(--space-8)" }}>
-            The Work
-          </h2>
-          <div className="media-grid">
-            {Array.from({ length: Math.max(project.workSlots, project.work?.length ?? 0) }, (_, i) => {
-              const video = project.work?.[i];
-              return (
-                <figure key={i} className="figure">
-                  <Media
-                    folder={project.slug}
-                    name={`work-${i + 1}`}
-                    kind="video"
-                    label={`Work clip ${i + 1}`}
-                    spec="16:9 clip or still (JPG works too)"
-                    canopy={i % 2 === 1}
-                    youtube={video?.id}
-                    title={video?.title}
-                  />
-                  <figcaption className="caption">
-                    <Text>{video?.title ?? project.workCaptions?.[i] ?? "[Caption: client · format · tools · year]"}</Text>
-                  </figcaption>
-                </figure>
-              );
-            })}
-          </div>
-          {project.shorts && project.shorts.length > 0 && (
-            <>
-              <span className="eyebrow" style={{ display: "block", margin: "var(--space-12) 0 var(--space-6)" }}>
-                Shorts & social
-              </span>
-              <div className="shelf">
-                {project.shorts.map((s, i) => (
-                  <figure key={s.id} className="figure">
+        {(project.workSlots > 0 || (project.work?.length ?? 0) > 0 || (project.shorts?.length ?? 0) > 0) && (
+          <section className="cs-section" style={{ display: "block" }}>
+            <h2 className="heading" style={{ marginBottom: "var(--space-8)" }}>
+              The Work
+            </h2>
+            <div className="media-grid">
+              {Array.from({ length: Math.max(project.workSlots, project.work?.length ?? 0) }, (_, i) => {
+                const video = project.work?.[i];
+                return (
+                  <figure key={i} className="figure">
                     <Media
                       folder={project.slug}
-                      name={`short-${i + 1}`}
+                      name={`work-${i + 1}`}
                       kind="video"
-                      ratio="vertical"
-                      label={`Vertical ${i + 1}`}
-                      spec="9:16, 1080×1920 MP4"
-                      youtube={s.id}
-                      title={s.title}
+                      label={`Work clip ${i + 1}`}
+                      spec="16:9 clip or still (JPG works too)"
+                      canopy={i % 2 === 1}
+                      youtube={video?.id}
+                      title={video?.title}
                     />
-                    <figcaption className="caption">{s.title}</figcaption>
+                    <figcaption className="caption">
+                      <Text>{video?.title ?? project.workCaptions?.[i] ?? "[Caption: client · format · tools · year]"}</Text>
+                    </figcaption>
                   </figure>
-                ))}
-              </div>
-            </>
-          )}
-        </section>
+                );
+              })}
+            </div>
+            {project.shorts && project.shorts.length > 0 && (
+              <>
+                <span className="eyebrow" style={{ display: "block", margin: "var(--space-12) 0 var(--space-6)" }}>
+                  Shorts & social
+                </span>
+                <div className="shelf">
+                  {project.shorts.map((s, i) => (
+                    <figure key={s.id} className="figure">
+                      <Media
+                        folder={project.slug}
+                        name={`short-${i + 1}`}
+                        kind="video"
+                        ratio="vertical"
+                        label={`Vertical ${i + 1}`}
+                        spec="9:16, 1080×1920 MP4"
+                        youtube={s.id}
+                        title={s.title}
+                      />
+                      <figcaption className="caption">{s.title}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </>
+            )}
+          </section>
+        )}
 
         <section className="cs-section">
           <h2 className="heading">The Result</h2>

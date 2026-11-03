@@ -167,7 +167,7 @@ export const projects: Project[] = [
   {
     slug: "water-truck",
     title: "Water Truck: TODAY Show Feature",
-    discipline: "Editing",
+    discipline: "Offline Editorial",
     year: "2018",
     summary:
       "A five-minute feature for the TODAY Show's 2018 drought telethon, which raised $7.5 million for farmers, cut in a week and named Nine's best TODAY Show feature edit.",
@@ -213,7 +213,7 @@ export const projects: Project[] = [
     metaDescription:
       "Editing for Water Truck, a 4:55 feature in the TODAY Show's 2018 drought telethon, which raised $7.5m. Cut in a week; Nine's best TODAY Show feature edit.",
     bunny: { library: "797786", id: "9af26276-1eae-4013-87c1-16d630bfaa11", title: "Water Truck: TODAY Show Feature" },
-    workSlots: 2,
+    workSlots: 0,
   },
   {
     slug: "pcuk",
