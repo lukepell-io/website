@@ -128,7 +128,7 @@ export const projects: Project[] = [
       ],
       team: [
         "Day Shifts: 12 Editors and a Shift Leader",
-        "Morning Shifts: 6 Editors and a Shift Leader (Led by Me)",
+        "Morning Shifts: 6 Editors and a Shift Leader (Led by Me From 2018)",
         "From a Pool of ~34 Editors",
       ],
       deliverables: [
@@ -139,12 +139,25 @@ export const projects: Project[] = [
       tools: ["Adobe Premiere Pro", "Avid Media Composer"],
     },
     brief:
-      "From 2016 to 2019 I cut daily news for 9News Sydney, as one of a pool of around 34 editors. Day shifts ran 12 editors and a shift leader, and morning shifts ran six editors and a shift leader; I led the morning shift. The shift leader assigned each editor one main story for the day, and we stayed with it through every bulletin: playoffs and VO/SOTs for the TODAY and TODAY EXTRA news breaks, then the 11:30am, 3pm and 4pm bulletins, before finishing a full package for the 6pm news. Stories were often still being cut 15 seconds before they went to air.",
+      "From 2016 to 2019 I cut daily news for 9News Sydney, as one of a pool of around 34 editors. Day shifts ran 12 editors and a shift leader, and morning shifts ran six editors and a shift leader. From December 2018, as Senior Video Editor, I led the morning shift. The shift leader assigned each editor one main story for the day, and we stayed with it through every bulletin: playoffs and VO/SOTs for the TODAY and TODAY EXTRA news breaks, then the 11:30am, 3pm and 4pm bulletins, before finishing a full package for the 6pm news. Stories were often still being cut 15 seconds before they went to air.",
     approach: [
       "On each story I worked with a producer and a reporter, who wrote the script. A separate pool of motion designers built the motion plates from their script and brief, and I cut everything together for air.",
       "I regularly cut the bulletin's lead stories. They ranged from foreign news, such as the rise of the Islamic State group in 2015 and 2016 and the Hong Kong protests, to environmental stories like the bushfire seasons of 2018 and 2019, along with the major national and political stories of the period.",
     ],
-    result: "[1–2 sentences: what aired, any numbers or feedback.]",
+    result:
+      "9News was Sydney's most-watched news every year I cut for it, part of a run of 11 consecutive years at No.1 that Nine confirmed in 2021. That record came from the 6pm hour, the bulletin every story I worked on was building towards.",
+    stats: [
+      { value: "No.1", label: "Sydney's most-watched news, 11 years running" },
+      { value: "~34", label: "Editors in the newsroom pool" },
+      { value: "15 sec", label: "Before air, at the tightest" },
+      { value: "4 yrs", label: "Cutting daily news, 2016–2019" },
+    ],
+    links: [
+      {
+        label: "Nine: 9News No.1 in Sydney for the 11th consecutive year",
+        href: "https://www.nineforbrands.com.au/media-release/no-1-in-sydney-11th-consecutive-year-as-sydneys-most-watched-news/",
+      },
+    ],
     featured: true,
     youtube: { id: "C1YrjGWKxHk", title: "Nine Network showreel" },
     workSlots: 4,
