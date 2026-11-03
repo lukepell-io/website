@@ -907,6 +907,10 @@ a {
     grid-template-columns: 1fr;
   }
 }
+/* A single still or clip spans the full width */
+.media-grid > .figure:only-child {
+  grid-column: 1 / -1;
+}
 .figure {
   margin: 0;
   display: flex;

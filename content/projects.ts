@@ -421,7 +421,8 @@ export const projects: Project[] = [
     seoTitle: "Bing International Title Animation | Luke Pelletier",
     metaDescription:
       "Localisation motion design for Bing Bunny: four international title sequences animated in After Effects to match the original beat for beat.",
-    workSlots: 2,
+    workSlots: 1,
+    workCaptions: ["The four localised Bing logos: Hindi, Mandarin (Taiwan), Arabic and Japanese"],
   },
   {
     slug: "bing-creative-content",

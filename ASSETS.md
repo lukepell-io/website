@@ -46,9 +46,9 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 
 ## Bing Bunny international title animation (`public/media/bing-title-animation/`)
 
-- [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
+- [x] `cover.jpg`: the four localised Bing logos (Hindi, Mandarin, Arabic, Japanese) on white, 1920×1080.
 - [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
-- [ ] `work-1.mp4` … `work-2.mp4` (or .jpg stills): supporting clips, 16:9.
+- [x] `work-1.jpg`: the same four-logo still, shown full width in The Work.
 
 ## Bing Bunny creative content (`public/media/bing-creative-content/`)
 
