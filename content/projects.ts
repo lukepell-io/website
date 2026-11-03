@@ -126,7 +126,11 @@ export const projects: Project[] = [
         "Video Editor (2016)",
         "Senior Video Editor (2018)",
       ],
-      team: ["12 Editors and a Shift Leader per Shift", "From a Pool of 30–40 Editors"],
+      team: [
+        "Day Shifts: 12 Editors and a Shift Leader",
+        "Morning Shifts: 6 Editors and a Shift Leader (Led by Me)",
+        "From a Pool of ~34 Editors",
+      ],
       deliverables: [
         "Playoffs and News VO/SOTs for TODAY and TODAY EXTRA News Breaks",
         "Playoffs and News VO/SOTs for the 11:30am, 3pm and 4pm Bulletins",
@@ -135,9 +139,11 @@ export const projects: Project[] = [
       tools: ["Adobe Premiere Pro", "Avid Media Composer"],
     },
     brief:
-      "From 2016 to 2019 I cut daily news for 9News Sydney, on shifts of 12 editors and a shift leader drawn from a pool of 30 to 40. Each editor was given one main story for the day and stayed with it through every bulletin: playoffs and VO/SOTs for the TODAY and TODAY EXTRA news breaks, then the 11:30am, 3pm and 4pm bulletins, before finishing a full package for the 6pm news. Stories were often still being cut 15 seconds before they went to air.",
-    approach:
+      "From 2016 to 2019 I cut daily news for 9News Sydney, as one of a pool of around 34 editors. Day shifts ran 12 editors and a shift leader, and morning shifts ran six editors and a shift leader; I led the morning shift. The shift leader assigned each editor one main story for the day, and we stayed with it through every bulletin: playoffs and VO/SOTs for the TODAY and TODAY EXTRA news breaks, then the 11:30am, 3pm and 4pm bulletins, before finishing a full package for the 6pm news. Stories were often still being cut 15 seconds before they went to air.",
+    approach: [
+      "On each story I worked with a producer and a reporter, who wrote the script. A separate pool of motion designers built the motion plates from their script and brief, and I cut everything together for air.",
       "I regularly cut the bulletin's lead stories. They ranged from foreign news, such as the rise of the Islamic State group in 2015 and 2016 and the Hong Kong protests, to environmental stories like the bushfire seasons of 2018 and 2019, along with the major national and political stories of the period.",
+    ],
     result: "[1–2 sentences: what aired, any numbers or feedback.]",
     featured: true,
     youtube: { id: "C1YrjGWKxHk", title: "Nine Network showreel" },
