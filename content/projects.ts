@@ -391,32 +391,64 @@ export const projects: Project[] = [
   {
     slug: "bing-creative-content",
     title: "Bing Bunny Creative Content",
-    discipline: "Content Operations",
-    year: "[Years]",
+    discipline: "Video Production",
+    year: "2020–2026",
     summary:
-      "Operational lead on every new Bing Bunny content format, from cinema to Alexa.",
-    meta: "Acamar Films · New formats · [Years]",
-    tags: ["Operations", "Social", "Cinema"],
+      "Six years making Bing Bunny content, from cinema screens to Amazon Alexa.",
+    blurb:
+      "Six years of Bing Bunny content: three cinema packages, YouTube compilations and Shorts, music videos, social, Alexa audio stories and investor trailers.",
+    meta: "Acamar Films · Bing Bunny · 2020–2026",
+    tags: ["Video Editing", "Motion Design", "Cinema"],
     facts: {
-      client: "Acamar Films",
-      role: "Designed and executed the content pipeline",
-      tools: "[Tools]",
+      client: "Acamar Films (Bing Bunny)",
+      role: "Video Producer → Senior Video Producer → Head of Video Production",
+      disciplines: "Offline editorial, motion design, art direction, game design, content pipeline",
+      tools: "Premiere Pro, After Effects, Photoshop, Illustrator, Audition",
       deliverables:
-        "Themed compilations, cinema games & DCP, social, stop-motion and toy play, educational, Alexa audio story visuals",
+        "Cinema DCP packages, themed YouTube compilations, YouTube Shorts, music videos, topical-day and product social, partner campaigns, Alexa and app audio stories, stop motion and toy play, investor trailers",
+      timeline: "October 2020 to 2026",
+      recognition: "The series: International Emmy winner (Kids: Preschool, 2016), BAFTA nominee (2014)",
     },
-    brief: "[2–3 sentences: why Acamar needed new formats, and the scale.]",
-    approach: "[2–3 sentences: how you ran the pipeline across formats.]",
-    result:
-      "Working alongside the YouTube team that ran the channels, the pipeline helped Bing grow from 1 billion to 11 billion YouTube views in six years. TikTok went from 0 to 142,000 followers in two years, and Instagram from 15,000 to 75,000.",
+    brief: [
+      "Bing is an International Emmy-winning, BAFTA-nominated pre-school series, made by Acamar Films with Brown Bag Films. Beyond the episodes, Acamar needed a constant flow of new content to keep Bing in front of families wherever they watch: 67 YouTube channels in 35 languages, TikTok, Instagram, the Bing app, Amazon Alexa and cinema screens across the UK and Europe.",
+      "I joined in October 2020 as Video Producer, was promoted to Senior Video Producer in January 2023, and became Head of Video Production before leaving in 2026. Over those six years I worked on almost every format Acamar made: sometimes as editor, sometimes as art director, and sometimes building the system the rest of the team worked in.",
+    ],
+    approach: [
+      "Cinema. Three feature-length DCP cinema packages: Bing's Animal Stories (2021), Bing and His Friends at the Cinema (2022) and Bing and Friends Birthday Celebration (2024). Each mixes favourite episodes with cinema-only content. On all three I was Video Editor, covering offline editorial and motion design, and Game Designer, building the play-along games that get toddlers pointing and shouting at the big screen.",
+      "YouTube. Themed compilations ran across the channels all year. I edited the biggest of them, It's Christmas Day Today!, and cut YouTube Shorts alongside. Behind them sat the content pipeline I designed: the workflow, naming conventions and automation tools, including Batch Builder.",
+      "Music videos. Art Director on the nursery rhyme videos Hickory Dickory Dock and The Stuckie Duckie Song, designing some of the on-screen assets.",
+      "Social and partners. Topical-day content for TikTok and Instagram, product shorts for new merchandise, and 9:16 videos with partners such as The Wildlife Trusts for 30 Days Wild.",
+      "Audio and app. Visuals for Bing audio stories on Amazon Alexa and the Bing: Watch Play Learn app, plus motion design and editing across Bing's digital platforms.",
+      "Stop motion and toy play. Camera operator on stop-motion and toy-play shoots, and editor on some of them.",
+      "Investor and corporate. Trailers, animations and presentation videos for Acamar's own use, including trailers that supported funding rounds of up to £500k.",
+    ],
+    result: [
+      "Over six years, Bing grew from 1 billion to 11 billion YouTube views and passed 13 billion lifetime views across 67 channels in 35 languages, with 1.3 million hours watched every day. TikTok went from 0 to 142,000 followers in two years, and Instagram from 15,000 to 75,000.",
+      "Channels managed by Acamar's YouTube team. Pipeline, workflow, naming conventions and automation tools by me; QC and delivery by a video team of three, including me.",
+    ],
     stats: [
       { value: "13bn+", label: "Lifetime YouTube views, 67 channels, 35 languages" },
       { value: "1bn → 11bn", label: "YouTube views in six years" },
       { value: "1.3m", label: "Viewing hours every day" },
-      { value: "0 → 142k", label: "TikTok followers in two years" },
+      { value: "3", label: "Cinema packages, 2021–2024" },
     ],
+    links: [
+      { label: "Getting Ready for Life", href: "/work/getting-ready-for-life" },
+      { label: "Hoppity Voosh & the Moonkeeper", href: "/work/hoppity-voosh" },
+      { label: "Find and Learn", href: "/work/bing-find-and-learn" },
+      { label: "Batch Builder", href: "/work/batch-builder" },
+    ],
+    credits: [
+      { role: "Series", names: "Acamar Films with Brown Bag Films" },
+      { role: "YouTube Channel Management", names: "Acamar's YouTube team" },
+    ],
+    seoTitle: "Bing Bunny Creative Content | Luke Pelletier",
+    metaDescription:
+      "Six years of Bing Bunny content for Acamar Films: three cinema packages, YouTube compilations, music videos, social and Alexa stories.",
     featured: true,
     youtube: { id: "-O3VAWv-Y_A", title: "Themed compilation: It's Christmas Day Today!" },
     work: [
+      { id: "x0RLkq90MuU", title: "The Stuckie Duckie Song" },
       { id: "4b9wuENbRlg", title: "Carrot and Banana music video" },
       { id: "wBh2UfGWc9g", title: "Bing & Coco being artists" },
     ],
