@@ -39,7 +39,7 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
     { label: "Tools", value: project.facts.tools },
     { label: "Timeline", value: project.facts.timeline },
     { label: "Recognition", value: project.facts.recognition },
-  ].filter((f): f is { label: string; value: string } => Boolean(f.value));
+  ].filter((f): f is { label: string; value: string | string[] } => Boolean(f.value) && f.value.length > 0);
 
   const paragraphs = (text: string | string[]) => (Array.isArray(text) ? text : [text]);
 
@@ -82,7 +82,17 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
                 {f.label}
               </dt>
               <dd>
-                <Text>{f.value}</Text>
+                {Array.isArray(f.value) ? (
+                  <ul className="fact-list">
+                    {f.value.map((item) => (
+                      <li key={item}>
+                        <Text>{item}</Text>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <Text>{f.value}</Text>
+                )}
               </dd>
             </div>
           ))}

@@ -11,12 +11,13 @@ export type Project = {
   summary: string;
   meta: string; // one line under the card title
   tags: string[];
+  // Any fact can be a list: each item then shows on its own line
   facts: {
     client: string;
-    role: string;
-    tools: string;
-    deliverables: string;
-    disciplines?: string;
+    role: string | string[];
+    tools: string | string[];
+    deliverables: string | string[];
+    disciplines?: string | string[];
     timeline?: string;
     recognition?: string;
   };
@@ -401,13 +402,25 @@ export const projects: Project[] = [
     tags: ["Video Editing", "Motion Design", "Cinema"],
     facts: {
       client: "Acamar Films (Bing Bunny)",
-      role: "Video Producer → Senior Video Producer → Head of Video Production",
-      disciplines: "Offline editorial, motion design, art direction, game design, content pipeline",
-      tools: "Premiere Pro, After Effects, Photoshop, Illustrator, Audition",
-      deliverables:
-        "Cinema DCP packages, themed YouTube compilations, YouTube Shorts, music videos, topical-day and product social, partner campaigns, Alexa and app audio stories, stop motion and toy play, investor trailers",
+      role: [
+        "Video Producer (2020)",
+        "Senior Video Producer (2023)",
+        "Head of Video Production (2026)",
+      ],
+      disciplines: ["Offline Editorial", "Motion Design", "Art Direction", "Game Design", "Content Pipeline"],
+      deliverables: [
+        "Cinema DCP Packages",
+        "Themed YouTube Compilations",
+        "YouTube Shorts",
+        "Music Videos",
+        "Topical and Product Social",
+        "Partner Campaigns",
+        "Alexa and App Audio Stories",
+        "Stop Motion and Toy Play",
+        "Investor Trailers",
+      ],
+      tools: ["Premiere Pro", "After Effects", "Photoshop", "Illustrator", "Audition"],
       timeline: "October 2020 to 2026",
-      recognition: "The series: International Emmy winner (Kids: Preschool, 2016), BAFTA nominee (2014)",
     },
     brief: [
       "Bing is an International Emmy-winning, BAFTA-nominated pre-school series, made by Acamar Films with Brown Bag Films. Beyond the episodes, Acamar needed a constant flow of new content to keep Bing in front of families wherever they watch: 67 YouTube channels in 35 languages, TikTok, Instagram, the Bing app, Amazon Alexa and cinema screens across the UK and Europe.",
@@ -437,10 +450,6 @@ export const projects: Project[] = [
       { label: "Hoppity Voosh & the Moonkeeper", href: "/work/hoppity-voosh" },
       { label: "Find and Learn", href: "/work/bing-find-and-learn" },
       { label: "Batch Builder", href: "/work/batch-builder" },
-    ],
-    credits: [
-      { role: "Series", names: "Acamar Films with Brown Bag Films" },
-      { role: "YouTube Channel Management", names: "Acamar's YouTube team" },
     ],
     seoTitle: "Bing Bunny Creative Content | Luke Pelletier",
     metaDescription:
