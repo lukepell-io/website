@@ -17,7 +17,7 @@ Tips: export video as MP4 (H.264), 1080p, under 50 MB where you can. Name each p
 
 ## News stories for Nine (`public/media/nine-news/`)
 
-- [ ] `cover.jpg`: card thumbnail, 16:9 still, 1920×1080.
+- [x] `cover.jpg`: 9News Media Room image from Nine for Brands, cropped to 16:9 (732×412, low-res: swap for a 1920×1080 version if one turns up).
 - [ ] `hero.mp4` + `hero.jpg`: the best 30–90s of the project, 16:9.
 - [ ] `work-1.mp4` … `work-4.mp4` (or .jpg stills): supporting clips, 16:9.
 
