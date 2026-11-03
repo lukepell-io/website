@@ -18,6 +18,7 @@ export type Project = {
     tools: string | string[];
     deliverables: string | string[];
     disciplines?: string | string[];
+    team?: string;
     timeline?: string;
     recognition?: string;
   };
@@ -114,15 +115,23 @@ export const projects: Project[] = [
     slug: "nine-news",
     title: "News Stories for Nine",
     discipline: "Editing",
-    year: "[Year]",
+    year: "2014–2020",
     summary: "A compilation of news stories I cut for Nine Entertainment Co.",
-    meta: "Nine Entertainment Co. · News · [Year]",
+    meta: "Nine Entertainment Co. · 9News Sydney · 2014–2020",
     tags: ["Editing", "News"],
     facts: {
-      client: "Nine Entertainment Co.",
-      role: "[Your role]",
-      tools: "[Tools]",
-      deliverables: "[e.g. 12 news packages]",
+      client: "Nine Entertainment Co. (9News Sydney)",
+      role: [
+        "Media Ingest Operator (2014)",
+        "Video Editor (2016)",
+        "Senior Video Editor (2018)",
+      ],
+      team: "Pool of 30–40 Editors on Live Broadcast",
+      deliverables: [
+        "1–2 Stories a Shift for the 6pm 9News Bulletin",
+        "TODAY Show Stories on Morning Shifts",
+      ],
+      tools: ["Adobe Premiere Pro", "Avid Media Composer"],
     },
     brief: "[2–3 sentences: what Nine needed, and the turnaround.]",
     approach: "[2–3 sentences: how you cut the stories, what made it work.]",

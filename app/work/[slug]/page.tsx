@@ -35,6 +35,7 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
     { label: "Client", value: project.facts.client },
     { label: "My Role", value: project.facts.role },
     { label: "Disciplines", value: project.facts.disciplines },
+    { label: "Team", value: project.facts.team },
     { label: "Deliverables", value: project.facts.deliverables },
     { label: "Tools", value: project.facts.tools },
     { label: "Timeline", value: project.facts.timeline },
