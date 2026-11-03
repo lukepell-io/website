@@ -18,7 +18,7 @@ export type Project = {
     tools: string | string[];
     deliverables: string | string[];
     disciplines?: string | string[];
-    team?: string;
+    team?: string | string[];
     timeline?: string;
     recognition?: string;
   };
@@ -126,15 +126,16 @@ export const projects: Project[] = [
         "Video Editor (2016)",
         "Senior Video Editor (2018)",
       ],
-      team: "Pool of 30–40 Editors on Live Broadcast",
+      team: ["12 Editors and a Shift Leader per Shift", "From a Pool of 30–40 Editors"],
       deliverables: [
-        "1–2 Stories a Shift for the 6pm 9News Bulletin",
-        "TODAY Show Stories on Morning Shifts",
+        "Playoffs and News VO/SOTs for TODAY and TODAY EXTRA News Breaks",
+        "Playoffs and News VO/SOTs for the 11:30am, 3pm and 4pm Bulletins",
+        "A Full Package for the 6pm Bulletin",
       ],
       tools: ["Adobe Premiere Pro", "Avid Media Composer"],
     },
     brief:
-      "From 2016 to 2019 I cut daily news stories for 9News Sydney, as one of a pool of 30 to 40 editors working on live broadcast. Each shift I was assigned one or two stories for the 6pm bulletin, or stories for the TODAY Show on morning shifts, all cut to a fixed on-air time.",
+      "From 2016 to 2019 I cut daily news for 9News Sydney, on shifts of 12 editors and a shift leader drawn from a pool of 30 to 40. Each editor was given one main story for the day and stayed with it through every bulletin: playoffs and VO/SOTs for the TODAY and TODAY EXTRA news breaks, then the 11:30am, 3pm and 4pm bulletins, before finishing a full package for the 6pm news. Stories were often still being cut 15 seconds before they went to air.",
     approach:
       "I regularly cut the bulletin's lead stories. They ranged from foreign news, such as the rise of the Islamic State group in 2015 and 2016 and the Hong Kong protests, to environmental stories like the bushfire seasons of 2018 and 2019, along with the major national and political stories of the period.",
     result: "[1–2 sentences: what aired, any numbers or feedback.]",
