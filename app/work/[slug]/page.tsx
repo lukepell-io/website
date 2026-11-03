@@ -68,11 +68,12 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
           spec="16:9, the best 30–90s of this project, 1080p MP4 + a poster still"
           large
           youtube={project.youtube?.id}
-          title={project.youtube?.title}
+          title={project.youtube?.title ?? project.bunny?.title}
+          bunny={project.bunny}
         />
-        {project.youtube && (
+        {(project.youtube ?? project.bunny) && (
           <p className="caption" style={{ marginTop: "var(--space-3)" }}>
-            {project.youtube.title}
+            {(project.youtube ?? project.bunny)!.title}
           </p>
         )}
 

@@ -43,6 +43,8 @@ export type Project = {
   workCaptions?: string[];
   // YouTube links (just the video ID, the bit after watch?v=)
   youtube?: { id: string; title: string }; // the hero video
+  // A hero video hosted on Bunny Stream (library ID + video ID from the Bunny dashboard)
+  bunny?: { library: string; id: string; title: string };
   work?: { id: string; title: string }[];
   shorts?: { id: string; title: string }[];
   featured?: boolean; // shown on the home page
@@ -210,6 +212,7 @@ export const projects: Project[] = [
     seoTitle: "Water Truck: TODAY Show Feature Edit | Luke Pelletier",
     metaDescription:
       "Editing for Water Truck, a 4:55 feature in the TODAY Show's 2018 drought telethon, which raised $7.5m. Cut in a week; Nine's best TODAY Show feature edit.",
+    bunny: { library: "797786", id: "9af26276-1eae-4013-87c1-16d630bfaa11", title: "Water Truck: TODAY Show Feature" },
     workSlots: 2,
   },
   {

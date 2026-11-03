@@ -19,7 +19,8 @@ type Props = {
   canopy?: boolean; // green-to-turquoise placeholder instead of the default
   autoplay?: boolean; // muted looping preview (never with sound)
   youtube?: string; // YouTube video ID, used when there's no local file
-  title?: string; // the video's title (for YouTube)
+  title?: string; // the video's title (for YouTube or Bunny)
+  bunny?: { library: string; id: string }; // Bunny Stream video, used when there's no local file
 };
 
 const VIDEO_EXT = ["mp4", "webm", "mov"];
@@ -45,6 +46,7 @@ export function Media({
   autoplay,
   youtube,
   title,
+  bunny,
 }: Props) {
   const image = find(folder, name, IMAGE_EXT);
   const video = kind === "video" ? find(folder, name, VIDEO_EXT) : null;
@@ -73,6 +75,21 @@ export function Media({
       <div className={className}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={image} alt={label} />
+      </div>
+    );
+  }
+
+  // No local file, but it's hosted on Bunny Stream: embed the Bunny player.
+  if (bunny && kind === "video") {
+    return (
+      <div className={className}>
+        <iframe
+          src={`https://player.mediadelivery.net/embed/${bunny.library}/${bunny.id}?autoplay=false&loop=false&muted=false&preload=true&responsive=true`}
+          title={title ?? label}
+          loading="lazy"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen"
+          allowFullScreen
+        />
       </div>
     );
   }
