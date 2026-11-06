@@ -36,6 +36,7 @@ export default function Home() {
       <section className="intro">
         <div className="container">
           <div className="intro-text">
+            <p className="muted hero-role">{site.hero.role}</p>
             <h1 className="display hero-headline">
               {site.hero.headline.map((line) => (
                 <span key={line}>{line}</span>

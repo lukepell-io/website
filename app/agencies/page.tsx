@@ -33,6 +33,7 @@ export default function AgenciesPage() {
           {a.offers.map((o) => (
             <li key={o.title}>
               <h3 className="title">{o.title}</h3>
+              <p className="step-tag">{o.rate}</p>
               <p>{o.body}</p>
             </li>
           ))}

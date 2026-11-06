@@ -484,7 +484,7 @@ a {
   border-radius: 0;
   aspect-ratio: auto;
   /* Sized so the headline and booking button below still land on the first screen */
-  height: clamp(240px, calc(100svh - var(--nav-height) - 356px), 56.25vw);
+  height: clamp(240px, calc(100svh - var(--nav-height) - 406px), 56.25vw);
 }
 .reel-full .slot-label {
   left: var(--gutter);
@@ -512,7 +512,7 @@ a {
 }
 .intro-text p {
   margin: 0;
-  max-width: 560px;
+  max-width: 720px;
 }
 .doors {
   grid-column: 9 / span 4;
@@ -1330,11 +1330,14 @@ a {
 .hero-headline span {
   display: block;
 }
-.hero-headline span + span {
+.hero-headline span:last-child {
   color: var(--brand-strong);
 }
+.hero-role {
+  margin: 0 0 var(--space-3);
+}
 .intro .intro-text {
-  max-width: 1100px;
+  max-width: none;
 }
 .hero-headline span {
   text-wrap: balance;

@@ -22,9 +22,10 @@ export const site = {
 
   hero: {
     // Each line of the headline shows on its own line; the second is in the brand colour
-    headline: ["Video Editing & Motion Design for Agencies.", "Content Systems for Brands."],
+    role: "Digital Video Producer & Motion Designer",
+    headline: ["Production & Motion Design for Agencies.", "Content Systems for Brands."],
     intro:
-      "Thirteen years in video, from cutting national news at 9News Sydney to building the pipeline behind 67 YouTube channels.",
+      "13+ years in production, from cutting news at 9News Sydney to leading video production at Acamar Films, home of the International Emmy-winning, BAFTA-nominated Bing.",
     proof:
       "Most recently, I designed the content pipeline for a global kids' entertainment brand's 67 YouTube channels. It turned out around 60 compilations a week in 35 languages, with a team of three.",
     location: "Based in Sydney, working in studio or remotely.",
@@ -35,16 +36,16 @@ export const site = {
     {
       href: "/brands",
       title: "For Brands and Companies",
-      line: "Your own video team and the systems to make more, for less, or a one-off video.",
+      line: "One-off videos, or a video team of your own. The pipeline I designed for Bing turned out around 60 compilations a week with a team of three.",
       tag: "Audit and retainer, or a project fee for one-off videos",
       action: "See how I work with brands",
     },
     {
       href: "/agencies",
       title: "For Agencies",
-      line: "A senior editor, motion designer or animation producer, by the day.",
+      line: "A freelance Producer who runs your video and animation jobs from brief to delivery, or a Senior Video Editor and Motion Designer when you need hands on the timeline.",
       tag: "Day or project rate",
-      action: "See how I work with agencies",
+      action: "See my day rate",
     },
   ],
 
@@ -89,7 +90,7 @@ export const site = {
     ],
     proofTitle: "Proof",
     proof:
-      "For a global kids' entertainment brand, I designed the content pipeline behind 67 YouTube channels: around 60 compilations a week in 35 languages, with a team of three. I led and mentored that team, and onboarded and trained the staff and freelancers who joined it.",
+      "At Acamar Films, I designed the content pipeline behind Bing's 67 YouTube channels: around 60 compilations a week in 35 languages, with a team of three. I led and mentored that team, and onboarded and trained the staff and freelancers who joined it.",
     faqTitle: "Questions Brands Usually Ask",
     faq: [
       {
@@ -117,30 +118,34 @@ export const site = {
   },
 
   agencies: {
-    metaTitle: "Freelance Editor & Motion Designer for Agencies",
+    metaTitle: "Freelance Producer, Editor & Motion Designer for Agencies",
     metaDescription:
-      "Sydney-based Senior Editor, Motion Designer and Animation Producer for screens of every size. I slot into your team, your software and your workflow.",
-    headline: "Senior Video Editing, Motion Design and Animation Producing, Slotted Straight Into Your Team.",
+      "Sydney-based freelance Producer, Senior Video Editor and Motion Designer. Former Head of Video Production at Acamar Films (Bing). By the day or project.",
+    headline: "A Freelance Producer, Slotted Straight Into Your Team.",
     intro:
-      "I work in your software, follow your naming and versioning, and hand back project files your team can pick up without a briefing.",
-    rate: "$900 + GST a day, or a project rate for longer jobs. Your first day is risk-free.",
+      "I run video and animation jobs from brief to delivery in your software and your naming, and I can edit or animate when the timeline needs another pair of hands.",
+    rate: "From $900 + GST for a 10-hour day, or a project rate for longer jobs. Your first day is risk-free.",
     offersTitle: "What I Can Pick Up",
     offers: [
       {
+        title: "Producing",
+        rate: "From $1,000 + GST a day",
+        body: "Video and animation jobs from brief, script and storyboard to delivery. I schedule, track budgets, brief freelancers and partners, and handle localised versions for other markets.",
+      },
+      {
         title: "Video Editing",
+        rate: "From $900 + GST a day",
         body: "Offline and Online Editing for broadcast, social and brand, with Colour Grading in DaVinci Resolve. Versions, cut-downs and aspect ratios included.",
       },
       {
         title: "Motion Design",
+        rate: "From $900 + GST a day",
         body: "2D and 3D Motion Design for social, broadcast, large-format LED screens and apps. Titles, animated assets and templates, built to the exact resolution and spec of each screen.",
-      },
-      {
-        title: "Producing for Animation",
-        body: "I run animation projects from script and storyboard through to delivery, coordinating animators and partners along the way.",
       },
     ],
     teamTitle: "How I Work With Your Team",
     team: [
+      "Producing in your project tools: Airtable, ClickUp, Notion or whatever you run",
       "On my own kit: Premiere Pro, After Effects, Blender, and DaVinci Resolve for colour",
       "In your studio, on Avid Media Composer or whatever you run",
       "In studio around Sydney, or remote",
@@ -149,6 +154,7 @@ export const site = {
     trial: "If you're not happy with my first day, tell me by the end of it and the day's on me.",
     creditsTitle: "Credits",
     credits: [
+      "Head of Video Production at Acamar Films, the studio behind Bing",
       "Senior Video Editor at 9News Sydney, leading a shift of eight editors and motion designers",
       "Camera Crew Awards 2018: Best TODAY Show Feature Edit",
       "Third Sector Awards 2022: Communications Campaign of the Year, as Creative Producer and 2D Animator",
@@ -158,13 +164,13 @@ export const site = {
     faq: [
       {
         q: "What's Your Rate?",
-        a: "$900 + GST a day. If you need me for a few weeks, I'll quote a project rate instead. Either way, your first day with me is risk-free.",
+        a: "Producing is from $1,000 + GST a day, and Video Editing and Motion Design from $900 + GST, all for a 10-hour day. If you need me for a few weeks, I'll quote a project rate instead. Either way, your first day with me is risk-free.",
       },
       {
         q: "Can You Take Something On at Short Notice?",
         a: "Send me your dates and I'll confirm my availability within one working day.",
       },
-      { q: "Do You Shoot?", a: "No. I edit footage your crew has shot, and produce animation." },
+      { q: "Do You Shoot?", a: "No. I produce and edit, and work alongside the crew who film." },
       {
         q: "Do You Do the Sound Mix?",
         a: "I lay up audio cleanly for your sound team, but I don't do final mixes.",
@@ -178,7 +184,7 @@ export const site = {
       "Freelance Video Editing, Motion Design and Animation Producing for agencies, plus one-off videos and in-house video teams for brands. Based in Sydney.",
     headline: "From One Edit to a Whole Video Team.",
     intro:
-      "Agencies book Video Editing, Motion Design and Animation Producing by the day or project. Brands can start with a one-off video, or with an audit and a build.",
+      "Agencies book me as a Producer, Video Editor or Motion Designer, by the day or project. Brands can start with a one-off video, or with an audit and a build.",
     list: [
       {
         id: "systems",
@@ -191,9 +197,18 @@ export const site = {
         link: { href: "/brands", label: "How I work with brands" },
       },
       {
+        id: "animation",
+        title: "Producing",
+        tag: "For agencies and brands. From $1,000 + GST a day.",
+        problem: "You've won the job and nobody's free to run it.",
+        does: "I take video and animation jobs from brief, script and storyboard through art direction, freelancers and partners to final delivery, including localised versions for other markets.",
+        gets: "One person accountable from first draft to final file. I've art directed and animated a special sold to Italian broadcaster Rai, and coordinated international partners for localised releases.",
+        link: { href: "/agencies", label: "How I work with agencies" },
+      },
+      {
         id: "editing",
         title: "Video Editing",
-        tag: "For agencies and brands. Day or project rate.",
+        tag: "For agencies and brands. From $900 + GST a day.",
         problem: "The footage is in, the deadline's moved and your editors are booked.",
         does: "Offline and Online Editing for broadcast, social and brand, with Colour Grading in DaVinci Resolve. Versions, cut-downs and aspect ratios included.",
         gets: "Clean timelines and project files, labelled to your conventions and ready for your sound team.",
@@ -202,19 +217,10 @@ export const site = {
       {
         id: "motion",
         title: "Motion Design",
-        tag: "For agencies and brands. Day or project rate.",
+        tag: "For agencies and brands. From $900 + GST a day.",
         problem: "Your content needs to look right on a phone, a broadcast feed and a building-sized LED screen.",
         does: "2D and 3D Motion Design in After Effects and Blender, built to the exact resolution and spec of each screen, including apps.",
         gets: "Finished renders, plus editable templates your team can reuse.",
-        link: { href: "/work", label: "See the case studies" },
-      },
-      {
-        id: "animation",
-        title: "Producing for Animation",
-        tag: "For agencies and brands. Day or project rate.",
-        problem: "You've got an animated project and nobody free to run it.",
-        does: "I take it from script and storyboard through art direction, animators and partners to final delivery, including localised versions for other markets.",
-        gets: "One person accountable from first draft to final file. I've art directed and animated a special sold to Italian broadcaster Rai, and coordinated international partners for localised releases.",
         link: { href: "/work", label: "See the case studies" },
       },
     ],
@@ -225,13 +231,13 @@ export const site = {
 
   about: {
     metaDescription:
-      "Thirteen years in video, from 9News Sydney to Acamar Films in London. Now a freelance Video Producer and Motion Designer back in Sydney.",
+      "13+ years in production, from 9News Sydney to Head of Video Production at Acamar Films in London. Now a freelance Producer and Motion Designer back in Sydney.",
     heading: "Hi, I'm Luke.",
     intro: "I'm a Digital Video Producer and Motion Designer based in Sydney, working with agencies and brands.",
     storyTitle: "How I Got Here",
     story: [
-      "I started at SBS in 2013, then moved to Nine. By 2018 I was a Senior Editor at 9News Sydney, leading a shift of eight.",
-      "In 2020 I joined Acamar Films in London, the studio behind Bing. I took projects from script to delivery and designed the content pipeline behind Bing's 67 YouTube channels, then the new Again! Again! channel.",
+      "I started at SBS in 2013, then moved to Nine. By 2018 I was a Senior Video Editor at 9News Sydney, leading a shift of eight.",
+      "In 2020 I joined Acamar Films in London, the studio behind Bing, and finished as Head of Video Production. I took projects from script to delivery and designed the content pipeline behind Bing's 67 YouTube channels, then the new Again! Again! channel.",
       "Now I'm back in Sydney, working for myself.",
     ],
     quotesTitle: "What People Say",
@@ -283,7 +289,7 @@ export const site = {
   },
 
   footer: {
-    line: "Digital Video Producer and Motion Designer, based in Sydney.",
+    line: "Digital Video Producer & Motion Designer, based in Sydney.",
   },
 
   ctas: {
