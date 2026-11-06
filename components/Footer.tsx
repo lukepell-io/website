@@ -29,12 +29,12 @@ export function Footer() {
         </a>
         <div className="footer-bottom caption">
           <span>
-            © {new Date().getFullYear()} {site.name} · ABN {site.abn}
+            © {new Date().getFullYear()} {site.name}. ABN {site.abn}
           </span>
           <ul>
             <li>
               <a href={site.linkedin} target="_blank" rel="noopener noreferrer">
-                LinkedIn ↗
+                LinkedIn
               </a>
             </li>
             <li>

@@ -49,11 +49,11 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
       <div className="container">
         <header className="cs-head">
           <Link href="/work" className="back-link">
-            ← All Case Studies
+            All Case Studies
           </Link>
-          <span className="eyebrow">
-            <Text>{`${project.discipline} · ${project.year}`}</Text>
-          </span>
+          <p className="caption">
+            <Text>{`${project.meta.split(" · ")[0]}, ${project.year}`}</Text>
+          </p>
           <h1 className="display">{project.title}</h1>
           <p className="body-lg muted" style={{ margin: 0, maxWidth: "var(--container-text)" }}>
             <Text>{project.summary}</Text>
@@ -77,40 +77,6 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
           </p>
         )}
 
-        <dl className="facts">
-          {facts.map((f) => (
-            <div key={f.label}>
-              <dt className="eyebrow" style={{ color: "var(--ink-muted)" }}>
-                {f.label}
-              </dt>
-              <dd>
-                {Array.isArray(f.value) ? (
-                  <ul className="fact-list">
-                    {f.value.map((item) => (
-                      <li key={item}>
-                        <Text>{item}</Text>
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <Text>{f.value}</Text>
-                )}
-              </dd>
-            </div>
-          ))}
-        </dl>
-
-        {project.stats && (
-          <dl className="stats">
-            {project.stats.map((s) => (
-              <div key={s.label}>
-                <dt className="stat-value">{s.value}</dt>
-                <dd className="caption">{s.label}</dd>
-              </div>
-            ))}
-          </dl>
-        )}
-
         <section className="cs-section">
           <h2 className="heading">The Brief</h2>
           <div className="body-lg">
@@ -120,6 +86,28 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
               </p>
             ))}
           </div>
+          <dl className="facts">
+            {facts.map((f) => (
+              <div key={f.label}>
+                <dt className="eyebrow" style={{ color: "var(--ink-muted)" }}>
+                  {f.label}
+                </dt>
+                <dd>
+                  {Array.isArray(f.value) ? (
+                    <ul className="fact-list">
+                      {f.value.map((item) => (
+                        <li key={item}>
+                          <Text>{item}</Text>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <Text>{f.value}</Text>
+                  )}
+                </dd>
+              </div>
+            ))}
+          </dl>
         </section>
 
         <section className="cs-section">
@@ -130,6 +118,15 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
                 <Text>{para}</Text>
               </p>
             ))}
+            <div className="cs-still">
+              <Media
+                folder={project.slug}
+                name="approach"
+                kind="image"
+                label="Approach still"
+                spec="16:9 frame that shows the approach, 1920×1080 JPG"
+              />
+            </div>
           </div>
         </section>
 
@@ -154,7 +151,7 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
                       title={video?.title}
                     />
                     <figcaption className="caption">
-                      <Text>{video?.title ?? project.workCaptions?.[i] ?? "[Caption: client · format · tools · year]"}</Text>
+                      <Text>{video?.title ?? project.workCaptions?.[i] ?? "[Caption: client, format, tools and year]"}</Text>
                     </figcaption>
                   </figure>
                 );
@@ -162,9 +159,9 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
             </div>
             {project.shorts && project.shorts.length > 0 && (
               <>
-                <span className="eyebrow" style={{ display: "block", margin: "var(--space-12) 0 var(--space-6)" }}>
-                  Shorts & social
-                </span>
+                <h3 className="title" style={{ margin: "var(--space-12) 0 var(--space-6)" }}>
+                  Shorts & Social
+                </h3>
                 <div className="shelf">
                   {project.shorts.map((s, i) => (
                     <figure key={s.id} className="figure">
@@ -199,7 +196,7 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
               <p>
                 {project.links.map((l) => (
                   <a key={l.href} href={l.href} className="text-link" target="_blank" rel="noopener noreferrer">
-                    {l.label} <span className="arrow" aria-hidden="true">→</span>
+                    {l.label}
                   </a>
                 ))}
               </p>
@@ -233,6 +230,16 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
               </div>
             )}
           </div>
+          {project.stats && (
+            <dl className="stats">
+              {project.stats.map((s) => (
+                <div key={s.label}>
+                  <dt className="stat-value">{s.value}</dt>
+                  <dd className="caption">{s.label}</dd>
+                </div>
+              ))}
+            </dl>
+          )}
         </section>
 
         {project.credits && project.credits.length > 0 && (
@@ -253,9 +260,9 @@ export default async function CaseStudyPage(props: PageProps<"/work/[slug]">) {
 
         <section className="section">
           <div className="section-head">
-            <span className="eyebrow">Next Project</span>
+            <h2 className="heading">Next Project</h2>
           </div>
-          <div style={{ maxWidth: 400 }}>
+          <div style={{ maxWidth: 600 }}>
             <ProjectCard project={next} index={index + 1} />
           </div>
         </section>

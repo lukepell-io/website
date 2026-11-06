@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/content/site";
 import { Faq } from "@/components/Faq";
+import { Media } from "@/components/Media";
 
 const a = site.agencies;
 
@@ -10,16 +11,20 @@ export const metadata: Metadata = { title: a.metaTitle, description: a.metaDescr
 export default function AgenciesPage() {
   return (
     <div className="container page">
-      <header className="page-head">
-        <span className="eyebrow">For Agencies</span>
-        <h1 className="display">{a.headline}</h1>
-        <p className="body-lg muted">{a.intro}</p>
-        <div className="hero-actions">
-          <a className="btn btn-primary" href={site.availabilityUrl}>
-            {site.ctas.availability}
-          </a>
+      <header className="page-head page-head-split">
+        <div className="page-head-text">
+          <h1 className="display">{a.headline}</h1>
+          <p className="body-lg muted">{a.intro}</p>
+          <div className="hero-actions">
+            <a className="btn btn-primary" href={site.availabilityUrl}>
+              {site.ctas.availability}
+            </a>
+          </div>
+          <p className="caption">{a.rate}</p>
         </div>
-        <p className="caption">{a.rate}</p>
+        <div className="page-head-visual">
+          <Media folder="agencies" name="hero" kind="image" ratio="square" label="Agencies hero still" spec="Portrait still, 4:5, 1200×1500 JPG: a frame from an edit or motion job" canopy />
+        </div>
       </header>
 
       <section className="service">
@@ -56,7 +61,7 @@ export default function AgenciesPage() {
           ))}
         </ul>
         <Link href="/work" className="text-link">
-          See the case studies <span className="arrow" aria-hidden="true">→</span>
+          See the case studies
         </Link>
       </section>
 

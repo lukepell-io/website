@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/content/site";
 import { Faq } from "@/components/Faq";
+import { Media } from "@/components/Media";
 
 const b = site.brands;
 
@@ -10,20 +11,24 @@ export const metadata: Metadata = { title: b.metaTitle, description: b.metaDescr
 export default function BrandsPage() {
   return (
     <div className="container page">
-      <header className="page-head">
-        <span className="eyebrow">For Brands and Companies</span>
-        <h1 className="display">{b.headline}</h1>
-        <p className="body-lg muted">{b.intro}</p>
-        <div className="hero-actions">
-          <a className="btn btn-primary" href={site.bookingUrl}>
-            {site.ctas.call}
-          </a>
-          <span className="muted hero-or">
-            or email{" "}
-            <a href={`mailto:${site.email}`} className="text-link">
-              {site.email}
+      <header className="page-head page-head-split">
+        <div className="page-head-text">
+          <h1 className="display">{b.headline}</h1>
+          <p className="body-lg muted">{b.intro}</p>
+          <div className="hero-actions">
+            <a className="btn btn-primary" href={site.bookingUrl}>
+              {site.ctas.call}
             </a>
-          </span>
+            <span className="muted hero-or">
+              or email{" "}
+              <a href={`mailto:${site.email}`} className="text-link">
+                {site.email}
+              </a>
+            </span>
+          </div>
+        </div>
+        <div className="page-head-visual">
+          <Media folder="brands" name="hero" kind="image" ratio="square" label="Brands hero still" spec="Portrait still, 4:5, 1200×1500 JPG: a frame from a brand video you made" canopy />
         </div>
       </header>
 
@@ -44,7 +49,7 @@ export default function BrandsPage() {
         <h2 className="heading">{b.proofTitle}</h2>
         <p className="body-lg proof-copy">{b.proof}</p>
         <Link href="/work" className="text-link">
-          See the case study <span className="arrow" aria-hidden="true">→</span>
+          See the case study
         </Link>
       </section>
 

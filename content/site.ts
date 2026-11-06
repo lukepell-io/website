@@ -21,7 +21,6 @@ export const site = {
   resumeUrl: "/Luke-Pelletier-Resume.pdf",
 
   hero: {
-    eyebrow: "Digital Video Producer & Motion Designer",
     // Each line of the headline shows on its own line; the second is in the brand colour
     headline: ["Video Editing & Motion Design for Agencies.", "Content Systems for Brands."],
     intro:
@@ -50,7 +49,6 @@ export const site = {
   ],
 
   proof: {
-    label: "The Systems Behind the Numbers",
     sentence:
       "At Acamar Films, I designed and ran the content pipeline behind the global digital channels for Bing and Again! Again!",
     footnote:
@@ -70,7 +68,7 @@ export const site = {
       "Sydney-based Video Producer who helps brands build in-house video teams: audit, workflow, custom tools, hiring and training.",
     headline: "Build Your Own Video Team, and the System It Runs On.",
     intro:
-      "The content that works usually comes from steady output: lots of pieces, tried on real audiences, with the winners turned into more. I help you hire the person to make it, set up the workflow around them and train them to run it. Need one video rather than a team? I make one-off videos too, priced per project.",
+      "I help you hire the person to make your videos, set up the workflow around them and train them to run it.",
     stepsTitle: "How We'd Work Together",
     steps: [
       {
@@ -124,7 +122,7 @@ export const site = {
       "Sydney-based Senior Editor, Motion Designer and Animation Producer for screens of every size. I slot into your team, your software and your workflow.",
     headline: "Senior Video Editing, Motion Design and Animation Producing, Slotted Straight Into Your Team.",
     intro:
-      "I've spent over a decade cutting for national TV news and making content for a global kids' entertainment brand. I work in your software, follow your naming and versioning, and hand back project files your team can pick up without a briefing.",
+      "I work in your software, follow your naming and versioning, and hand back project files your team can pick up without a briefing.",
     rate: "$900 + GST a day, or a project rate for longer jobs. Your first day is risk-free.",
     offersTitle: "What I Can Pick Up",
     offers: [
@@ -185,7 +183,8 @@ export const site = {
       {
         id: "systems",
         title: "Content Systems and In-House Video Teams",
-        tag: "For brands and companies · Audit, then a monthly retainer",
+        short: "Content Systems", // label for the jump button at the top of the page
+        tag: "For brands and companies. Audit, then a monthly retainer.",
         problem: "Each video starts from scratch, costs a lot, and nobody in-house owns what happens next.",
         does: "I audit your goals, your current output and your tools. Then I build the workflow in the software you already use, code custom tools where they save time, and help you hire and train someone to run it.",
         gets: "A person making video every week, and a documented system they can run without me. Builds usually take 1 to 3 months.",
@@ -194,7 +193,7 @@ export const site = {
       {
         id: "editing",
         title: "Video Editing",
-        tag: "For agencies and brands · Day or project rate",
+        tag: "For agencies and brands. Day or project rate.",
         problem: "The footage is in, the deadline's moved and your editors are booked.",
         does: "Offline and Online Editing for broadcast, social and brand, with Colour Grading in DaVinci Resolve. Versions, cut-downs and aspect ratios included.",
         gets: "Clean timelines and project files, labelled to your conventions and ready for your sound team.",
@@ -203,7 +202,7 @@ export const site = {
       {
         id: "motion",
         title: "Motion Design",
-        tag: "For agencies and brands · Day or project rate",
+        tag: "For agencies and brands. Day or project rate.",
         problem: "Your content needs to look right on a phone, a broadcast feed and a building-sized LED screen.",
         does: "2D and 3D Motion Design in After Effects and Blender, built to the exact resolution and spec of each screen, including apps.",
         gets: "Finished renders, plus editable templates your team can reuse.",
@@ -212,7 +211,7 @@ export const site = {
       {
         id: "animation",
         title: "Producing for Animation",
-        tag: "For agencies and brands · Day or project rate",
+        tag: "For agencies and brands. Day or project rate.",
         problem: "You've got an animated project and nobody free to run it.",
         does: "I take it from script and storyboard through art direction, animators and partners to final delivery, including localised versions for other markets.",
         gets: "One person accountable from first draft to final file. I've art directed and animated a special sold to Italian broadcaster Rai, and coordinated international partners for localised releases.",
@@ -231,8 +230,8 @@ export const site = {
     intro: "I'm a Digital Video Producer and Motion Designer based in Sydney, working with agencies and brands.",
     storyTitle: "How I Got Here",
     story: [
-      "I started in 2013 in the ingest room at SBS, then moved to Nine. By 2018 I was a Senior Editor at 9News Sydney, leading a shift of eight editors and motion designers.",
-      "In 2020 I moved to London and joined Acamar Films, the studio behind Bing. Over six years I took projects from script to delivery. I also designed the content pipeline for Bing's 67 YouTube channels and its digital platforms: the Bing app, Facebook, Instagram and TikTok. Most recently, I set up the pipeline for the new Again! Again! channel.",
+      "I started at SBS in 2013, then moved to Nine. By 2018 I was a Senior Editor at 9News Sydney, leading a shift of eight.",
+      "In 2020 I joined Acamar Films in London, the studio behind Bing. I took projects from script to delivery and designed the content pipeline behind Bing's 67 YouTube channels, then the new Again! Again! channel.",
       "Now I'm back in Sydney, working for myself.",
     ],
     quotesTitle: "What People Say",
@@ -299,8 +298,8 @@ export const site = {
 // Vertical (9:16) pieces for the Shorts shelf on the home page.
 // `youtube` is the video ID (the bit after /shorts/).
 export const shorts = [
-  { id: "short-1", youtube: "lSP4MglE-qw", title: "The Wildlife Trusts Collaboration", credit: "Bing Bunny · YouTube Shorts · [Year]" },
-  { id: "short-2", youtube: "ag5qz-wddbo", title: "Live-Action Paper Cutout", credit: "Bing Bunny · YouTube Shorts · [Year]" },
-  { id: "short-3", youtube: "HDUusThf8m4", title: "Guess Which Musical Instrument", credit: "Bing Bunny · YouTube Shorts · [Year]" },
-  { id: "short-4", youtube: "UgsB7p9qLtI", title: "In the Garden", credit: "Bing Bunny · YouTube Shorts · [Year]" },
+  { id: "short-1", youtube: "lSP4MglE-qw", title: "The Wildlife Trusts Collaboration", credit: "A Bing Bunny YouTube Short, [Year]" },
+  { id: "short-2", youtube: "ag5qz-wddbo", title: "Live-Action Paper Cutout", credit: "A Bing Bunny YouTube Short, [Year]" },
+  { id: "short-3", youtube: "HDUusThf8m4", title: "Guess Which Musical Instrument", credit: "A Bing Bunny YouTube Short, [Year]" },
+  { id: "short-4", youtube: "UgsB7p9qLtI", title: "In the Garden", credit: "A Bing Bunny YouTube Short, [Year]" },
 ];

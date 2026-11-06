@@ -10,13 +10,12 @@ export default function ServicesPage() {
   return (
     <div className="container page">
       <header className="page-head">
-        <span className="eyebrow">Services</span>
         <h1 className="display">{s.headline}</h1>
         <p className="body-lg muted">{s.intro}</p>
         <div className="jump-links">
           {s.list.map((item) => (
             <a key={item.id} href={`#${item.id}`} className="btn btn-secondary">
-              {item.title}
+              {"short" in item ? item.short : item.title}
             </a>
           ))}
         </div>
@@ -44,7 +43,7 @@ export default function ServicesPage() {
           </ul>
           <p style={{ marginTop: "var(--space-6)" }}>
             <Link href={item.link.href} className="text-link">
-              {item.link.label} <span className="arrow" aria-hidden="true">→</span>
+              {item.link.label}
             </Link>
           </p>
         </section>

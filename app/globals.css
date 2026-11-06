@@ -36,6 +36,7 @@
   --space-12: 48px;
   --space-16: 64px;
   --space-24: 96px;
+  --space-32: 128px;
 
   --radius-sm: 8px;
   --radius-md: 16px;
@@ -51,7 +52,7 @@
   --container-text: 680px;
   --nav-height: 72px;
   --gutter: var(--space-12);
-  --section-gap: var(--space-24);
+  --section-gap: var(--space-32);
 
   color-scheme: light;
 }
@@ -120,11 +121,13 @@
 }
 
 html {
+  overflow-x: clip;
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--nav-height) + var(--space-12));
 }
 
 body {
+  overflow-x: clip;
   margin: 0;
   background: var(--surface);
   color: var(--ink);
@@ -162,12 +165,14 @@ a {
   margin: 0;
 }
 .display {
-  font: 600 48px/54px var(--font-display), sans-serif;
+  /* 36px on phones, about 52px at 1440 */
+  font: 600 clamp(2.25rem, 2.2vw + 1.25rem, 3.375rem)/1.12 var(--font-display), sans-serif;
   letter-spacing: -0.015em;
   margin: 0;
 }
 .heading {
-  font: 500 32px/38px var(--font-display), sans-serif;
+  /* 28px on phones, about 42px at 1440 */
+  font: 500 clamp(1.75rem, 1.8vw + 1rem, 2.75rem)/1.18 var(--font-display), sans-serif;
   letter-spacing: -0.01em;
   margin: 0;
 }
@@ -194,14 +199,6 @@ a {
   .display-xl {
     font-size: 48px;
     line-height: 54px;
-  }
-  .display {
-    font-size: 36px;
-    line-height: 42px;
-  }
-  .heading {
-    font-size: 26px;
-    line-height: 32px;
   }
 }
 
@@ -484,8 +481,8 @@ a {
 .reel-full .frame {
   border-radius: 0;
   aspect-ratio: auto;
-  height: min(78vh, 56.25vw);
-  min-height: 240px;
+  /* Sized so the headline and booking button below still land on the first screen */
+  height: clamp(240px, calc(100svh - var(--nav-height) - 356px), 56.25vw);
 }
 .reel-full .slot-label {
   left: var(--gutter);
@@ -497,7 +494,7 @@ a {
 /* ── Home: intro + the two doors ── */
 
 .intro {
-  padding: var(--space-16) 0 var(--space-12);
+  padding: var(--space-12) 0 var(--space-12);
 }
 .intro-grid {
   display: grid;
@@ -862,6 +859,7 @@ a {
 }
 .facts dd {
   margin: var(--space-1) 0 0;
+  overflow-wrap: break-word;
 }
 .fact-list {
   list-style: none;
@@ -879,7 +877,7 @@ a {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: var(--space-6);
-  padding-top: var(--space-16);
+  padding-top: var(--section-gap);
 }
 .cs-section > h2 {
   grid-column: 1 / span 4;
@@ -1290,7 +1288,7 @@ a {
   gap: var(--space-6);
 }
 .doors-section {
-  padding: var(--space-12) 0 var(--space-16);
+  padding: var(--space-24) 0 var(--space-16);
 }
 .door-cards {
   list-style: none;
@@ -1579,3 +1577,50 @@ a {
   color: var(--ink);
   font-weight: 600;
 }
+
+/* Case studies: a still beside The Approach, and the numbers across the foot of The Result */
+.cs-still {
+  margin-top: var(--space-8);
+}
+.cs-section > .facts {
+  grid-column: 1 / -1;
+  margin-top: var(--space-12);
+  border-top: 1px solid var(--hairline);
+}
+.cs-section > .stats {
+  grid-column: 1 / -1;
+  margin-top: var(--space-12);
+  border-top: 1px solid var(--hairline);
+}
+
+/* Brands and Agencies: headline beside a still, so the first screen is full */
+.page-head-split {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--space-6);
+  align-items: center;
+  max-width: none;
+  min-height: calc(100svh - 280px);
+}
+.page-head-text {
+  grid-column: 1 / span 7;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.page-head-visual {
+  grid-column: 8 / span 5;
+}
+.page-head-visual .frame {
+  aspect-ratio: 4 / 5;
+}
+@media (max-width: 767px) {
+  .page-head-split {
+    min-height: 0;
+  }
+  .page-head-text,
+  .page-head-visual {
+    grid-column: 1 / -1;
+  }
+}
+

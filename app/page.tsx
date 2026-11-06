@@ -36,7 +36,6 @@ export default function Home() {
       <section className="intro">
         <div className="container">
           <div className="intro-text">
-            <span className="eyebrow">{site.hero.eyebrow}</span>
             <h1 className="display hero-headline">
               {site.hero.headline.map((line) => (
                 <span key={line}>{line}</span>
@@ -70,13 +69,10 @@ export default function Home() {
                 <Link href={d.href} className="door-card">
                   <span className="door-title">
                     {d.title}
-                    <span className="door-arrow" aria-hidden="true">
-                      →
-                    </span>
                   </span>
                   <span className="door-line">{d.line}</span>
                   <span className="door-action">
-                    {d.action} <span className="arrow" aria-hidden="true">→</span>
+                    {d.action}
                   </span>
                 </Link>
               </li>
@@ -89,10 +85,9 @@ export default function Home() {
       <section className="stats-band" aria-labelledby="proof-label">
         <div className="container">
           <div className="proof">
-            <span id="proof-label" className="eyebrow">
-              {site.proof.label}
-            </span>
-            <p className="proof-sentence">{site.proof.sentence}</p>
+            <h2 id="proof-label" className="proof-sentence">
+              {site.proof.sentence}
+            </h2>
           </div>
           <dl className="stat-row">
             {site.proof.stats.map((st) => (
@@ -114,7 +109,7 @@ export default function Home() {
           <div className="section-head row">
             <h2 className="heading">Selected Work</h2>
             <Link href="/work" className="text-link">
-              All Case Studies <span className="arrow" aria-hidden="true">→</span>
+              All Case Studies
             </Link>
           </div>
           <div className="work-grid featured">

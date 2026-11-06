@@ -17,14 +17,11 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
         title={project.youtube?.title}
       />
       <div className="card-body">
-        <span className="eyebrow">
-          <Text>{project.discipline}</Text>
-        </span>
+        <p className="caption card-byline">
+          <Text>{`${project.meta.split(" · ")[0]}, ${project.year}`}</Text>
+        </p>
         <h3 className="title">{project.title}</h3>
         {project.blurb && <p className="card-blurb">{project.blurb}</p>}
-        <span className="caption">
-          <Text>{project.meta}</Text>
-        </span>
         <div className="tags">
           {project.tags.map((t, i) => (
             <span key={i} className="tag">

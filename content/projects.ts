@@ -62,7 +62,7 @@ export const projects: Project[] = [
     summary:
       "A vertical brand campaign showing parents how Bing helps little ones get ready for life, one feeling at a time.",
     blurb:
-      "A vertical brand campaign for Bing Bunny across four European markets, built around each episode's core emotion. 213m+ YouTube views.",
+      "A vertical brand campaign across four European markets. 213m+ YouTube views.",
     meta: "Acamar Films · Bing Bunny · UK, Italy, Poland, Benelux",
     tags: ["Editing", "Motion Design", "Localisation"],
     facts: {
@@ -119,6 +119,7 @@ export const projects: Project[] = [
     discipline: "Editing",
     year: "2014–2020",
     summary: "A compilation of news stories I cut for Nine Entertainment Co.",
+    blurb: "Six years cutting national news at 9News Sydney, leading a shift of eight editors by 2018.",
     meta: "Nine Entertainment Co. · 9News Sydney · 2014–2020",
     tags: ["Editing", "News"],
     facts: {
@@ -223,7 +224,7 @@ export const projects: Project[] = [
     summary:
       "Kinetic typography that turned the voices of people lost to pancreatic cancer into an award-winning film, made in four days.",
     blurb:
-      "Kinetic typography for Pancreatic Cancer UK's Lost Voices, made in four days. Winner, Communications Campaign of the Year, Third Sector Awards 2022.",
+      "Kinetic typography made in four days. Winner, Communications Campaign of the Year, Third Sector Awards 2022.",
     meta: "Pancreatic Cancer UK · Acamar Films · 2021",
     tags: ["Art Direction", "Motion Design", "Kinetic Typography"],
     facts: {
@@ -432,7 +433,7 @@ export const projects: Project[] = [
     summary:
       "Six years making Bing Bunny content, from cinema screens to Amazon Alexa.",
     blurb:
-      "Six years of Bing Bunny content: three cinema packages, YouTube compilations and Shorts, music videos, social, Alexa audio stories and investor trailers.",
+      "Six years of Bing: cinema packages, YouTube compilations, music videos and Alexa stories.",
     meta: "Acamar Films · Bing Bunny · 2020–2026",
     tags: ["Video Editing", "Motion Design", "Cinema"],
     facts: {
@@ -471,13 +472,13 @@ export const projects: Project[] = [
       "Investor and corporate. Trailers, animations and presentation videos for Acamar's own use, including trailers that supported funding rounds of up to £500k.",
     ],
     result: [
-      "Over six years, Bing grew from 1 billion to 11 billion YouTube views and passed 13 billion lifetime views across 67 channels in 35 languages, with 1.3 million hours watched every day. TikTok went from 0 to 142,000 followers in two years, and Instagram from 15,000 to 75,000.",
+      "Over six years, Bing grew from 1 billion to over 13 billion YouTube views across 67 channels in 35 languages, with 1.3 million hours watched every day. TikTok went from 0 to 142,000 followers in two years, and Instagram from 15,000 to 75,000.",
       "Channels managed by Acamar's YouTube team. Pipeline, workflow, naming conventions and automation tools by me; QC and delivery by a video team of three, including me.",
     ],
     stats: [
-      { value: "13bn+", label: "Lifetime YouTube views, 67 channels, 35 languages" },
-      { value: "1bn → 11bn", label: "YouTube views in six years" },
+      { value: "1bn → 13bn+", label: "YouTube views in six years, 67 channels, 35 languages" },
       { value: "1.3m", label: "Viewing hours every day" },
+      { value: "0 → 142k", label: "TikTok followers in two years" },
       { value: "3", label: "Cinema packages, 2021–2024" },
     ],
     links: [
