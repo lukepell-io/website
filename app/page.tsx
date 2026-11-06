@@ -7,6 +7,7 @@ import { Text } from "@/components/Text";
 import { CountUp } from "@/components/CountUp";
 import { PlayWithSound } from "@/components/PlayWithSound";
 import { VimeoReel } from "@/components/VimeoReel";
+import { BookCall } from "@/components/BookCall";
 
 export default function Home() {
   const featured = projects.filter((p) => p.featured);
@@ -44,9 +45,7 @@ export default function Home() {
             </h1>
             <p className="body-lg muted">{site.hero.intro}</p>
             <div className="hero-actions">
-              <a className="btn btn-primary" href={site.bookingUrl}>
-                {site.ctas.call}
-              </a>
+              <BookCall />
               <span className="muted hero-or">
                 or email{" "}
                 <a href={`mailto:${site.email}`} className="text-link">

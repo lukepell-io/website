@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/content/site";
 import { Faq } from "@/components/Faq";
+import { Icon } from "@/components/Icon";
 import { Media } from "@/components/Media";
 
 const a = site.agencies;
@@ -32,7 +33,10 @@ export default function AgenciesPage() {
         <ul className="offers">
           {a.offers.map((o) => (
             <li key={o.title}>
-              <h3 className="title">{o.title}</h3>
+              <h3 className="title with-icon">
+                <Icon name={o.icon} size={22} />
+                {o.title}
+              </h3>
               <p className="step-tag">{o.rate}</p>
               <p>{o.body}</p>
             </li>
@@ -43,8 +47,11 @@ export default function AgenciesPage() {
       <section className="service">
         <h2 className="heading">{a.teamTitle}</h2>
         <ul className="plain-list">
-          {a.team.map((line) => (
-            <li key={line}>{line}</li>
+          {a.team.map((item) => (
+            <li key={item.text} className="icon-row">
+              <Icon name={item.icon} />
+              <span>{item.text}</span>
+            </li>
           ))}
         </ul>
       </section>

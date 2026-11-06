@@ -11,8 +11,8 @@ export const site = {
   location: "Sydney, Australia",
   abn: "44 342 727 741",
   linkedin: "https://www.linkedin.com/in/lukepelletier1991/",
-  // Swap for your Calendly link when it's set up
-  bookingUrl: "mailto:luke@lukepell.io?subject=15-minute%20call",
+  // Google Calendar booking page: "15 mins with Luke"
+  bookingUrl: "https://calendar.app.google/tP9weX8ggABgKpYF7",
   availabilityUrl: "mailto:luke@lukepell.io?subject=Availability",
   // The homepage showreel on Vimeo (the number at the end of the Vimeo link)
   // Leave empty to use public/media/home/showreel.mp4. Vimeo blocks embedding 406275939 for now.
@@ -74,16 +74,19 @@ export const site = {
     steps: [
       {
         title: "1. Audit",
+        icon: "audit",
         tag: "$3,600 + GST, credited in full to the Build",
         body: "Four days, one written plan. We start with what video needs to do for your business, such as bringing in leads or sales. Then I look at what you're making now, what it costs and the tools you already have. You get a plan covering the role you need, the workflow to build and how you'll know it's working, within two weeks of our first session.",
       },
       {
         title: "2. Build",
+        icon: "build",
         tag: "Monthly retainer, usually 1 to 3 months",
         body: "I set up the workflow in your existing software, code custom tools where they save time and write the documentation. I help you write the role, sit in on interviews and choose the right person, then onboard and train them.",
       },
       {
         title: "3. Handover",
+        icon: "handover",
         tag: "",
         body: "Your new hire runs it, testing formats and making more each week. If you'd like check-ins afterwards, we'll set them up however suits you.",
       },
@@ -129,26 +132,29 @@ export const site = {
     offers: [
       {
         title: "Producing",
+        icon: "producing",
         rate: "From $1,000 + GST a day",
         body: "Video and animation jobs from brief, script and storyboard to delivery. I schedule, track budgets, brief freelancers and partners, and handle localised versions for other markets.",
       },
       {
         title: "Video Editing",
+        icon: "editing",
         rate: "From $900 + GST a day",
         body: "Offline and Online Editing for broadcast, social and brand, with Colour Grading in DaVinci Resolve. Versions, cut-downs and aspect ratios included.",
       },
       {
         title: "Motion Design",
+        icon: "motion",
         rate: "From $900 + GST a day",
         body: "2D and 3D Motion Design for social, broadcast, large-format LED screens and apps. Titles, animated assets and templates, built to the exact resolution and spec of each screen.",
       },
     ],
     teamTitle: "How I Work With Your Team",
     team: [
-      "Producing in your project tools: Airtable, ClickUp, Notion or whatever you run",
-      "On my own kit: Premiere Pro, After Effects, Blender, and DaVinci Resolve for colour",
-      "In your studio, on Avid Media Composer or whatever you run",
-      "In studio around Sydney, or remote",
+      { icon: "tasks", text: "Producing in your project tools: Airtable, ClickUp, Notion or whatever you run" },
+      { icon: "kit", text: "On my own kit: Premiere Pro, After Effects, Blender, and DaVinci Resolve for colour" },
+      { icon: "studio", text: "In your studio, on Avid Media Composer or whatever you run" },
+      { icon: "location", text: "In studio around Sydney, or remote" },
     ],
     trialTitle: "Try Me for a Day",
     trial: "If you're not happy with my first day, tell me by the end of it and the day's on me.",
@@ -188,7 +194,8 @@ export const site = {
     list: [
       {
         id: "systems",
-        title: "Content Systems and In-House Video Teams",
+        icon: "systems",
+        title: "Content Systems and In‑House Video Teams", // non-breaking hyphen keeps "In-House" together
         short: "Content Systems", // label for the jump button at the top of the page
         tag: "For brands and companies. Audit, then a monthly retainer.",
         problem: "Each video starts from scratch, costs a lot, and nobody in-house owns what happens next.",
@@ -198,6 +205,7 @@ export const site = {
       },
       {
         id: "animation",
+        icon: "producing",
         title: "Producing",
         tag: "For agencies and brands. From $1,000 + GST a day.",
         problem: "You've won the job and nobody's free to run it.",
@@ -207,6 +215,7 @@ export const site = {
       },
       {
         id: "editing",
+        icon: "editing",
         title: "Video Editing",
         tag: "For agencies and brands. From $900 + GST a day.",
         problem: "The footage is in, the deadline's moved and your editors are booked.",
@@ -216,6 +225,7 @@ export const site = {
       },
       {
         id: "motion",
+        icon: "motion",
         title: "Motion Design",
         tag: "For agencies and brands. From $900 + GST a day.",
         problem: "Your content needs to look right on a phone, a broadcast feed and a building-sized LED screen.",
@@ -299,7 +309,7 @@ export const site = {
 
   // The contact form. Paste your Web3Forms access key between the quotes to switch it on.
   contactForm: {
-    accessKey: "",
+    accessKey: "f34e1e48-ae5f-487e-bd2c-369590d16dbf",
     nameLabel: "Name",
     emailLabel: "Email",
     whoLabel: "Who's getting in touch?",

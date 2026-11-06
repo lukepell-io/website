@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/content/site";
+import { Icon } from "@/components/Icon";
+import { BookCall } from "@/components/BookCall";
 
 const s = site.services;
 
@@ -15,6 +17,7 @@ export default function ServicesPage() {
         <div className="jump-links">
           {s.list.map((item) => (
             <a key={item.id} href={`#${item.id}`} className="btn btn-secondary">
+              <Icon name={item.icon} />
               {"short" in item ? item.short : item.title}
             </a>
           ))}
@@ -24,7 +27,10 @@ export default function ServicesPage() {
       {s.list.map((item) => (
         <section key={item.id} id={item.id} className="service">
           <div className="service-head">
-            <h2 className="heading">{item.title}</h2>
+            <h2 className="heading with-icon">
+              <Icon name={item.icon} size={32} />
+              {item.title}
+            </h2>
             <p className="caption">{item.tag}</p>
           </div>
           <ul className="offers">
@@ -57,9 +63,7 @@ export default function ServicesPage() {
       <div className="service-cta">
         <span className="title">{s.closing}</span>
         <div className="hero-actions">
-          <a className="btn btn-primary" href={site.bookingUrl}>
-            {site.ctas.call}
-          </a>
+          <BookCall />
           <a className="btn btn-secondary" href={site.availabilityUrl}>
             {site.ctas.availability}
           </a>

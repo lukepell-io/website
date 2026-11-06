@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/content/site";
 import { Faq } from "@/components/Faq";
+import { Icon } from "@/components/Icon";
 import { Media } from "@/components/Media";
+import { BookCall } from "@/components/BookCall";
 
 const b = site.brands;
 
@@ -16,9 +18,7 @@ export default function BrandsPage() {
           <h1 className="display">{b.headline}</h1>
           <p className="body-lg muted">{b.intro}</p>
           <div className="hero-actions">
-            <a className="btn btn-primary" href={site.bookingUrl}>
-              {site.ctas.call}
-            </a>
+            <BookCall />
             <span className="muted hero-or">
               or email{" "}
               <a href={`mailto:${site.email}`} className="text-link">
@@ -37,7 +37,10 @@ export default function BrandsPage() {
         <ol className="offers steps">
           {b.steps.map((step) => (
             <li key={step.title}>
-              <h3 className="title">{step.title}</h3>
+              <h3 className="title with-icon">
+                <Icon name={step.icon} size={22} />
+                {step.title}
+              </h3>
               {step.tag && <p className="step-tag">{step.tag}</p>}
               <p>{step.body}</p>
             </li>
@@ -58,9 +61,7 @@ export default function BrandsPage() {
       <div className="service-cta">
         <span className="title">{b.closing}</span>
         <div className="hero-actions">
-          <a className="btn btn-primary" href={site.bookingUrl}>
-            {site.ctas.call}
-          </a>
+          <BookCall />
           <a className="btn btn-secondary" href={`mailto:${site.email}`}>
             {site.email}
           </a>

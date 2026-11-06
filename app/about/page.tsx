@@ -3,6 +3,7 @@ import { site } from "@/content/site";
 import Link from "next/link";
 import { Media } from "@/components/Media";
 import { Icon } from "@/components/Icon";
+import { BookCall } from "@/components/BookCall";
 
 const a = site.about;
 
@@ -27,9 +28,7 @@ export default function AboutPage() {
           <h1 className="display">{a.heading}</h1>
           <p className="body-lg">{a.intro}</p>
           <div className="hero-actions">
-            <a className="btn btn-primary" href={site.bookingUrl}>
-              {site.ctas.call}
-            </a>
+            <BookCall />
             <span className="muted hero-or">
               or email{" "}
               <a href={`mailto:${site.email}`} className="text-link">
@@ -87,9 +86,7 @@ export default function AboutPage() {
         <h2 className="heading">{a.closingTitle}</h2>
         <p className="body-lg muted">{a.closingLine}</p>
         <div className="hero-actions">
-          <a className="btn btn-primary" href={site.bookingUrl}>
-            {site.ctas.call}
-          </a>
+          <BookCall />
           <span className="muted hero-or">
             or email{" "}
             <a href={`mailto:${site.email}`} className="text-link">

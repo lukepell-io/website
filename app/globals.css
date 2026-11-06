@@ -1812,4 +1812,15 @@ p {
   gap: var(--space-2);
   vertical-align: bottom;
 }
+.with-icon {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+.with-icon .icon {
+  margin-top: 0.22em;
+}
+.with-icon .icon {
+  color: var(--brand-strong);
+}
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { site } from "@/content/site";
 import { ContactForm } from "@/components/ContactForm";
 import { Icon } from "@/components/Icon";
+import { BookCall } from "@/components/BookCall";
 
 const c = site.contact;
 
@@ -22,9 +23,7 @@ export default function ContactPage() {
           <div className="contact-option">
             <h2 className="title">{c.talkTitle}</h2>
             <p className="muted">{c.brands.body}</p>
-            <a className="btn btn-primary" href={site.bookingUrl}>
-              {site.ctas.call}
-            </a>
+            <BookCall />
           </div>
           <div className="contact-option">
             <h2 className="title">{c.agencies.title}</h2>
