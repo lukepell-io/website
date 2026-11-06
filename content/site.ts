@@ -282,7 +282,8 @@ export const site = {
     metaDescription:
       "Book a 15-minute call or email luke@lukepell.io. Freelance Video Producer and Motion Designer based in Sydney.",
     headline: "Tell Me What You Need.",
-    intro: "The quickest way is a 15-minute call. If you'd rather write, email works just as well.",
+    intro: "Send me a message and I'll reply within one working day. If you'd rather talk, book a 15-minute call.",
+    talkTitle: "Prefer to Talk?",
     brands: {
       title: "For Brands and Companies",
       body: "Tell me about the video you need, or talk me through where your content is now and where you'd like it to be.",
@@ -294,6 +295,24 @@ export const site = {
     emailTitle: "Or Just Email",
     emailHint: "It helps to include what you're making, rough dates, and a budget if you have one.",
     details: "Based in Sydney (AEST), working in studio around Sydney or remotely",
+  },
+
+  // The contact form. Paste your Web3Forms access key between the quotes to switch it on.
+  contactForm: {
+    accessKey: "",
+    nameLabel: "Name",
+    emailLabel: "Email",
+    whoLabel: "Who's getting in touch?",
+    whoOptions: ["An agency", "A brand or company", "Something else"],
+    messageLabel: "Message",
+    messageHint: "What you're making, rough dates, and a budget if you have one.",
+    submit: "Send message",
+    sending: "Sending…",
+    privacy: "I'll only use your details to reply to you.",
+    notConnected: "This form isn't connected yet. Please email luke@lukepell.io for now.",
+    sentTitle: "Thanks, your message is in.",
+    sentBody: "I'll reply within one working day.",
+    error: "That didn't send. Please try again, or email luke@lukepell.io.",
   },
 
   footer: {
