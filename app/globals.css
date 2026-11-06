@@ -23,7 +23,9 @@
   --coral-strong: #b4472f;
   --focus: var(--brand);
   --scrim: rgba(3, 18, 26, 0.6);
-  --on-scrim: #ffffff;
+  --on-scrim: #f4fbfa;
+  --on-scrim-veil: rgba(244, 251, 250, 0.12);
+  --video-ground: #01080c;
   --shadow-soft: 0 8px 24px rgba(18, 49, 47, 0.08);
   --shadow-float: 0 18px 48px rgba(11, 111, 128, 0.18);
 
@@ -758,14 +760,12 @@ a {
   border: 1px solid var(--hairline);
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: var(--shadow-soft);
   color: inherit;
   text-decoration: none;
-  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  transition: border-color 0.2s ease-out;
 }
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-float);
+  border-color: var(--brand);
 }
 .card .frame {
   border-radius: 0;
@@ -998,12 +998,6 @@ a {
   background: none;
   cursor: pointer;
 }
-.yt-facade img {
-  transition: transform 0.4s ease-out;
-}
-.yt-facade:hover img {
-  transform: scale(1.03);
-}
 .yt-facade .play {
   transition: transform 0.3s ease-out;
 }
@@ -1073,6 +1067,7 @@ a {
 }
 .stat-value {
   font: 600 40px/44px var(--font-display), sans-serif;
+  font-variant-numeric: tabular-nums;
   letter-spacing: -0.02em;
   color: var(--brand-strong);
 }
@@ -1463,7 +1458,7 @@ a {
   padding: 0;
   border: 0;
   border-radius: var(--radius-md);
-  background: #000;
+  background: var(--video-ground);
   overflow: visible;
 }
 .reel-dialog::backdrop {
@@ -1488,7 +1483,7 @@ a {
   color: var(--on-scrim);
 }
 .reel-close:hover {
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--on-scrim-veil);
 }
 
 /* Case studies: card blurb and credits */
@@ -1622,5 +1617,18 @@ a {
   .page-head-visual {
     grid-column: 1 / -1;
   }
+}
+
+/* Polish: balanced headings, no one-word last lines, a pressed state on buttons */
+.display,
+.heading,
+.title {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+.btn:active {
+  transform: translateY(1px);
 }
 
