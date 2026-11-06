@@ -1,4 +1,5 @@
 "use client";
+import { Icon } from "./Icon";
 
 // Unmutes the homepage showreel and plays it from the start, full screen where the browser allows.
 export function PlayWithSound() {
@@ -13,7 +14,8 @@ export function PlayWithSound() {
 
   return (
     <button type="button" className="btn btn-secondary reel-sound" onClick={play}>
-      ▶ Play with sound
+      <Icon name="sound" />
+        Play with sound
     </button>
   );
 }

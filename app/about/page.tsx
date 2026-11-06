@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { site } from "@/content/site";
 import Link from "next/link";
 import { Media } from "@/components/Media";
+import { Icon } from "@/components/Icon";
 
 const a = site.about;
 
@@ -106,7 +107,8 @@ export default function AboutPage() {
         </p>
         <p className="caption">
           {site.ctas.hiring}{" "}
-          <a href={site.resumeUrl} className="text-link" target="_blank" rel="noopener noreferrer">
+          <a href={site.resumeUrl} className="text-link icon-link" target="_blank" rel="noopener noreferrer">
+            <Icon name="download" />
             {site.ctas.resumeBody}
           </a>
         </p>

@@ -29,7 +29,15 @@ export function Footer() {
         </a>
         <div className="footer-bottom caption">
           <span>
-            © {new Date().getFullYear()} {site.name}. ABN {site.abn}
+            © {new Date().getFullYear()} {site.name}. ABN {site.abn}. Icons by{" "}
+            <a href="https://www.streamlinehq.com" target="_blank" rel="noopener noreferrer">
+              Streamline
+            </a>
+            , licensed{" "}
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">
+              CC BY 4.0
+            </a>
+            .
           </span>
           <ul>
             <li>

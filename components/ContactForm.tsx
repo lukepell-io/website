@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { site } from "@/content/site";
+import { Icon } from "./Icon";
 
 // Sends the message to Luke's inbox through Web3Forms (https://web3forms.com).
 // Nothing is stored on this site. The access key is public by design: it can only
@@ -95,6 +96,7 @@ export function ContactForm() {
 
       <div className="form-actions">
         <button type="submit" className="btn btn-primary" disabled={!connected || status === "sending"}>
+          <Icon name="mail" />
           {status === "sending" ? f.sending : f.submit}
         </button>
         <p className="caption muted">{connected ? f.privacy : f.notConnected}</p>

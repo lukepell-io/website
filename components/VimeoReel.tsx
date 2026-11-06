@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { Icon } from "./Icon";
 
 // The homepage showreel from Vimeo: a muted loop fills the hero, and
 // "Play with sound" opens the full reel with sound and controls in a pop-up.
@@ -34,7 +35,8 @@ export function VimeoReel({ id, title }: { id: string; title: string }) {
         />
       </div>
       <button type="button" className="btn btn-secondary reel-sound" onClick={show}>
-        ▶ Play with sound
+        <Icon name="sound" />
+        Play with sound
       </button>
 
       <dialog ref={dialog} className="reel-dialog" aria-label={title} onClose={() => setOpen(false)}>

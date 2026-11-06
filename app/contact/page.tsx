@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { site } from "@/content/site";
 import { ContactForm } from "@/components/ContactForm";
+import { Icon } from "@/components/Icon";
 
 const c = site.contact;
 
@@ -33,18 +34,24 @@ export default function ContactPage() {
             </a>
           </div>
           <ul className="plain-list contact-details">
-            <li>
+            <li className="icon-row">
+              <Icon name="mail" />
               <a href={`mailto:${site.email}`} className="text-link">
                 {site.email}
               </a>
             </li>
-            <li>{c.details}</li>
-            <li>
+            <li className="icon-row">
+              <Icon name="location" />
+              <span>{c.details}</span>
+            </li>
+            <li className="icon-row">
+              <Icon name="profile" />
               <a href={site.linkedin} className="text-link" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
             </li>
-            <li>
+            <li className="icon-row">
+              <Icon name="download" />
               <a href={site.resumeUrl} className="text-link" target="_blank" rel="noopener noreferrer">
                 {site.ctas.resumeBody}
               </a>
