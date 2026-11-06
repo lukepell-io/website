@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { site } from "@/content/site";
+import Link from "next/link";
 import { Media } from "@/components/Media";
 
 const a = site.about;
@@ -24,6 +25,17 @@ export default function AboutPage() {
         <div className="about-text">
           <h1 className="display">{a.heading}</h1>
           <p className="body-lg">{a.intro}</p>
+          <div className="hero-actions">
+            <a className="btn btn-primary" href={site.bookingUrl}>
+              {site.ctas.call}
+            </a>
+            <span className="muted hero-or">
+              or email{" "}
+              <a href={`mailto:${site.email}`} className="text-link">
+                {site.email}
+              </a>
+            </span>
+          </div>
 
           <h2 className="heading about-subhead">{a.storyTitle}</h2>
           {a.story.map((para) => (
@@ -31,6 +43,15 @@ export default function AboutPage() {
           ))}
         </div>
       </div>
+
+      <section className="service">
+        <h2 className="heading">{a.whyTitle}</h2>
+        <div className="body-lg about-why">
+          {a.why.map((para) => (
+            <p key={para}>{para}</p>
+          ))}
+        </div>
+      </section>
 
       <section className="service">
         <h2 className="heading">{a.quotesTitle}</h2>
@@ -61,13 +82,27 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className="service">
-        <p className="body-lg">
-          {a.signOff}{" "}
-          <a href={`mailto:${site.email}`} className="text-link">
-            {site.email}
+      <section className="service about-close">
+        <h2 className="heading">{a.closingTitle}</h2>
+        <p className="body-lg muted">{a.closingLine}</p>
+        <div className="hero-actions">
+          <a className="btn btn-primary" href={site.bookingUrl}>
+            {site.ctas.call}
           </a>
-          .
+          <span className="muted hero-or">
+            or email{" "}
+            <a href={`mailto:${site.email}`} className="text-link">
+              {site.email}
+            </a>
+          </span>
+        </div>
+        <p className="about-doors">
+          <Link href="/agencies" className="text-link">
+            See how I work with agencies
+          </Link>
+          <Link href="/brands" className="text-link">
+            See how I work with brands
+          </Link>
         </p>
         <p className="caption">
           {site.ctas.hiring}{" "}

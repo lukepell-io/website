@@ -233,12 +233,19 @@ export const site = {
     metaDescription:
       "13+ years in production, from 9News Sydney to Head of Video Production at Acamar Films in London. Now a freelance Producer and Motion Designer back in Sydney.",
     heading: "Hi, I'm Luke.",
-    intro: "I'm a Digital Video Producer and Motion Designer based in Sydney, working with agencies and brands.",
+    intro:
+      "I'm a Digital Video Producer and Motion Designer in Sydney. Agencies book me to run their video and animation jobs, and brands bring me in to build a video team of their own.",
     storyTitle: "How I Got Here",
     story: [
       "I started at SBS in 2013, then moved to Nine. By 2018 I was a Senior Video Editor at 9News Sydney, leading a shift of eight.",
       "In 2020 I joined Acamar Films in London, the studio behind Bing, and finished as Head of Video Production. I took projects from script to delivery and designed the content pipeline behind Bing's 67 YouTube channels, then the new Again! Again! channel.",
       "Now I'm back in Sydney, working for myself.",
+    ],
+    whyTitle: "Steady Output Beats One Big Video",
+    why: [
+      "The content that works usually comes from steady output: lots of pieces, tried on real audiences, with the winners turned into more. I learned that cutting stories to air every day at 9News, and again at Acamar, where around 60 compilations a week went out in 35 languages with a team of three.",
+      "Batch Builder came from the same place. I built a Premiere Pro plugin that cut each compile from about three minutes to under five seconds, and the team still uses it.",
+      "So when you book me, you get a producer who has cut the edits himself and knows where a schedule loses its hours.",
     ],
     quotesTitle: "What People Say",
     quotes: [
@@ -267,7 +274,8 @@ export const site = {
       "I do life drawing.",
       "I've run the City2Surf seven times, and I do it every year I can.",
     ],
-    signOff: "Want to work together? Email me at",
+    closingTitle: "Tell Me What You're Working On.",
+    closingLine: "A 15-minute call is the quickest way to see if I'm the right fit for the job.",
   },
 
   contact: {

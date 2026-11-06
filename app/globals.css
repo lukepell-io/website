@@ -1635,3 +1635,32 @@ p {
   transform: translateY(1px);
 }
 
+/* About: the why section, and a closing call to action */
+.about-why {
+  max-width: var(--container-text);
+}
+.about-why p {
+  margin: 0 0 var(--space-4);
+}
+.about-close .hero-actions {
+  margin: var(--space-6) 0 var(--space-4);
+}
+.about-close .body-lg {
+  margin: var(--space-4) 0 0;
+}
+.about-doors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin: 0 0 var(--space-4);
+}
+
+.about-text .hero-actions {
+  margin: var(--space-6) 0 var(--space-2);
+}
+.about-why {
+  margin-top: var(--space-6);
+}
+.about {
+  margin-bottom: var(--space-12);
+}
